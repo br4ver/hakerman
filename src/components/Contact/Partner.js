@@ -5,7 +5,7 @@ import styles from "../../css/contact.module.css"
 const Partner = () => {
   return (
     <section className={styles.contact}>
-      <Title title="contact" subtitle="us" />
+      <Title title="Sign" subtitle="Up" />
       <div className={styles.center}>
         <form
           action="https://formspree.io/norbzqwerty@gmail.com"
