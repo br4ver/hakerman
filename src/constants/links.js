@@ -1,14 +1,14 @@
 export default [
     {
-        path: "/",
-        text: "home"
+        path: "/rider",
+        text: "Become a Partner"
     },
         {
-        path: "/blog",
-        text: "blog"
+        path: "/posts",
+        text: "Articles"
     },
         {
         path: "/contact",
-        text: "contact"
+        text: "contact us"
     }
 ]

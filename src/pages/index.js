@@ -1,22 +1,40 @@
 import React from "react"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Layout from "../components/Layout"
-import SimleHero from '../components/SimpleHero'
 import Banner from '../components/Banner'
 import About from '../components/Home/About'
 import Services from "../components/Home/Services"
-export default () => (
+import StyledHero from '../components/StyledHero'
+import {graphql} from 'gatsby'
+import FeaturePost from '../components/Home/FeaturedPost'
+
+export default ({data}) => (
+
   <Layout>
-    <SimleHero>
+    <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
       <Banner
         title="Money"
         info="Pork belly selvage microdosing subway tile quinoa street art. Celiac meditation roof party, lo-fi tacos viral keytar etsy venmo microdosing. IPhone kickstarter fashion axe craft beer raw denim palo santo retro. Hexagon hell of roof party, drinking vinegar kombucha disrupt kickstarter. Tumblr taiyaki etsy cliche.">
-        <Link to="/" className="btn-white">
+        <AniLink fade to="/" className="btn-white">
           More Info
-        </Link>
-      </Banner>
-    </SimleHero>
+        </AniLink>
+      </Banner>      
+    </StyledHero> 
     <Services/>
     <About />
+    <FeaturePost/>
   </Layout>
 )
+
+
+export const query = graphql`
+         query {
+           defaultBcg: file(relativePath: { eq: "defaultBcg.jpg" }) {
+             childImageSharp {
+               fluid(quality: 90, maxWidth: 4160) {
+                 ...GatsbyImageSharpFluid_withWebp
+               }
+             }
+           }
+         }
+       `

@@ -26,6 +26,9 @@ body {
   line-height: 1.4;
   font-size: 1rem;
 }
+a{
+  text-decoration: none;
+}
 h1,
 h2,
 h3,
@@ -41,7 +44,7 @@ p {
 }
 .defaultHero {
   min-height: calc(100vh - 62px);
-  background: linear-gradient(rgba(0, 216, 200, 0.7), rgba(0, 0, 0, 0.7)),
+  background: 
     url("../images/defaultBcg.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
