@@ -1,0 +1,8 @@
+.titleContainer {
+  font-family: "gilroy-extrabold";
+}
+.titleWrapper h1 {
+  font-size: 150px;
+  margin: 0;
+  line-height: 1.1em;
+}

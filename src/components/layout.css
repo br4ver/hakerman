@@ -1,4 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|Poppins");
+@font-face {
+  font-family: "gilroy-extrabold";
+  src: url("../fonts/gilroy-extrabold-webfont.woff2") format("woff2"),
+    url("../fonts/gilroy-extrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gilroy-light";
+  src: url("../fonts/gilroy-light-webfont.woff2") format("woff2"),
+    url("../fonts/gilroy-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   --primaryColor: #00d8c8;
@@ -7,7 +20,11 @@
   --mainBlack: #222;
   --mainGrey: #ececec;
   --darkGrey: #cfcfcf;
+  --goferBlue: #2f2478;
+  --goferPink: #ff0076;
+  --goferYellow: #ffe300;
   --mainTransition: all 0.3s linear;
+  --titleTransition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   --mainSpacing: 4px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
@@ -20,13 +37,13 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: gilroy-light;
   color: var(--mainBlack);
-  background: var(--mainWhite);
+  background: var(--mainPrimary);
   line-height: 1.4;
   font-size: 1rem;
 }
-a{
+a {
   text-decoration: none;
 }
 h1,
@@ -35,17 +52,17 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: gilroy-extrabold;
   margin-bottom: 1.25rem;
   letter-spacing: var(--mainSpacing);
 }
 p {
-  margin-bottom: 1.25rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 .defaultHero {
   min-height: calc(100vh - 62px);
-  background: 
-    url("../images/defaultBcg.jpg") center/cover no-repeat;
+  background: url("../images/defaultBcg.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,26 +81,77 @@ p {
 }
 .btn-white:hover {
   background: var(--mainWhite);
-  color: var(--primaryColor);
+  color: var(--goferPink);
 }
 .btn-primary {
   border-radius: 25px;
-  background: var(--primaryColor);
+  background: var(--goferPink);
   color: var(--mainWhite);
-  border: 2px solid var(--primaryColor);
+  border: 2px solid var(--goferPink);
+  align-items: center;
 }
 .btn-primary:hover {
   background: transparent;
-  color: var(--primaryColor);
+  color: var(--goferPink);
 }
 /* .gatsby-image-wrapper {
   max-height: 600px;
 } */
-.goferlogo{
+.goferlogo {
   height: 40px;
 }
-main{
+main {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
+.btn-help {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--mainWhite);
+  border: 1px solid var(--mainWhite);
+  transition: var(--mainTransition);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn-help:hover {
+  background: var(--mainWhite);
+  color: var(--primaryColor);
+}
+
+/* supertitle */
+.titleContainer {
+  position: relative;
+  --maskX: 0;
+  --maskY: 00;
+  max-width: 40vw;
+  margin-left: 10vw;
+}
+.titleContainer h1 {
+  font-size: 90px;
+  margin: 0;
+  line-height: 1.1em;
+}
+
+.titleWrapper {
+  color: var(--mainWhite);
+  cursor: pointer;
+}
+
+.cloneWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgba(0, 219, 199);
+  /*transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);*/
+  clip-path: polygon(
+    0 0,
+    calc(var(--maskX) * 1% + (var(--maskY) - 50) * 0.4%) 0,
+    calc(var(--maskX) * 1% + (var(--maskY) - 1) * -0.4%) 100%,
+    0 100%
+  );
+}
+
+

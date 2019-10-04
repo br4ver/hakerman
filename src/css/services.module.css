@@ -1,5 +1,5 @@
 .services {
-  background: var(--mainGrey);
+  background: var(--mainWhite);
   padding: 4rem 0;
 }
 .center {
@@ -14,11 +14,12 @@
   text-align: center;
 }
 .service span {
-  background: var(--primaryColor);
+
   padding: 0.5rem;
   display: inline-block;
   font-size: 2rem;
   margin-bottom: 1.5rem;
+
 }
 .service h4 {
   text-transform: uppercase;

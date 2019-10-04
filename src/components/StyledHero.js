@@ -31,7 +31,7 @@ background-position: center;
 background-size: cover;
 opacity: 1 !important;
 display: flex;
-justify-content: center;
+justify-content: flex-start;
 align-items: center;
 
 `

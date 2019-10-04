@@ -3,12 +3,12 @@ import styled from 'styled-components'
 
 const Title = ({title, subtitle, className}) => {
     return (
-        <div className={className}>
-         <h1>
-             <span className="title">{title}</span>
-             <span>{subtitle}</span>
-         </h1>
-        </div>
+      <div className={className}>
+          <h1>
+            <span className="title">{title}</span>
+            <span>{subtitle}</span>
+          </h1>
+      </div>
     )
 }
 
@@ -27,10 +27,12 @@ h1{
 span{
     display:block;
 }
+
 @media (min-width:576px){
     span{
         display: inline-block;
         margin:  0 0.35rem;
+        text-shadow:var(--lightShadow);
     }
 }
 `

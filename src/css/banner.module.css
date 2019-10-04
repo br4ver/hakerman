@@ -1,25 +1,38 @@
 .banner {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   letter-spacing: var(--mainSpacing);
   color: var(--mainWhite);
+  align-items: flex-start;
 }
 .banner h1 {
   font-size: 3.3rem;
   text-transform: uppercase;
-  margin-bottom: 2rem;
-  padding: 0 1rem;
+  margin-bottom: 0.5rem;
   letter-spacing: 6px;
+  width: 60%;
 }
 .banner p {
-  width: 85%;
-  margin: 0 auto;
+  width: 40%;
   margin-bottom: 2rem;
 }
 @media screen and (min-width: 768px) {
   .banner h1 {
     font-size: 4.5rem;
-  }
-  .banner p {
     width: 70%;
   }
+  .banner p {
+    width: 40%;
+  }
+}
+@media screen and (max-width:546px){
+  .banner h1 {
+  margin-right: 5vw;
+  margin-left: 10vw;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  letter-spacing: 6px;
+  width: 80%;
+}
 }

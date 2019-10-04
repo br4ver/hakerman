@@ -4,17 +4,17 @@ import { FaMoneyBillWaveAlt, FaMoneyBillWave, FaMoneyBill } from "react-icons/fa
 export default [
   {
     icon: <FaMoneyBillWaveAlt />,
-    title: "Earn Money",
-    text: "Seitan ramps cred, cornhole coloring book enamel pin church-key.",
+    title: "Satisfy your appetite",
+    text: "From breakfast meal deals to late-night chill we got you!",
   },
   {
     icon: <FaMoneyBillWave />,
-    title: "More Money",
-    text: "Master cleanse man bun cliche viral bushwick tattooed freegan cray.",
+    title: "Explore and Tap",
+    text: "Effortless ordering in a tap.",
   },
   {
     icon: <FaMoneyBill />,
-    title: "A Lot of Money",
-    text: "Banjo truffaut fingerstache, poutine la croix YOLO chambray.",
+    title: "Track",
+    text: "Trace your order from meal prep to delivery.",
   },
 ]

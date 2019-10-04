@@ -1,0 +1,28 @@
+.box {
+    margin-top: 20vh;
+  position: relative;
+  width: 500px;
+  height: 200px;
+}
+.iso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.box:hover .screen.screen3{
+    transform: translateY(-130px);
+}
+.box:hover .screen.screen2{
+    transform: translateY(-90px);
+    opacity: .7;
+}
+.box:hover .screen.screen1{
+    transform: translateY(-40px);
+    opacity: .4;
+}
