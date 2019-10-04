@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <AniLink fade to="/">
+          <AniLink fade to="/blog">
             <img src={logo} alt="gofer logo" className="goferlogo" />
           </AniLink>
           <button type="button" className={styles.logoBtn} onClick={toggleNav}>
@@ -28,27 +28,27 @@ const Navbar = () => {
           }
         >
           <div>
-            <AniLink fade to="/">
+            <AniLink fade to="/blog">
               Home
             </AniLink>
           </div>
               <ul>
                 <li className={styles.down}>
-                  <a href="/">Become a Partner</a>
+                  <a href="/blof">Become a Partner</a>
                 <div className={styles.SoccerContent}>
-                  <a href="/">Rider</a>
-                  <a href="/">Merchant</a>
+                  <a href="/blog">Rider</a>
+                  <a href="/blog">Merchant</a>
                 </div>                  
                 </li>
               </ul>
 
           <div>
-            <AniLink fade to="/">
+            <AniLink fade to="/blog">
               About Us
             </AniLink>
           </div>
           <div>
-            <AniLink to="/" className="btn-help">
+            <AniLink to="/blog" className="btn-help">
               Help
             </AniLink>
           </div>

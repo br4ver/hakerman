@@ -8,10 +8,26 @@ import {
   FaMoneyBillWave,
   FaMoneyBill,
 } from "react-icons/fa"
+class IndexPage extends React.Component {
+  componentDidMount() {
+    const isBrowser = typeof window !== "undefined"
+    const AOS = isBrowser ? require("aos") : undefined
 
-AOS.init()
+    this.aos = AOS
+    this.aos.init()
+  }
+
+  componentDidUpdate() {
+    this.aos.refresh()
+  }
+}
+
+     
+ 
 const Services = () => {
+
     return (
+      
       <section className={styles.services}>
         <Title title="our" subtitle="services" />
         <div>
