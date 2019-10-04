@@ -1,14 +1,13 @@
 import React from 'react'
 import Title from '../Title'
 import styles from '../../css/services.module.css'
-import AOS from "aos"
 import "aos/dist/aos.css"
 import {
   FaMoneyBillWaveAlt,
   FaMoneyBillWave,
   FaMoneyBill,
 } from "react-icons/fa"
-class IndexPage extends React.Component {
+class Services extends React.Component {
   componentDidMount() {
     const isBrowser = typeof window !== "undefined"
     const AOS = isBrowser ? require("aos") : undefined
@@ -20,12 +19,8 @@ class IndexPage extends React.Component {
   componentDidUpdate() {
     this.aos.refresh()
   }
-}
-
-     
- 
-const Services = () => {
-
+render(){
+  
     return (
       
       <section className={styles.services}>
@@ -69,6 +64,7 @@ const Services = () => {
         </div>
       </section>
     )
+}
 }
 
 export default Services
