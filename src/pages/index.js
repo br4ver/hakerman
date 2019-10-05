@@ -7,16 +7,20 @@ import { graphql } from "gatsby"
 import Info from "../components/Home/info"
 import Scroll from "../components/Home/scrollindicator"
 import Title from '../components/Home/superBanner'
+import FeaturedPost from '../components/Home/FeaturedTours'
+import SEO from "../components/SEO"
 
 export default ({ data }) => (
   <Layout>
+    <SEO title="Home" />
     <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
-      <Title text="GOOD FOOD FOR EVERY MOOD"/>
+      <Title text="GOOD FOOD FOR EVERY MOOD" />
       <Scroll />
     </StyledHero>
     <Services />
     <Info />
     <About />
+    <FeaturedPost />
   </Layout>
 )
 

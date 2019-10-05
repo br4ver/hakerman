@@ -1,13 +1,16 @@
 import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
-import "react-responsive-carousel/lib/styles/carousel.min.css"
-import Isometric from '../components/Home/isometric'
+import StyledHero from "../components/StyledHero"
+import BlogList from "../components/Blog/BlogList"
+import SEO from "../components/SEO"
 
 const blog = ({ data }) => {
   return (
     <Layout>
-      <Isometric/>
+      <SEO title="Blog" />
+      <StyledHero img={data.blogBcg.childImageSharp.fluid} />
+      <BlogList />
     </Layout>
   )
 }

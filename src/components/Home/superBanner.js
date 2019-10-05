@@ -30,7 +30,7 @@ class Title extends React.Component {
   }
 
   render() {
-    const { text } = this.props
+    const { text,text2 } = this.props
     const { x, y } = this.state
     const maskStyle = {
       "--maskX": x,
@@ -46,9 +46,11 @@ class Title extends React.Component {
       >
         <div className="titleWrapper">
           <h1>{text}</h1>
+          <p>{text2}</p>
         </div>
         <div className="titleWrapper cloneWrapper">
           <h1>{text}</h1>
+          <p>{text2}</p>
         </div>
       </div>
     )

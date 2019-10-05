@@ -1,5 +1,4 @@
 import React from 'react'
-import Title from '../Title'
 import styles from '../../css/about.module.css'
 import {useStaticQuery, graphql} from 'gatsby'
 import Img from 'gatsby-image'
@@ -19,7 +18,7 @@ const About = () => {
   const {aboutImage} =useStaticQuery(getAbout);
     return (
       <section className={styles.about}>
-        <Title title="Download" subtitle="Now" />
+        
         <div className={styles.aboutCenter}>
           <article
             data-aos="fade-right"
@@ -36,14 +35,10 @@ const About = () => {
             data-aos-duration="500"
             className={styles.aboutInfo}
           >
-            <h2>More Money</h2>
-            <p>
-              Art party activated charcoal hot chicken, portland yr meggings
-              street art gentrify. Chillwave mixtape distillery, blue bottle
-              selfies hexagon tbh. Ramps tattooed pabst godard, plaid marfa kale
-              chips jean shorts twee activated charcoal 3 wolf moon butcher
-              post-ironic asymmetrical food truck.
-            </p>
+            <h2>
+              <span>Download</span>
+              <span>Now</span>
+              </h2>
             <button type="button" className="btn-primary">
               Download
             </button>

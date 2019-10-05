@@ -6,8 +6,12 @@ module.exports = {
     title: "gofer",
     description: "More Money",
     author: "hakkerman",
+    twitterUsername: "@norbzbasas",
+    image: "Phone.jpg",
+    siteUrl: "https://hakkerman.netlify.com",
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
