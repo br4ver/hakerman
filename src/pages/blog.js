@@ -8,7 +8,7 @@ import SEO from "../components/SEO"
 const blog = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Blog" />
+      <SEO title="Blog" content="blah blah blah" />
       <StyledHero img={data.blogBcg.childImageSharp.fluid} />
       <BlogList />
     </Layout>
@@ -16,15 +16,15 @@ const blog = ({ data }) => {
 }
 
 export const query = graphql`
-         query {
-           blogBcg: file(relativePath: { eq: "defaultBcg.jpg" }) {
-             childImageSharp {
-               fluid(quality: 90, maxWidth: 4160) {
-                 ...GatsbyImageSharpFluid_withWebp
-               }
-             }
-           }
-         }
-       `
+  query {
+    blogBcg: file(relativePath: { eq: "defaultBcg.jpg" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 4160) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
 
 export default blog

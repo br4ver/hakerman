@@ -1,13 +1,13 @@
 .tours {
   padding: 4rem 0;
   text-align: center;
+  background: var(--mainGrey)
 }
 .cut{
   display: flex;
   flex-direction: row;
 }
 .center {
-  width: 60vw;
   margin: 3rem auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

@@ -1,0 +1,15 @@
+.slider-container {
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  height: 70vh;
+}
+
+.slick-slide img {
+  margin: auto;
+}
+.slider-img{
+  padding: 0 70px;
+  box-sizing: border-box;
+  width: 100%;
+}

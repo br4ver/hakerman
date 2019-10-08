@@ -6,6 +6,7 @@ import Partner from "../components/Contact/Partner"
 import RiderServices from "../components/Partner/RiderServices"
 import Title from "../components/Home/superBanner"
 import SEO from "../components/SEO"
+import RiderSec from "../components/Partner/Ridersec"
 export default class rider extends Component {
   render() {
     return (
@@ -15,6 +16,7 @@ export default class rider extends Component {
           <Title text="Start your journey with us!"/>
         </StyledHero>
         <RiderServices />
+        <RiderSec/>
         <Partner />
       </Layout>
     )

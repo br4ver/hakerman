@@ -1,12 +1,23 @@
 .day {
   margin: 2rem 0;
+  border: 1px solid var(--mainGrey);
+  padding: 0.9rem 1.6rem;
+  border-radius: 10px;
+  max-width: 40vw;
+    display: flex;
+  flex-wrap: wrap;
 }
 .day h4 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: left;
+}
+.innerday{
+  width: 100%;
 }
 .btn {
+  align-self: stretch;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -19,9 +30,15 @@
 .day p {
   line-height: 2;
   transition: var(--mainTransition);
+  text-align: left;
 }
 @media screen and (min-width: 992px) {
   .day h4 {
-    width: 400px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .day {
+    max-width: 80vw;
   }
 }

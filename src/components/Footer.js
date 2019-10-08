@@ -70,7 +70,7 @@ const Footer = () => {
                 </AniLink>
               </div>
               <div className={styles.links}>
-                <AniLink fade to="/">
+                <AniLink fade to="/blogs">
                   Blog
                 </AniLink>
               </div>

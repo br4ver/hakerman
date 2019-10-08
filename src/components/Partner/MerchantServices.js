@@ -2,11 +2,10 @@ import React from "react"
 import Title from "../Title"
 import styles from "../../css/services.module.css"
 import "aos/dist/aos.css"
-import {
-  FaMoneyBillWaveAlt,
-  FaMoneyBillWave,
-  FaMoneyBill,
-} from "react-icons/fa"
+
+import merchant from '../../images/11.png'
+import merchant2 from "../../images/22.png"
+import merchant3 from "../../images/33.png"
 class MerchantServices extends React.Component {
   componentDidMount() {
     const isBrowser = typeof window !== "undefined"
@@ -14,10 +13,6 @@ class MerchantServices extends React.Component {
 
     this.aos = AOS
     this.aos.init()
-  }
-
-  componentDidUpdate() {
-    this.aos.refresh()
   }
   render() {
     return (
@@ -31,10 +26,10 @@ class MerchantServices extends React.Component {
               data-aos-duration="2000"
             >
               <span>
-                <FaMoneyBillWaveAlt />
+                <img className={styles.img} src={merchant} alt="" />
               </span>
-              <h4>Reach more diners</h4>
-              <p>Integrated delivery platform to bridge you to customers.</p>
+              <h4>Work Whenever, Wherever</h4>
+              <p>Own your working time.</p>
             </article>
             <article
               className={styles.service}
@@ -42,10 +37,10 @@ class MerchantServices extends React.Component {
               data-aos-duration="2500"
             >
               <span>
-                <FaMoneyBillWave />
+                <img className={styles.img} src={merchant2} alt="" />
               </span>
-              <h4>Grow your business</h4>
-              <p>A partnership that cares for you and your business</p>
+              <h4>Earn for your goals.</h4>
+              <p>Earn for your goals by partnering with us.</p>
             </article>
             <article
               className={styles.service}
@@ -53,13 +48,10 @@ class MerchantServices extends React.Component {
               data-aos-duration="2500"
             >
               <span>
-                <FaMoneyBill />
+                <img className={styles.img} src={merchant3} alt="" />
               </span>
-              <h4>Road Partner</h4>
-              <p>
-                Access to our fleet of rider partner delivering your cooked
-                meals to customers
-              </p>
+              <h4>We value your safety</h4>
+              <p>Safety training and Insurance coverage during your booking.</p>
             </article>
           </div>
         </div>

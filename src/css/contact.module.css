@@ -1,13 +1,21 @@
 .contact {
-  padding: 4rem 0;
+  padding: 10rem 0;
 }
 .center {
   width: 80vw;
   margin: 0 auto;
+}.helpcenter{
+  margin: 0 auto;
 }
+@media screen and (max-width:700px){
+  .helpcenter{
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .center {
-    width: 50vw;
+    width: 40vw;
     margin: 0 auto;
   }
 }
@@ -19,14 +27,13 @@
 .formControl,
 .submit {
   width: 100%;
-  font-size: 1rem;
   margin-bottom: 1rem;
   padding: 0.375rem 0.75rem;
-  border: 1px solid var(--darkGrey);
+  border: 1px solid var(--mainGrey);
   border-radius: 0.25rem;
 }
 .submit {
-  background-color: var(--primaryColor);
+  background: var(--primaryColor);
   border-color: var(--primaryColor);
   text-transform: uppercase;
   color: var(--mainBlack);
@@ -37,4 +44,23 @@
   background: var(--darkGrey);
   color: var(--mainWhite);
   border-color: var(--darkGrey);
+}
+.btn-primary {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainWhite);
+  border: 2px solid var(--mainWhite);
+  padding: 0.9rem 1.6rem;
+  display: inline-block;
+  transition: var(--mainTransition);
+  cursor: pointer;
+  background: var(--primaryColor); 
+  border-radius: 25px;
+}
+
+.btn-primary:hover {
+background: var(--mainWhite);
+  border: 2px solid var(--primaryColor);
+  color: var(--primaryColor);
 }

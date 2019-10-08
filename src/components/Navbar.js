@@ -3,12 +3,13 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import styles from "../css/navbar.module.css"
 import { FaBars } from "react-icons/fa"
 import logo from "../images/gofer1.png"
+
+
 const Navbar = () => {
   const [isOpen, setNav] = useState()
   const toggleNav = () => {
     setNav(isOpen => !isOpen)
   }
-
   return (
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
@@ -32,15 +33,19 @@ const Navbar = () => {
               Home
             </AniLink>
           </div>
-              <ul>
-                <li className={styles.down}>
-                  <p className={styles.napv}>Become a Partner</p> 
-                <div className={styles.SoccerContent}>
-                  <AniLink fade to="/rider">Rider</AniLink>
-                  <AniLink fade to="/merchant">Merchant</AniLink>
-                </div>                  
-                </li>
-              </ul>
+          <ul>
+            <li className={styles.down}>
+              <p className={styles.napv}>Become a Partner</p>
+              <div className={styles.SoccerContent}>
+                <AniLink fade to="/rider">
+                  Rider
+                </AniLink>
+                <AniLink fade to="/merchant">
+                  Merchant
+                </AniLink>
+              </div>
+            </li>
+          </ul>
 
           <div>
             <AniLink fade to="/blog">
@@ -48,7 +53,7 @@ const Navbar = () => {
             </AniLink>
           </div>
           <div>
-            <AniLink to="/blog" className="btn-help">
+            <AniLink to="/help" className="btn-help">
               Help
             </AniLink>
           </div>

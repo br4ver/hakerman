@@ -1,9 +1,28 @@
 .template {
-  padding: 4rem 0;
+  padding: 0 0;
 }
-.center {
+.help-center {
   width: 80vw;
   margin: 0 auto;
+}
+.help-img {
+  margin: 1rem 0;
+  position: relative;
+}
+.help-info {
+  margin-top: 2rem;
+  text-align: center;
+}
+.help-img img {
+  width: 100%;
+  display: block;
+}
+.contacthelp{
+  height: 4rem;
+}
+.left{
+  width: 40vw;
+  margin: auto;
 }
 .images {
   display: grid;
@@ -47,6 +66,17 @@
 .journey {
   margin: 3rem 0;
 }
+@media screen and (min-width: 768px) {
+  .help-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3rem;
+    align-items: flex-start;
+    margin-top: 3rem;
+    text-align: left;
+  }
+
+}
 @media screen and (min-width: 992px) {
   .journey,
   .desc {
@@ -55,11 +85,18 @@
 }
 @media screen and (min-width: 1200px) {
   .center {
-    width: 95vw;
-    max-width: 1170vw;
+    width: 40vw;
+  }
+  .left{
+    width: 40vw;
   }
   .images {
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     grid-column-gap: 50px;
+  }
+}
+@media screen and (max-width: 700px){
+  .help-img{
+    padding: none;
   }
 }

@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
 import Partner from "../components/Contact/Partner"
+import MerchantSec from "../components/Partner/MerchantSec"
 import MerchantServices from "../components/Partner/MerchantServices"
 import Title from "../components/Home/superBanner"
 import SEO from "../components/SEO"
@@ -14,7 +15,8 @@ export default class merchant extends Component {
         <StyledHero img={this.props.data.merchantBcg.childImageSharp.fluid}>
           <Title text="GOOD FOOD FOR EVERY MOOD" />
         </StyledHero>
-        <MerchantServices />
+        <MerchantServices/>
+        <MerchantSec/>
         <Partner />
       </Layout>
     )

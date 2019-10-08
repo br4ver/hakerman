@@ -6,6 +6,13 @@ margin: auto;
   border-radius: 20px;
   overflow: hidden;
 }
+.help{
+  width: 500px;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: left;
+}
 .tour:hover {
   box-shadow: var(--darkShadow);
 }

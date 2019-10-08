@@ -12,6 +12,13 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+      help: allContentfulHelp {
+        edges {
+          node {
+            slug
+          }
+        }
+      }
     }
   `)
   data.posts.edges.forEach(({ node }) => {
@@ -23,7 +30,17 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
-    // amount of posts
+    data.help.edges.forEach(({ node }) => {
+      createPage({
+        path: `help/${node.slug}`,
+        component: path.resolve("./src/templates/help-template.js"),
+        context: {
+          slug: node.slug,
+        },
+      })
+    })
+
+  // amount of posts
   const posts = data.posts.edges
   // posts per page
   const postsPerPage = 6

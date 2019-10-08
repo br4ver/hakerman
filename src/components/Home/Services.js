@@ -16,9 +16,6 @@ class Services extends React.Component {
     this.aos.init()
   }
 
-  componentDidUpdate() {
-    this.aos.refresh()
-  }
 render(){
   
     return (

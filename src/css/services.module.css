@@ -24,3 +24,6 @@
 .service h4 {
   text-transform: uppercase;
 }
+.service img{
+  max-height: 100px;
+}
