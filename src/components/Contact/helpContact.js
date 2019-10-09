@@ -9,7 +9,7 @@ const HelpContact = () => {
         <div className={styles.helpcenter}>
           <form action="https://formspree.io/norbzqwerty@gmail.com" method="POST" className={styles.form} >
             <div>
-              <label for="email">Email</label>
+              <label>Email</label>
               <input
                 type="email"
                 name="email"
@@ -19,7 +19,7 @@ const HelpContact = () => {
               />
             </div>
             <div>
-              <label for="message">Question</label>
+              <label>Question</label>
               <textarea
                 name="message"
                 id="message"

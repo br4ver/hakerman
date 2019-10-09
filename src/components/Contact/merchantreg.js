@@ -2,9 +2,9 @@ import React from "react"
 import Title from "../Title"
 import styles from "../../css/contact.module.css"
 
-const Partner = () => {
+const MerchantReg = () => {
   return (
-    <section className={styles.contact}>
+    <section id="merchant-registration" className={styles.contact}>
       <Title title="Sign" subtitle="Up" />
       <div className={styles.center}>
         <form
@@ -13,47 +13,46 @@ const Partner = () => {
           className={styles.form}
         >
           <div>
-            <label for="name">Name</label>
+            <label>Name</label>
             <input
               type="text"
-              name="name"
+              name="merchant-name"
               id="name"
               className={styles.formControl}
               placeholder="Juan Dela Cruz"
             />
           </div>
           <div>
-            <label for="email">Email</label>
+            <label>Email</label>
             <input
               type="email"
-              name="email"
+              name="merchant-email"
               id="email"
               className={styles.formControl}
               placeholder="JuanDelaCruz@Email.com"
             />
           </div>
           <div>
-            <label for="Rider">Rider Info</label>
+            <label>Partner Info</label>
             <input
               type="text"
               name="Rider"
-              id="Rider"
               className={styles.formControl}
               placeholder="Ghost Rider"
             />
           </div>
           <div>
-            <label for="Riderinfo">Rider Info</label>
+            <label >Partner Info</label>
             <input
               type="text"
               name="Riderinfo"
-              id="Riderinfo"
               className={styles.formControl}
               placeholder="Ghost Rider"
             />
           </div>
           <div>
             <input
+              id="merchant-reg-btn"
               type="submit"
               value="Submit here"
               className={styles.submit}
@@ -65,4 +64,4 @@ const Partner = () => {
   )
 }
 
-export default Partner
+export default MerchantReg

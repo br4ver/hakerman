@@ -2,11 +2,7 @@ import React from 'react'
 import Title from '../Title'
 import styles from '../../css/services.module.css'
 import "aos/dist/aos.css"
-import {
-  FaMoneyBillWaveAlt,
-  FaMoneyBillWave,
-  FaMoneyBill,
-} from "react-icons/fa"
+import {FaMoneyBillWaveAlt, FaMoneyBillWave, FaMoneyBill} from "react-icons/fa"
 class Services extends React.Component {
   componentDidMount() {
     const isBrowser = typeof window !== "undefined"
@@ -20,7 +16,7 @@ render(){
   
     return (
       
-      <section className={styles.services}>
+      <section id="home-benefits" className={styles.services}>
         <Title title="our" subtitle="services" />
         <div>
           <div className={styles.center}>

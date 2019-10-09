@@ -14,11 +14,10 @@ const getAbout = graphql`
   }
 `
 
-const About = () => {
+const Download = () => {
   const {aboutImage} =useStaticQuery(getAbout);
     return (
-      <section className={styles.about}>
-        
+      <section id="home-download" className={styles.about}>
         <div className={styles.aboutCenter}>
           <article
             data-aos="fade-right"
@@ -48,4 +47,4 @@ const About = () => {
     )
 }
 
-export default About
+export default Download

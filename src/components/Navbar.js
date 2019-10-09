@@ -48,7 +48,7 @@ const Navbar = () => {
           </ul>
 
           <div>
-            <AniLink fade to="/blog">
+            <AniLink fade to="/about">
               About Us
             </AniLink>
           </div>

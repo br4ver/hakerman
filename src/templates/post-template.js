@@ -17,7 +17,6 @@ const Template  = ({ data }) => {
         return (
           <div>
             <img width="400" src={node.data.target.fields.file["en-US"].url} alt="Blogs Illustrator"/>
-            <p>images provided by john doe</p>
           </div>
         )
       },

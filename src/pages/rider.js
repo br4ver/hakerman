@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
-import Partner from "../components/Contact/Partner"
+import RiderReg from "../components/Contact/riderreg"
 import RiderServices from "../components/Partner/RiderServices"
 import Title from "../components/Home/superBanner"
 import SEO from "../components/SEO"
@@ -17,7 +17,7 @@ export default class rider extends Component {
         </StyledHero>
         <RiderServices />
         <RiderSec/>
-        <Partner />
+        <RiderReg />
       </Layout>
     )
   }

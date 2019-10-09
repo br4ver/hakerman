@@ -1,54 +1,59 @@
 import React from "react"
-import Slider from "react-animated-slider"
-import "react-animated-slider/build/horizontal.css"
-import "../../css/slider-animation.css"
-import "../../css/styles.css"
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import "../../css/rider.sec.css"
+import styled from '../../css/info.module.css'
+import Phone1 from "../../images/step1.png"
+import Phone2 from "../../images/step2.png"
+import Phone3 from "../../images/step3.png"
+import Phone4 from "../../images/step4.png"
 
+import "aos/dist/aos.css"
 
-const content = [
-  {
-    title: "Step 1",
-    description: "Download the App",
-    button: "Read <br/> More",
-    image: "../../1.jpg",
-  },
-  {
-    title: "Step 2",
-    description: "Complete your profile",
-    button: "Discover",
-    image: "../../2.jpg",
-  },
-  {
-    title: "Step 3",
-    description: "Select and add to cart.",
-    button: "Buy now",
-    image: "../../3.jpg",
-  },
-  {
-    title: "Step 4",
-    description: "Confirm and enjoy meal.",
-    button: "Buy now",
-    image: "../../4.jpg",
-  },
-]
-
-const Info = () => (
-    <Slider className="slider-wrapper" infinite="true" autoplay={3000}>
-      {content.map((item, index) => (
-        <div
-          key={index}
-          className="slider-content"
-          style={{
-            background: `url('${item.image}') no-repeat center center`,
-          }}
-        >
-          <div className="inner">
-            <h1>{item.title}</h1>
-            <h1>{item.description}</h1>
-          </div>
+class Info extends React.Component {
+  state = {
+    slideIndex: 0,
+    updateCount: 0,
+  }
+  render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      autoplay: true,
+      arrows: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      initialSlide: 0,
+      adaptiveHeight: true,
+      afterChange: () =>
+        this.setState(state => ({ updateCount: state.updateCount + 1 })),
+      beforeChange: (current, next) => this.setState({ slideIndex: next }),
+    }
+    return (
+      <section>
+        <div className={styled.leftDownload} >
+          <article>
+            <Slider ref={slider => (this.slider = slider)} {...settings}>
+              <div>
+                <img src={Phone1} alt="gofer logo" className="home1" />
+              </div>
+              <div>
+                <img src={Phone2} alt="gofer logo" className="home1" />
+              </div>
+              <div>
+                <img src={Phone3} alt="gofer logo" className="home1" />
+              </div>
+              <div>
+                <img src={Phone4} alt="gofer logo" className="home1" />
+              </div>
+            </Slider>
+          </article>
         </div>
-      ))}
-    </Slider>
-)
+      </section>
+    )
+  }
+}
 
 export default Info

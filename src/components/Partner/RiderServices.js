@@ -16,12 +16,9 @@ class RiderServices extends React.Component {
     this.aos.init()
   }
 
-  componentDidUpdate() {
-    this.aos.refresh()
-  }
   render() {
     return (
-      <section className={styles.services}>
+      <section id="rider-benefits" className={styles.services}>
         <Title title="our" subtitle="services" />
         <div>
           <div className={styles.center}>

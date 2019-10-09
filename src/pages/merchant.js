@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
-import Partner from "../components/Contact/Partner"
+import MerchantReg from "../components/Contact/merchantreg"
 import MerchantSec from "../components/Partner/MerchantSec"
 import MerchantServices from "../components/Partner/MerchantServices"
 import Title from "../components/Home/superBanner"
@@ -17,7 +17,7 @@ export default class merchant extends Component {
         </StyledHero>
         <MerchantServices/>
         <MerchantSec/>
-        <Partner />
+        <MerchantReg />
       </Layout>
     )
   }

@@ -3,6 +3,7 @@ import styles from "../css/footer.module.css"
 import socialIcons from "../constants/social-icons"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import logo from "../images/gofer1.png"
+import {Link} from 'gatsby'
 
 const Footer = () => {
   return (
@@ -35,19 +36,19 @@ const Footer = () => {
             <h6 className={styles.title}>Getting Started</h6>
             <ul>
               <div className={styles.links}>
-                <AniLink fade to="/">
+                <Link to="/#home-benefits">
                   Benefits
-                </AniLink>
+                </Link>
               </div>
               <div className={styles.links}>
-                <AniLink fade to="/">
+                <Link to="/#home-howitwork">
                   How it works
-                </AniLink>
+                </Link>
               </div>
               <div className={styles.links}>
-                <AniLink fade to="/">
+                <Link to="/#home-download">
                   Download
-                </AniLink>
+                </Link>
               </div>
             </ul>
           </div>
@@ -55,17 +56,17 @@ const Footer = () => {
             <h6 className={styles.title}>About Company</h6>
             <ul>
               <div className={styles.links}>
-                <AniLink fade to="/">
+                <AniLink fade to="/about">
                   About Us
                 </AniLink>
               </div>
               <div className={styles.links}>
-                <AniLink fade to="/">
+                <AniLink fade to="/contact">
                   Contact Us
                 </AniLink>
               </div>
               <div className={styles.links}>
-                <AniLink fade to="/">
+                <AniLink fade to="/help">
                   Knowledge Base
                 </AniLink>
               </div>
@@ -80,17 +81,17 @@ const Footer = () => {
             <h6 className={styles.title}>Legal</h6>
             <ul>
               <div className={styles.links}>
-                <AniLink fade to="/">
+                <AniLink fade to="/terms">
                   Terms And Conditions
                 </AniLink>
               </div>
               <div className={styles.links}>
-                <AniLink fade to="/">
+                <AniLink fade to="/privacy">
                   Privacy Policy
                 </AniLink>
               </div>
               <div className={styles.links}>
-                <AniLink fade to="/">
+                <AniLink fade to="/cookie">
                   Cookie Policy
                 </AniLink>
               </div>

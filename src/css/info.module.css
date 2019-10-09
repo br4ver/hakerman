@@ -1,0 +1,26 @@
+.center-download{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+      align-items: center;
+}
+.left-download{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: left;
+}
+.right-download{
+    flex-flow: row wrap;
+    width: 55%;
+    text-align: center;
+    margin: auto;
+      align-items: center;
+  justify-content: center;
+}
+.left-download img{
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}

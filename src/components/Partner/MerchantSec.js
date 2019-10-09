@@ -3,7 +3,7 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import "../../css/rider.sec.css"
-
+import {Link} from 'gatsby'
 export default class MerchantSec extends Component {
   render() {
     const settings = {
@@ -19,22 +19,14 @@ export default class MerchantSec extends Component {
         {
           breakpoint: 1200,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 2,
+            slidesToScroll: 2,
             infinite: true,
             dots: true,
           },
         },
         {
-          breakpoint: 900,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2,
-          },
-        },
-        {
-          breakpoint: 580,
+          breakpoint: 600,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -59,7 +51,9 @@ export default class MerchantSec extends Component {
                   <h4>Step 1</h4>
                   <h1 className="cardtitle">Fill up the form</h1>
                   <button type="button" className="btn-merchant">
-                    Sign Up
+                    <Link to="/merchant/#merchant-registration" className="txbtn">
+                      Sign Up
+                    </Link>
                   </button>
                 </div>
               </div>

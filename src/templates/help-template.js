@@ -56,7 +56,7 @@ export const query = graphql`
                answer
              }
            }
-           customerBg: file(relativePath: { eq: "help.jpg" }) {
+           customerBg: file(relativePath: { eq: "help.png" }) {
              childImageSharp {
                fluid(quality: 90, maxWidth: 4160) {
                  ...GatsbyImageSharpFluid_withWebp

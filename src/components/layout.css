@@ -82,7 +82,7 @@ h6 {
   display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;
-  color: var(--goferYellow)
+  color: var(--goferYellow);
 }
 .btn-merchant{
   text-transform: uppercase;

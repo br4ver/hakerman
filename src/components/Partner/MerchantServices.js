@@ -16,7 +16,7 @@ class MerchantServices extends React.Component {
   }
   render() {
     return (
-      <section className={styles.services}>
+      <section id="merchant-benefits" className={styles.services}>
         <Title title="our" subtitle="services" />
         <div>
           <div className={styles.center}>

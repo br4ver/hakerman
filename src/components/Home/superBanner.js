@@ -38,6 +38,7 @@ class Title extends React.Component {
     }
     return (
       <div
+        id="hero-title"
         className="titleContainer"
         onMouseMove={this._onMouseMove}
         onMouseOut={this._onMouseOut}
