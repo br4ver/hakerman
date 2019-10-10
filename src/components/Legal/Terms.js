@@ -19,7 +19,11 @@ const Term = () => {
 
     return (
       <div className={styles.cardlegal}>
-        <Img fluid={termImage.childImageSharp.fluid} className={styles.cardMedia} alt="term" />
+        <Img
+          fluid={termImage.childImageSharp.fluid}
+          className={styles.cardMedia}
+          alt="term"
+        />
         <div className={styles.cardDetails}>
           <h2 className={styles.cardHead}>Terms And Conditions</h2>
           <p>
@@ -37,6 +41,25 @@ const Term = () => {
             New South Wales, ...Located two hours south of Sydney in the
             Southern Highlands of New South Wales, ...
           </p>
+        </div>
+        <div className={styles.card}>
+          <div className={styles.cardPicWrap}>
+            <img
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1145795/plant-1.png"
+              alt="A leafy plant"
+            />
+          </div>
+          <div className={styles.cardContent}>
+            <h3>A leafy one</h3>
+            <p>
+              Blossom dorset heath scabious ipsum. Grape hyacinth bee balm bird
+              of paradise obedient plant african lily lily. Spring foxglove
+              florist’s nighmare primrose.
+            </p>
+            <p>
+              <a href="#0">So leafy</a>
+            </p>
+          </div>
         </div>
       </div>
     )

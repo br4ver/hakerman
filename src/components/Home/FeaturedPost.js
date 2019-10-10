@@ -7,7 +7,11 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const getPost = graphql`
   query {
-    featuredPost: allContentfulBlog(filter: { featured: { eq: true } }) {
+    featuredPost: allContentfulBlog(
+      filter: { featured: { eq: true } }
+      limit: 3
+      sort: { fields: published, order: DESC }
+    ) {
       edges {
         node {
           title
@@ -16,7 +20,7 @@ const getPost = graphql`
           featured
           contentful_id
           image {
-            fluid{
+            fluid {
               ...GatsbyContentfulFluid_tracedSVG
             }
           }

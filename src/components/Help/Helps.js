@@ -8,13 +8,18 @@ const getHelp = graphql`
       edges {
         node {
           title
-          customer{
+          customer {
             question
             answer
           }
           contentful_id
           category
           slug
+          images {
+            fluid {
+              ...GatsbyContentfulFluid_tracedSVG
+            }
+          }
         }
       }
     }

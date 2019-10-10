@@ -8,11 +8,12 @@
   flex-direction: row;
 }
 .center {
-  margin: 3rem auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: inline-block;
 }
 .right{
    width: 30vw;
@@ -30,3 +31,8 @@
     max-width: 1170px;
   }
 }
+
+
+
+
+

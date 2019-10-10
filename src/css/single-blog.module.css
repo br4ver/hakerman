@@ -1,17 +1,20 @@
 .blog {
-  padding: 4rem 0;
+  padding: 0 0;
 }
 .center {
   width: 80vw;
   margin: 0 auto;
+  margin-bottom: 3rem;
 }
 .blog h1,
-.blog h4 {
+.blog h5 {
   text-transform: capitalize;
 }
 .post {
-  margin: 2rem 0;
+  margin: 0 0;
+  text-align: justify;
 }
-.post img {
-  max-width: 70vw;
+.blog .img {
+  max-height: 30vw;
+  margin-bottom: 2rem;
 }
