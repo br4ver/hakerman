@@ -20,7 +20,7 @@ export default class HelpList extends Component {
     return (
       <section className={styles.tours}>
         <Title title="Getting" subtitle="Started" />
-        <div className={styles.center}>
+        <div className={styles.helpCenter}>
           {this.state.sortedHelps.map(({ node }) => {
             return <Help key={node.contentful_id} help={node} />
           })}

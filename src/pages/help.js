@@ -17,7 +17,7 @@ const help = ({ data }) => {
 
 export const query = graphql`
   query {
-    helpBg: file(relativePath: { eq: "help.png" }) {
+    helpBg: file(relativePath: { eq: "help.jpg" }) {
       childImageSharp {
         fluid(quality: 100, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp
