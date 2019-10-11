@@ -17,16 +17,7 @@ export default class MerchantSec extends Component {
       initialSlide: 0,
       responsive: [
         {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            infinite: true,
-            dots: true,
-          },
-        },
-        {
-          breakpoint: 600,
+          breakpoint: 700,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,

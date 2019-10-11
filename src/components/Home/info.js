@@ -33,20 +33,20 @@ class Info extends React.Component {
     }
     return (
       <section>
-        <div className={styled.leftDownload} >
+        <div className={styled.leftDownload}>
           <article>
             <Slider ref={slider => (this.slider = slider)} {...settings}>
               <div>
-                <img src={Phone1} alt="gofer logo" className="home1" />
+                <img src={Phone1} alt="gofer logo" className={styled.home1} />
               </div>
               <div>
-                <img src={Phone2} alt="gofer logo" className="home1" />
+                <img src={Phone2} alt="gofer logo" className={styled.home1} />
               </div>
               <div>
-                <img src={Phone3} alt="gofer logo" className="home1" />
+                <img src={Phone3} alt="gofer logo" className={styled.home1} />
               </div>
               <div>
-                <img src={Phone4} alt="gofer logo" className="home1" />
+                <img src={Phone4} alt="gofer logo" className={styled.home1} />
               </div>
             </Slider>
           </article>
