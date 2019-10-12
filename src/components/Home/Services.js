@@ -1,14 +1,19 @@
 import React from 'react'
 import Title from '../Title'
 import styles from '../../css/services.module.css'
-import AOS from 'aos';
 import "aos/dist/aos.css"
 import {FaMoneyBillWaveAlt, FaMoneyBillWave, FaMoneyBill} from "react-icons/fa"
 class Services extends React.Component {
+  componentDidMount() {
+    const isBrowser = typeof window !== "undefined"
+    const AOS = isBrowser ? require("aos") : undefined
 
+    this.aos = AOS
+    this.aos.init()
+  }
 
-render(){
-  AOS.init();
+  render() {
+
     return (
       <section id="home-benefits" className={styles.services}>
         <Title title="our" subtitle="services" />
@@ -51,7 +56,7 @@ render(){
         </div>
       </section>
     )
-}
+  }
 }
 
 export default Services

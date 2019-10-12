@@ -5,7 +5,11 @@ const MerchantReg = () => {
   return (
     <section id="merchant-registration" className={styles.contact}>
       <div className={styles.contactBody}>
-        <div className={styles.contactSession}>
+        <div
+          className={styles.contactSession}
+          data-aos="fade-down"
+          data-aos-duration="2000"
+        >
           <div className={styles.contactLeft}></div>
           <form action="" className={styles.contactLogin} autoComplete="off">
             <h4 className={styles.contactTitle}>
@@ -191,8 +195,7 @@ const MerchantReg = () => {
             </div>
             <div className={styles.floatingLabel}>
               <div className={styles.instruction}>
-                <div className={styles.infoIcon}>
-                </div>
+                <div className={styles.infoIcon}></div>
               </div>
             </div>
             <input className={styles.modalState} id="modal-1" type="checkbox" />

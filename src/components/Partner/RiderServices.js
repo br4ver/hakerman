@@ -1,7 +1,6 @@
 import React from "react"
 import Title from "../Title"
 import styles from "../../css/services.module.css"
-import AOS from "aos"
 import "aos/dist/aos.css"
 import {
   FaMoneyBillWaveAlt,
@@ -9,11 +8,13 @@ import {
   FaMoneyBill,
 } from "react-icons/fa"
 class RiderServices extends React.Component {
-
-
+  componentDidMount() {
+    const isBrowser = typeof window !== "undefined"
+    const AOS = isBrowser ? require("aos") : undefined
+    this.aos = AOS
+    this.aos.init()
+  }
   render() {
-      AOS.init()
-
     return (
       <section id="rider-benefits" className={styles.services}>
         <Title title="our" subtitle="services" />

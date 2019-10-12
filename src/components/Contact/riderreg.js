@@ -2,10 +2,9 @@ import React from "react"
 import styles from "../../css/contact.module.css"
 import  rider from '../../images/help4.png'
 import {Link} from 'gatsby'
-import AOS from "aos"
 import "aos/dist/aos.css"
 const RiderReg = () => {
-  AOS.init()
+
   return (
     <section id="rider-registration" className={styles.contact}>
       <div className={styles.contactBody}>
