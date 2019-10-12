@@ -46,20 +46,6 @@ const SEO = ({ title, description }) => {
       <meta name="twitter:title" content={siteTitle} />
       <meta name="twitter:description" content={siteDesc} />
       <meta name="twitter:image" content={`${siteUrl}${image}`} />
-      <link
-        rel="preload"
-        as="font"
-        href="../fonts/gilroy-extrabold-webfont.woff2"
-        type="font/woff2"
-        crossOrigin="anonymous"
-      />
-      <link
-        rel="preload"
-        as="font"
-        href="../fonts/gilroy-light-webfont.woff2"
-        type="font/woff2"
-        crossOrigin="anonymous"
-      />
     </Helmet>
   )
 }
