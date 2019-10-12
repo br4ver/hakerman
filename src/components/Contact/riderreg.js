@@ -2,12 +2,18 @@ import React from "react"
 import styles from "../../css/contact.module.css"
 import  rider from '../../images/help4.png'
 import {Link} from 'gatsby'
-
+import AOS from "aos"
+import "aos/dist/aos.css"
 const RiderReg = () => {
+  AOS.init()
   return (
     <section id="rider-registration" className={styles.contact}>
       <div className={styles.contactBody}>
-        <div className={styles.contactSession}>
+        <div
+          className={styles.contactSession}
+          data-aos="fade-down"
+          data-aos-duration="2000"
+        >
           <div className={styles.contactLeft}>
             <img src={rider} alt="fdfdf" />
           </div>
@@ -123,7 +129,7 @@ const RiderReg = () => {
                       <path d="M22 34h4V22h-4v12zm2-30C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16zm-2-22h4v-4h-4v4z"></path>
                     </g>
                   </svg>
-                  <label className={styles.infoLabel} for="modal-1">
+                  <label className={styles.infoLabel} htmlFor="modal-1">
                     Requirements
                   </label>
                 </div>
@@ -131,9 +137,12 @@ const RiderReg = () => {
             </div>
             <input className={styles.modalState} id="modal-1" type="checkbox" />
             <div className={styles.modal}>
-              <label className={styles.modal__bg} for="modal-1"></label>
+              <label className={styles.modal__bg} htmlFor="modal-1"></label>
               <div className={styles.modal__inner}>
-                <label className={styles.modal__close} for="modal-1"></label>
+                <label
+                  className={styles.modal__close}
+                  htmlFor="modal-1"
+                ></label>
                 <h2>Requirements</h2>
                 <p>
                   Man braid godard banjo chia wolf cliche. Pickled letterpress

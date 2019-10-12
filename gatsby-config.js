@@ -11,6 +11,7 @@ module.exports = {
     siteUrl: "https://hakkerman.netlify.com",
   },
   plugins: [
+    `gatsby-plugin-compression`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

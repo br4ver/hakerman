@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 const Help = ({ help }) => {
   const { title, slug, images } = help
   console.log(images);
-  
+
 
   return (
     <article className={styles.help}>
