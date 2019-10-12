@@ -49,14 +49,14 @@ const SEO = ({ title, description }) => {
       <link
         rel="preload"
         as="font"
-        href={"../fonts/gilroy-extrabold-webfont.woff2"}
+        href={'../fonts/gilroy-extrabold-webfont.woff2'}
         type="font/woff2"
         crossOrigin="anonymous"
       />
       <link
         rel="preload"
         as="font"
-        href={"../fonts/gilroy-light-webfont.woff2"}
+        href={'../fonts/gilroy-light-webfont.woff2'}
         type="font/woff2"
         crossOrigin="anonymous"
       />
