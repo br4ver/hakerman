@@ -4,10 +4,10 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import "../../css/rider.sec.css"
 import styled from '../../css/info.module.css'
-import Phone1 from "../../images/step1.png"
-import Phone2 from "../../images/step2.png"
-import Phone3 from "../../images/step3.png"
-import Phone4 from "../../images/step4.png"
+import Phone1 from "../../images/step1.webp"
+import Phone2 from "../../images/step2.webp"
+import Phone3 from "../../images/step3.webp"
+import Phone4 from "../../images/step4.webp"
 
 class Info extends React.Component {
   state = {

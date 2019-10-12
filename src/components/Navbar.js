@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import styles from "../css/navbar.module.css"
 import { FaBars } from "react-icons/fa"
-import logo from "../images/gofer1.png"
+import logo from "../images/gofer1.webp"
 
 
 const Navbar = () => {

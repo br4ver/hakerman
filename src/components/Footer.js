@@ -2,7 +2,7 @@ import React from "react"
 import styles from "../css/footer.module.css"
 import socialIcons from "../constants/social-icons"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import logo from "../images/gofer1.png"
+import logo from "../images/gofer1.webp"
 import {Link} from 'gatsby'
 
 const Footer = () => {
