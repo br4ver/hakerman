@@ -7,7 +7,7 @@ module.exports = {
     description: "More Money",
     author: "hakkerman",
     twitterUsername: "@norbzbasas",
-    image: "Phone.jpg",
+    image: "/gofer1.png",
     siteUrl: "https://hakkerman.netlify.com",
   },
   plugins: [

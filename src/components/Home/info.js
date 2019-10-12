@@ -9,8 +9,6 @@ import Phone2 from "../../images/step2.png"
 import Phone3 from "../../images/step3.png"
 import Phone4 from "../../images/step4.png"
 
-import "aos/dist/aos.css"
-
 class Info extends React.Component {
   state = {
     slideIndex: 0,
@@ -55,5 +53,6 @@ class Info extends React.Component {
     )
   }
 }
+
 
 export default Info
