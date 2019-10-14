@@ -6,7 +6,7 @@ import MerchantReg from "../components/Contact/merchantreg"
 import MerchantSec from "../components/Partner/MerchantSec"
 import MerchantServices from "../components/Partner/MerchantServices"
 import Title from "../components/Home/superBanner"
-import SEO from "../components/SEO"
+import SEO from "../components/SEO/SEO"
 export default class merchant extends Component {
   render() {
     return (

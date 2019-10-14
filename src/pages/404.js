@@ -3,7 +3,7 @@ import Layout from "../components/Layout"
 import styles from "../css/error.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Banner from '../components/Banner'
-import SEO from "../components/SEO"
+import SEO from "../components/SEO/SEO"
 export default function error() {
   return <Layout>
     <SEO title="Error" />

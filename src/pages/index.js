@@ -8,11 +8,12 @@ import Info from "../components/Home/info"
 import Scroll from "../components/Home/scrollindicator"
 import Title from '../components/Home/superBanner'
 import FeaturedPost from '../components/Home/FeaturedPost'
-import SEO from "../components/SEO"
-
+import SEO from "../components/SEO/SEO"
+import website from "../../config/website"
 export default ({ data }) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO
+      title={`Home | ${website.titleAlt}`}/>
     <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
       <Title text="GOOD FOOD FOR EVERY MOOD" />
       <Scroll />

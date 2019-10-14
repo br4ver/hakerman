@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
-import SEO from "../components/SEO"
+import SEO from "../components/SEO/SEO"
 const about = ({ data }) => {
   return (
     <Layout>

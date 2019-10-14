@@ -5,7 +5,7 @@ import { graphql } from "gatsby"
 import RiderReg from "../components/Contact/riderreg"
 import RiderServices from "../components/Partner/RiderServices"
 import Title from "../components/Home/superBanner"
-import SEO from "../components/SEO"
+import SEO from "../components/SEO/SEO"
 import RiderSec from "../components/Partner/Ridersec"
 export default class rider extends Component {
   render() {
