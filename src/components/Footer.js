@@ -35,7 +35,6 @@ const Footer = () => {
         <div className={styles.footerdesc1}>
           <div className={styles.footLinks}>
             <h6 className={styles.title}>Getting Started</h6>
-            <ul>
               <div className={styles.links}>
                 <Link aria-label="footer-benefits" to="/#home-benefits">
                   Benefits
@@ -51,11 +50,9 @@ const Footer = () => {
                   Download
                 </Link>
               </div>
-            </ul>
           </div>
           <div className={styles.footLinks}>
             <h6 className={styles.title}>About Company</h6>
-            <ul>
               <div className={styles.links}>
                 <AniLink aria-label="footer-about" fade to="/about">
                   About Us
@@ -76,11 +73,9 @@ const Footer = () => {
                   Blog
                 </AniLink>
               </div>
-            </ul>
           </div>
           <div>
             <h6 className={styles.title}>Legal</h6>
-            <ul>
               <div className={styles.links}>
                 <AniLink aria-label="footer-terms" fade to="/terms">
                   Terms And Conditions
@@ -96,7 +91,6 @@ const Footer = () => {
                   Cookie Policy
                 </AniLink>
               </div>
-            </ul>
           </div>
         </div>
       </div>

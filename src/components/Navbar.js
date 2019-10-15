@@ -26,7 +26,7 @@ const Navbar = () => {
             <FaBars className={styles.logoIcon} />
           </button>
         </div>
-        <ul
+        <div
           className={
             isOpen
               ? `${styles.navLinks} ${styles.showNav}`
@@ -38,8 +38,8 @@ const Navbar = () => {
               Home
             </AniLink>
           </div>
-          <ul>
-            <li className={styles.down}>
+          <div>
+            <div className={styles.down}>
               <p className={styles.napv}>Become a Partner</p>
               <div className={styles.SoccerContent}>
                 <AniLink aria-label="link-rider" fade to="/rider">
@@ -49,8 +49,8 @@ const Navbar = () => {
                   Merchant
                 </AniLink>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
 
           <div>
             <AniLink aria-label="link-about" fade to="/about">
@@ -58,11 +58,11 @@ const Navbar = () => {
             </AniLink>
           </div>
           <div>
-            <AniLink aria-label="link-help" to="/help" className="btn-help">
+            <AniLink aria-label="link-help" fade to="/help" className="btn-help">
               Help
             </AniLink>
           </div>
-        </ul>
+        </div>
       </div>
     </nav>
   )
