@@ -1,7 +1,7 @@
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
-const website = require("./config/website")
+const website = require('./config/website')
 
 const pathPrefix = website.pathPrefix === "/" ? "" : website.pathPrefix
 
@@ -23,7 +23,6 @@ module.exports = {
     facebook: website.facebook,
   },
   plugins: [
-
     `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-sitemap",
@@ -48,20 +47,6 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-playground`,
     `gatsby-plugin-transition-link`,
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        name: website.title,
-        short_name: website.titleAlt,
-        description: website.description,
-        start_url: pathPrefix,
-        background_color: website.backgroundColor,
-        theme_color: website.themeColor,
-        display: "standalone",
-        icon: website.favicon,
-      },
-    },
-    "gatsby-plugin-offline",
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
@@ -88,5 +73,19 @@ module.exports = {
         trackingId: website.googleAnalyticsID,
       },
     },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: website.title,
+        short_name: website.titleAlt,
+        description: website.description,
+        start_url: pathPrefix,
+        background_color: website.backgroundColor,
+        theme_color: website.themeColor,
+        display: "standalone",
+        icon: website.favicon,
+      },
+    },
+    "gatsby-plugin-offline",
   ],
 }

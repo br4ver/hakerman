@@ -1,7 +1,7 @@
 module.exports = {
-  pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "portfolio"
+  pathPrefix: '/home', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "portfolio"
   title: 'gofer', // Navigation and Site Title
-  titleAlt: 'gofer PH', // Title for JSONLD
+  titleAlt: 'gofer', // Title for JSONLD
   description: 'More Money',
   headline: 'More Money', // Headline for schema.org JSONLD
   url: 'https://hakkerman.netlify.com', // Domain of your site. No trailing slash!
@@ -14,7 +14,7 @@ module.exports = {
   shortName: 'gofer', // shortname for manifest. MUST be shorter than 12 characters
   author: 'hakkerman', // Author for schemaORGJSONLD
   themeColor: '#00dbc7',
-  backgroundColor: '#2f2478',
+  backgroundColor: '#00dbc7',
 
   twitter: '@norbzbasas', // Twitter Username
   facebook: 'gofer-ph', // Facebook Site Name
