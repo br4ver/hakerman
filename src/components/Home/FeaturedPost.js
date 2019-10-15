@@ -20,8 +20,8 @@ const getPost = graphql`
           featured
           contentful_id
           image {
-            fluid {
-              ...GatsbyContentfulFluid_tracedSVG
+            fluid(maxHeight: 200) {
+              ...GatsbyContentfulFluid_withWebp
             }
           }
         }

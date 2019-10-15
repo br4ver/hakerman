@@ -17,6 +17,7 @@ const Footer = () => {
             {socialIcons.map((item, index) => {
               return (
                 <a
+                  aria-label="social-links"
                   key={index}
                   href={item.url}
                   target="_blank"

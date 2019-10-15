@@ -24,7 +24,22 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-preload-fonts`,
+    {
+      resolve: "gatsby-plugin-preconnect",
+      options: {
+        domains: [
+          "https://images.ctfassets.net",
+          "https://www.google-analytics.com",
+        ],
+      },
+    },
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://hakkerman.netlify.com`,
+      },
+    },
     `gatsby-plugin-advanced-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,

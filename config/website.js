@@ -14,7 +14,7 @@ module.exports = {
   shortName: "gofer", // shortname for manifest. MUST be shorter than 12 characters
   author: "hakkerman", // Author for schemaORGJSONLD
   themeColor: "#00dbc7",
-  backgroundColor: "#00dbc7",
+  backgroundColor: "#ffffff",
 
   twitter: "@norbzbasas", // Twitter Username
   facebook: "gofer-ph", // Facebook Site Name

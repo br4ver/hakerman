@@ -17,6 +17,7 @@ class Info extends React.Component {
   render() {
     const settings = {
       dots: true,
+      lazyLoad:true,
       infinite: true,
       speed: 500,
       autoplay: true,
