@@ -25,7 +25,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-react-helmet`,
-    "gatsby-plugin-sitemap",
+    `gatsby-plugin-advanced-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -79,7 +79,7 @@ module.exports = {
         name: website.title,
         short_name: website.titleAlt,
         description: website.description,
-        start_url: '/',
+        start_url: "/",
         background_color: website.backgroundColor,
         theme_color: website.themeColor,
         display: "standalone",
