@@ -2,11 +2,10 @@ import React from "react"
 import Title from "../Title"
 import styles from "../../css/services.module.css"
 import "aos/dist/aos.css"
-import {
-  FaMoneyBillWaveAlt,
-  FaMoneyBillWave,
-  FaMoneyBill,
-} from "react-icons/fa"
+import rider1 from "../../images/Riders1.webp"
+import rider2 from "../../images/Riders2.webp"
+import rider3 from "../../images/Riders3.webp"
+
 class RiderServices extends React.Component {
   componentDidMount() {
     const isBrowser = typeof window !== "undefined"
@@ -14,6 +13,7 @@ class RiderServices extends React.Component {
     this.aos = AOS
     this.aos.init()
   }
+  
   render() {
     return (
       <section id="rider-benefits" className={styles.services}>
@@ -26,7 +26,7 @@ class RiderServices extends React.Component {
               data-aos-duration="2000"
             >
               <span>
-                <FaMoneyBillWaveAlt />
+                <img className={styles.img} src={rider1} alt="" />
               </span>
               <h4>Work Whenever, Wherever</h4>
               <p>Own your working time.</p>
@@ -37,7 +37,7 @@ class RiderServices extends React.Component {
               data-aos-duration="2500"
             >
               <span>
-                <FaMoneyBillWave />
+                <img className={styles.img} src={rider2} alt="" />
               </span>
               <h4>Earn for your goals.</h4>
               <p>Earn for your goals by partnering with us.</p>
@@ -48,7 +48,7 @@ class RiderServices extends React.Component {
               data-aos-duration="2500"
             >
               <span>
-                <FaMoneyBill />
+                <img className={styles.img} src={rider3} alt="" />
               </span>
               <h4>We value your safety</h4>
               <p>Safety training and Insurance coverage during your booking.</p>

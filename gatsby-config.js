@@ -23,6 +23,14 @@ module.exports = {
     facebook: website.facebook,
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["gilroy-extrabold", "gilroy-light"],
+        },
+      },
+    },
     `gatsby-plugin-preload-fonts`,
     {
       resolve: "gatsby-plugin-preconnect",

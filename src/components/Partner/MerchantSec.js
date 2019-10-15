@@ -9,6 +9,7 @@ export default class MerchantSec extends Component {
     const settings = {
       dots: true,
       infinite: true,
+      lazyload:true,
       speed: 500,
       autoplay: true,
       arrows: true,
@@ -26,7 +27,7 @@ export default class MerchantSec extends Component {
       ],
     };
     return (
-      <section>
+      <section className="riderservice">
         <Slider {...settings}>
           <div>
             <div className="container">

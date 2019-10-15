@@ -3,9 +3,9 @@ import Title from "../Title"
 import styles from "../../css/services.module.css"
 import "aos/dist/aos.css"
 
-import merchant from '../../images/11.png'
-import merchant2 from "../../images/22.png"
-import merchant3 from "../../images/33.png"
+import merchant from '../../images/Merchants1.webp'
+import merchant2 from "../../images/Merchants2.webp"
+import merchant3 from "../../images/Merchants3.webp"
 class MerchantServices extends React.Component {
   componentDidMount() {
     const isBrowser = typeof window !== "undefined"
@@ -28,8 +28,8 @@ class MerchantServices extends React.Component {
               <span>
                 <img className={styles.img} src={merchant} alt="" />
               </span>
-              <h4>Work Whenever, Wherever</h4>
-              <p>Own your working time.</p>
+              <h4>Reach more diners</h4>
+              <p>Integrated delivery platform to bridge you to customers.</p>
             </article>
             <article
               className={styles.service}
@@ -39,8 +39,8 @@ class MerchantServices extends React.Component {
               <span>
                 <img className={styles.img} src={merchant2} alt="" />
               </span>
-              <h4>Earn for your goals.</h4>
-              <p>Earn for your goals by partnering with us.</p>
+              <h4>Grow your business</h4>
+              <p>A partnership that cares for you and your business</p>
             </article>
             <article
               className={styles.service}
@@ -50,8 +50,11 @@ class MerchantServices extends React.Component {
               <span>
                 <img className={styles.img} src={merchant3} alt="" />
               </span>
-              <h4>We value your safety</h4>
-              <p>Safety training and Insurance coverage during your booking.</p>
+              <h4>Road Partner</h4>
+              <p>
+                Access to our fleet of rider partner delivering your cooked
+                meals to customers
+              </p>
             </article>
           </div>
         </div>

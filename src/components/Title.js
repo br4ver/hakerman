@@ -32,7 +32,7 @@ export default styled(Title)`
   @media (min-width: 576px) {
     text-transform: uppercase;
     font-size: 0.5 rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     span {
       display: inline-block;
       margin: 0 0.35rem;

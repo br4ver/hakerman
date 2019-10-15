@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.footerdesc1}>
-          <div>
+          <div className={styles.footLinks}>
             <h6 className={styles.title}>Getting Started</h6>
             <ul>
               <div className={styles.links}>
@@ -53,7 +53,7 @@ const Footer = () => {
               </div>
             </ul>
           </div>
-          <div>
+          <div className={styles.footLinks}>
             <h6 className={styles.title}>About Company</h6>
             <ul>
               <div className={styles.links}>

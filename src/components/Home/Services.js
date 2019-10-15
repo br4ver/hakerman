@@ -2,7 +2,9 @@ import React from 'react'
 import Title from '../Title'
 import styles from '../../css/services.module.css'
 import "aos/dist/aos.css"
-import {FaMoneyBillWaveAlt, FaMoneyBillWave, FaMoneyBill} from "react-icons/fa"
+import customer1 from "../../images/Customers1.webp"
+import customer2 from "../../images/Customers2.webp"
+import customer3 from "../../images/Customers3.webp"
 class Services extends React.Component {
   componentDidMount() {
     const isBrowser = typeof window !== "undefined"
@@ -25,7 +27,7 @@ class Services extends React.Component {
               data-aos-duration="2000"
             >
               <span>
-                <FaMoneyBillWaveAlt />
+                <img className={styles.img} src={customer1} alt="" />
               </span>
               <h4>Satisfy your appetite</h4>
               <p>From breakfast meal deals to late-night chill we got you!</p>
@@ -36,7 +38,7 @@ class Services extends React.Component {
               data-aos-duration="2500"
             >
               <span>
-                <FaMoneyBillWave />
+                <img className={styles.img} src={customer2} alt="" />
               </span>
               <h4>Explore and Tap</h4>
               <p>Effortless ordering in a tap.</p>
@@ -47,7 +49,7 @@ class Services extends React.Component {
               data-aos-duration="2500"
             >
               <span>
-                <FaMoneyBill />
+                <img className={styles.img} src={customer3} alt="" />
               </span>
               <h4>Track</h4>
               <p>Trace your order from meal prep to delivery.</p>

@@ -10,6 +10,7 @@ class RiderSec extends React.Component {
     const settings = {
       dots: true,
       infinite: true,
+      lazyload:true,
       speed: 500,
       autoplay: true,
       arrows: true,
@@ -27,7 +28,7 @@ class RiderSec extends React.Component {
       ],
     }
     return (
-      <section>
+      <section className="riderservice">
         <Slider ref={slider => (this.slider = slider)} {...settings}>
           <div>
             <div className="container">

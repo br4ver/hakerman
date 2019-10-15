@@ -14,10 +14,15 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <AniLink aria-label="link-gofer"  fade to="/">
+          <AniLink aria-label="link-gofer" fade to="/">
             <img src={logo} alt="gofer logo" className="goferlogo" />
           </AniLink>
-          <button type="button" className={styles.logoBtn} onClick={toggleNav}>
+          <button
+            aria-label="button"
+            type="button"
+            className={styles.logoBtn}
+            onClick={toggleNav}
+          >
             <FaBars className={styles.logoIcon} />
           </button>
         </div>
