@@ -37,12 +37,12 @@ const FeaturedPost = () => {
   return (
     <section id="home-featurepost" className={styles.tours}>
       <Title title="Latest" subtitle="Update" />
-         <div className={styles.center}>
+      <div className={styles.center}>
         {posts.map(({ node }) => {
           return <Post key={node.contentful_id} post={node} />
         })}
       </div>
-      <AniLink fade to="/blogs" className="btn-read">
+      <AniLink aria-label="all-post" fade to="/blogs" className="btn-read">
         all Posts
       </AniLink>
     </section>

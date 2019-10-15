@@ -42,7 +42,11 @@ export default class MerchantSec extends Component {
                   <h4>Step 1</h4>
                   <h1 className="cardtitle">Fill up the form</h1>
                   <button type="button" className="btn-merchant">
-                    <Link to="/merchant/#merchant-registration" className="txbtn">
+                    <Link
+                      aria-label="link-merchant-registration"
+                      to="/merchant/#merchant-registration"
+                      className="txbtn"
+                    >
                       Sign Up
                     </Link>
                   </button>

@@ -43,7 +43,11 @@ class RiderSec extends React.Component {
                   <h4>Step 1</h4>
                   <h2 className="cardtitle">Fill up the form</h2>
                   <button type="Button" className="btn-merchant">
-                    <Link to="/rider/#rider-registration" className="txbtn">
+                    <Link
+                      aria-label="link-rider-registration"
+                      to="/rider/#rider-registration"
+                      className="txbtn"
+                    >
                       Sign Up
                     </Link>
                   </button>

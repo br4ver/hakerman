@@ -8,6 +8,7 @@ if (typeof window !== "undefined") {
   require("smooth-scroll")('a[href*="#"]')
 }
 const Layout = ({children}) => {
+    
     return (
         <main>
             <Navbar/>

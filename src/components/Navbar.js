@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <AniLink fade to="/">
+          <AniLink aria-label="link-gofer"  fade to="/">
             <img src={logo} alt="gofer logo" className="goferlogo" />
           </AniLink>
           <button type="button" className={styles.logoBtn} onClick={toggleNav}>
@@ -37,10 +37,10 @@ const Navbar = () => {
             <li className={styles.down}>
               <p className={styles.napv}>Become a Partner</p>
               <div className={styles.SoccerContent}>
-                <AniLink fade to="/rider">
+                <AniLink aria-label="link-rider" fade to="/rider">
                   Rider
                 </AniLink>
-                <AniLink fade to="/merchant">
+                <AniLink aria-label="link-merchant" fade to="/merchant">
                   Merchant
                 </AniLink>
               </div>
@@ -48,12 +48,12 @@ const Navbar = () => {
           </ul>
 
           <div>
-            <AniLink fade to="/about">
+            <AniLink aria-label="link-about" fade to="/about">
               About Us
             </AniLink>
           </div>
           <div>
-            <AniLink to="/help" className="btn-help">
+            <AniLink aria-label="link-help" to="/help" className="btn-help">
               Help
             </AniLink>
           </div>

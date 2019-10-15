@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footerrow}>
         <div className={styles.footerdesc}>
-          <AniLink fade to="/">
+          <AniLink fade to="/" aria-label="logo">
             <img src={logo} alt="gofer logo" className="goferlogo" />
           </AniLink>
           <div className={styles.icons}>
@@ -36,17 +36,17 @@ const Footer = () => {
             <h6 className={styles.title}>Getting Started</h6>
             <ul>
               <div className={styles.links}>
-                <Link to="/#home-benefits">
+                <Link aria-label="footer-benefits" to="/#home-benefits">
                   Benefits
                 </Link>
               </div>
               <div className={styles.links}>
-                <Link to="/#home-howitwork">
+                <Link aria-label="footer-howitwork" to="/#home-howitwork">
                   How it works
                 </Link>
               </div>
               <div className={styles.links}>
-                <Link to="/#home-download">
+                <Link aria-label="footer-download" to="/#home-download">
                   Download
                 </Link>
               </div>
@@ -56,22 +56,22 @@ const Footer = () => {
             <h6 className={styles.title}>About Company</h6>
             <ul>
               <div className={styles.links}>
-                <AniLink fade to="/about">
+                <AniLink aria-label="footer-about" fade to="/about">
                   About Us
                 </AniLink>
               </div>
               <div className={styles.links}>
-                <AniLink fade to="/contact">
+                <AniLink aria-label="footer-contact" fade to="/contact">
                   Contact Us
                 </AniLink>
               </div>
               <div className={styles.links}>
-                <AniLink fade to="/help">
+                <AniLink aria-label="footer-help" fade to="/help">
                   Knowledge Base
                 </AniLink>
               </div>
               <div className={styles.links}>
-                <AniLink fade to="/blogs">
+                <AniLink aria-label="footer-blog" fade to="/blogs">
                   Blog
                 </AniLink>
               </div>
@@ -81,17 +81,17 @@ const Footer = () => {
             <h6 className={styles.title}>Legal</h6>
             <ul>
               <div className={styles.links}>
-                <AniLink fade to="/terms">
+                <AniLink aria-label="footer-terms" fade to="/terms">
                   Terms And Conditions
                 </AniLink>
               </div>
               <div className={styles.links}>
-                <AniLink fade to="/privacy">
+                <AniLink aria-label="footer-privacy" fade to="/privacy">
                   Privacy Policy
                 </AniLink>
               </div>
               <div className={styles.links}>
-                <AniLink fade to="/cookie">
+                <AniLink aria-label="footer-Cookie" fade to="/cookie">
                   Cookie Policy
                 </AniLink>
               </div>

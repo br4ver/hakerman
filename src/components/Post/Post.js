@@ -36,21 +36,18 @@ const Post = ({ post }) => {
       <div className={styles.footer}>
         <h3>{title}</h3>
         <AniLink
+          aria-label="link-singlepost"
           fade
           className={styles.stretchedLink}
           to={`/blog/${slug}`}
         ></AniLink>
         <div className={styles.info}>
-          <h4 className={styles.country}>
-            {author || "default country"}
-          </h4><h6 className={styles.tag}>Featured</h6>
-          <div className={styles.details}>
-
-          </div>
+          <h4 className={styles.country}>{author || "default country"}</h4>
+          <h6 className={styles.tag}>Featured</h6>
+          <div className={styles.details}></div>
         </div>
       </div>
       <div className={styles.imgContainer}>
-        
         <Image fluid={mainImage} className={styles.img} alt="single tour" />
         <div className={styles.link}>{author}</div>
       </div>

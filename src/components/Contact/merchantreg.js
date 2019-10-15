@@ -187,7 +187,11 @@ const MerchantReg = () => {
               <input value="Read" type="checkbox" name="Terms" />{" "}
               <p className={styles.termLabel}>
                 I have read the{" "}
-                <Link className={styles.linkTerms} to="/terms">
+                <Link
+                  aria-label="link-terms-merchant"
+                  className={styles.linkTerms}
+                  to="/terms"
+                >
                   Terms and Conditions
                 </Link>
                 .

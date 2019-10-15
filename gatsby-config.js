@@ -68,9 +68,12 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-gtag`,
       options: {
         trackingId: website.googleAnalyticsID,
+        head: false,
+        // enable ip anonymization
+        anonymize: false,
       },
     },
     {
