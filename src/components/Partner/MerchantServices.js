@@ -7,13 +7,7 @@ import merchant from '../../images/Merchants1.webp'
 import merchant2 from "../../images/Merchants2.webp"
 import merchant3 from "../../images/Merchants3.webp"
 class MerchantServices extends React.Component {
-  componentDidMount() {
-    const isBrowser = typeof window !== "undefined"
-    const AOS = isBrowser ? require("aos") : undefined
 
-    this.aos = AOS
-    this.aos.init()
-  }
   render() {
     return (
       <section id="merchant-benefits" className={styles.services}>

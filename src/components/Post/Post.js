@@ -48,7 +48,12 @@ const Post = ({ post }) => {
         </div>
       </div>
       <div className={styles.imgContainer}>
-        <Image fluid={mainImage} className={styles.img} alt="single tour" />
+        <Image
+          fluid={mainImage}
+          loading="lazy"
+          className={styles.img}
+          alt="single tour"
+        />
         <div className={styles.link}>{author}</div>
       </div>
     </article>

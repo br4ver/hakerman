@@ -7,12 +7,6 @@ import rider2 from "../../images/Riders2.webp"
 import rider3 from "../../images/Riders3.webp"
 
 class RiderServices extends React.Component {
-  componentDidMount() {
-    const isBrowser = typeof window !== "undefined"
-    const AOS = isBrowser ? require("aos") : undefined
-    this.aos = AOS
-    this.aos.init()
-  }
   
   render() {
     return (
