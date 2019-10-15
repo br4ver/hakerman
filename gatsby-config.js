@@ -31,6 +31,13 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: "gatsby-plugin-nprogress",
+      options: {
+        color: "#2f2478",
+        easing: "ease",
+      },
+    },
     `gatsby-plugin-preload-fonts`,
     {
       resolve: "gatsby-plugin-preconnect",

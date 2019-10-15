@@ -30,6 +30,7 @@
     "gatsby-plugin-google-tagmanager": "^2.1.13",
     "gatsby-plugin-gtag": "^1.0.11",
     "gatsby-plugin-manifest": "^2.2.22",
+    "gatsby-plugin-nprogress": "^2.1.12",
     "gatsby-plugin-offline": "^3.0.15",
     "gatsby-plugin-playground": "^1.0.6",
     "gatsby-plugin-preconnect": "^1.0.5",
