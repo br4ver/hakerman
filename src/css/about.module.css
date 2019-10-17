@@ -29,7 +29,12 @@
 .about-info h2 span{
   margin:  0 0.35rem;
 }
-
+.down-load{
+  top: -30px;
+  font-size: 3em;
+  position: absolute;
+  color: rgba(46,46, 46, 0.08);
+}
 @media screen and (min-width: 768px) {
   .about-center {
     display: grid;
@@ -38,7 +43,12 @@
     align-items: center;
     margin-top: 3rem;
   }
-
+.down-load{
+  top: -50px;
+  font-size: 5em;
+  position: absolute;
+  color: rgba(46,46, 46, 0.08);
+}
   .about-img,
   .about-info {
     margin: 0;
@@ -49,7 +59,6 @@
   .img-container {
     max-height: 800px;
   }
-
 }
 @media screen and (min-width: 992px) {
   .img-container::before {

@@ -25,3 +25,22 @@
   height: 70vh;
   object-fit: cover;
 }
+.txt-bg{
+  position: relative;
+}
+.info-txt{
+  position: absolute;
+  text-align: center;
+  right:40%;
+  top: 40%;
+  z-index: 1;
+    animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}

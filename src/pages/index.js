@@ -13,7 +13,7 @@ export default ({ data }) => (
   <Layout>
     <SEO
       title={`gofer`}/>
-    <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
+      <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
       <Title text="GOOD FOOD FOR EVERY MOOD" />
       <Scroll />
     </StyledHero>

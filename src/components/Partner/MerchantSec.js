@@ -18,7 +18,7 @@ const MerchantSec = () => {
       initialSlide: 0,
       responsive: [
         {
-          breakpoint: 700,
+          breakpoint: 1200,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,

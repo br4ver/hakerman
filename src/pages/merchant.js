@@ -11,7 +11,7 @@ export default class merchant extends Component {
   render() {
     return (
       <Layout>
-        <SEO title="Merchant"/>
+        <SEO title=" gofer Partner"/>
         <StyledHero img={this.props.data.merchantBcg.childImageSharp.fluid}>
           <Title text="GOOD FOOD FOR EVERY MOOD" />
         </StyledHero>

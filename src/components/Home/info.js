@@ -3,18 +3,16 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import "../../css/rider.sec.css"
-import styled from '../../css/info.module.css'
+import styled from "../../css/info.module.css"
 import Phone1 from "../../images/step1.webp"
 import Phone2 from "../../images/step2.webp"
 import Phone3 from "../../images/step3.webp"
 import Phone4 from "../../images/step4.webp"
-
 class Info extends React.Component {
-
   render() {
     const settings = {
       dots: true,
-      lazyLoad:true,
+      lazyLoad: true,
       infinite: true,
       speed: 500,
       autoplay: true,
@@ -25,11 +23,11 @@ class Info extends React.Component {
       adaptiveHeight: true,
     }
     return (
-      <section>
+      <section id="home-howitwork">
         <div className={styled.leftDownload}>
           <article>
             <Slider ref={slider => (this.slider = slider)} {...settings}>
-              <div>
+              <div >
                 <img
                   loading="lazy"
                   src={Phone1}
@@ -37,7 +35,7 @@ class Info extends React.Component {
                   className={styled.home1}
                 />
               </div>
-              <div>
+              <div >
                 <img
                   src={Phone2}
                   loading="lazy"
@@ -45,7 +43,7 @@ class Info extends React.Component {
                   className={styled.home1}
                 />
               </div>
-              <div>
+              <div >
                 <img
                   src={Phone3}
                   loading="lazy"
@@ -53,7 +51,7 @@ class Info extends React.Component {
                   className={styled.home1}
                 />
               </div>
-              <div>
+              <div >
                 <img
                   src={Phone4}
                   loading="lazy"
@@ -68,6 +66,5 @@ class Info extends React.Component {
     )
   }
 }
-
 
 export default Info

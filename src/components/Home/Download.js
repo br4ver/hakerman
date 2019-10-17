@@ -7,7 +7,7 @@ const getAbout = graphql`
     aboutImage: file(relativePath: { eq: "goferphone.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
@@ -24,6 +24,15 @@ const Download = () => {
             data-aos-easing="ease-in-sine"
             className={styles.aboutImg}
           >
+            <h4
+              className={styles.downLoad}
+              data-aos="fade-down"
+              data-aos-easing="ease-in-sine"
+              data-aos-anchor="#trigger-download"
+              data-aos-duration="2000"
+            >
+              DOWNLOAD
+            </h4>
             <div className={styles.imgContainer}>
               <Img fluid={aboutImage.childImageSharp.fluid} alt="about image" />
             </div>
@@ -37,8 +46,8 @@ const Download = () => {
             <h2>
               <span>Download</span>
               <span>Now</span>
-              </h2>
-            <button type="button" className="btn-primary">
+            </h2>
+            <button type="button" className="btn-primary" id="trigger-download">
               Download
             </button>
           </article>

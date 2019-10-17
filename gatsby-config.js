@@ -34,8 +34,9 @@ module.exports = {
     {
       resolve: "gatsby-plugin-nprogress",
       options: {
-        color: "#2f2478",
+        color: "#ff0076",
         easing: "ease",
+        showSpinner: false,
       },
     },
     `gatsby-plugin-preload-fonts`,
@@ -69,6 +70,24 @@ module.exports = {
         spaceId: "1l3lduuea9n7",
         // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: "cIkocFgYMK4OwTDOQAlbGTk3WLgj-4FvuRG14OCgVyU",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-lunr",
+      options: {
+        languages: [{ name: "en" }],
+        fields: [
+          { name: "answer", store: true, attributes: { boost: 20 } },
+          { name: "question", store: true, attributes: { boost: 5 } },
+          { name: "title" },
+        ],
+        resolvers: {
+          allContentfulHelp: {
+            answer: edges => edges.node.customer.answer,
+            question: edges => edges.node.customer.question,
+          },
+        },
+        filename: "search_index.json",
       },
     },
     `gatsby-transformer-sharp`,

@@ -11,7 +11,7 @@ export default class rider extends Component {
   render() {
     return (
       <Layout>
-        <SEO title="Rider"/>
+        <SEO title="gofer Rider"/>
         <StyledHero img={this.props.data.defaultBcg.childImageSharp.fluid}>
           <Title text="Start your journey with us!"/>
         </StyledHero>

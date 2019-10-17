@@ -4,6 +4,10 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import "../../css/rider.sec.css"
 import {Link} from 'gatsby'
+import Riderimg1 from '../../images/help1.png'
+import Riderimg2 from "../../images/help2.png"
+import Riderimg3 from "../../images/help3.png"
+import Riderimg4 from "../../images/help4.png"
 
 class RiderSec extends React.Component {
 
@@ -20,7 +24,7 @@ class RiderSec extends React.Component {
       initialSlide: 0,
       responsive: [
         {
-          breakpoint: 700,
+          breakpoint: 1200,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -38,8 +42,8 @@ class RiderSec extends React.Component {
                   <img
                     loading="lazy"
                     className="cardimage"
-                    src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2126&q=80"
-                    alt=""
+                    src={Riderimg1}
+                    alt="Step 1"
                   />
                 </div>
                 <div className="cardcontent">
@@ -65,8 +69,8 @@ class RiderSec extends React.Component {
                   <img
                     loading="lazy"
                     className="cardimage"
-                    src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2126&q=80"
-                    alt=""
+                    src={Riderimg2}
+                    alt="Step 2"
                   />
                 </div>
                 <div className="cardcontent">
@@ -83,8 +87,8 @@ class RiderSec extends React.Component {
                   <img
                     loading="lazy"
                     className="cardimage"
-                    src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2126&q=80"
-                    alt=""
+                    src={Riderimg3}
+                    alt="Step 3"
                   />
                 </div>
                 <div className="cardcontent">
@@ -101,8 +105,8 @@ class RiderSec extends React.Component {
                   <img
                     loading="lazy"
                     className="cardimage"
-                    src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2126&q=80"
-                    alt=""
+                    src={Riderimg4}
+                    alt="Step 4"
                   />
                 </div>
                 <div className="cardcontent">

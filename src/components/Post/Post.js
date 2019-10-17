@@ -42,7 +42,6 @@ const Post = ({ post }) => {
           to={`/blog/${slug}`}
         ></AniLink>
         <div className={styles.info}>
-          <h4 className={styles.country}>{author || "default country"}</h4>
           <h6 className={styles.tag}>Featured</h6>
           <div className={styles.details}></div>
         </div>

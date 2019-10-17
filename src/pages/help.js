@@ -3,13 +3,13 @@ import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import Helps from "../components/Help/Helps"
 import { graphql } from "gatsby"
-
 const help = ({ data }) => {
 
 
     return (
       <Layout>
         <StyledHero img={data.helpBg.childImageSharp.fluid} />
+
         <Helps />
       </Layout>
     )
