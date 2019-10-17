@@ -5,13 +5,19 @@
 .center {
   width: 80vw;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-column-gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .service {
   margin: 2rem 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 300px;
 }
 .service span {
 
@@ -21,9 +27,14 @@
   margin-bottom: 1.5rem;
 
 }
+.img-cont{
+  width: 150px;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.img-cont img{
+  width: 150px;
+}
 .service h4 {
   text-transform: uppercase;
-}
-.service img{
-  max-height: 100px;
 }

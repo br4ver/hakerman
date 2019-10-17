@@ -14,7 +14,7 @@ const RiderReg = () => {
           data-aos-duration="2000"
         >
           <div className={styles.contactLeft}>
-            <img src={rider} alt="fdfdf" />
+            <img loading="lazy" src={rider} alt="fdfdf" />
           </div>
           <form action="" className={styles.contactLogin} autoComplete="off">
             <h4 className={styles.contactTitle}>

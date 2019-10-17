@@ -10,10 +10,7 @@ import Phone3 from "../../images/step3.webp"
 import Phone4 from "../../images/step4.webp"
 
 class Info extends React.Component {
-  state = {
-    slideIndex: 0,
-    updateCount: 0,
-  }
+
   render() {
     const settings = {
       dots: true,
@@ -26,9 +23,6 @@ class Info extends React.Component {
       slidesToScroll: 1,
       initialSlide: 0,
       adaptiveHeight: true,
-      afterChange: () =>
-        this.setState(state => ({ updateCount: state.updateCount + 1 })),
-      beforeChange: (current, next) => this.setState({ slideIndex: next }),
     }
     return (
       <section>
@@ -36,16 +30,36 @@ class Info extends React.Component {
           <article>
             <Slider ref={slider => (this.slider = slider)} {...settings}>
               <div>
-                <img src={Phone1} alt="gofer logo" className={styled.home1} />
+                <img
+                  loading="lazy"
+                  src={Phone1}
+                  alt="gofer logo"
+                  className={styled.home1}
+                />
               </div>
               <div>
-                <img src={Phone2} alt="gofer logo" className={styled.home1} />
+                <img
+                  src={Phone2}
+                  loading="lazy"
+                  alt="gofer logo"
+                  className={styled.home1}
+                />
               </div>
               <div>
-                <img src={Phone3} alt="gofer logo" className={styled.home1} />
+                <img
+                  src={Phone3}
+                  loading="lazy"
+                  alt="gofer logo"
+                  className={styled.home1}
+                />
               </div>
               <div>
-                <img src={Phone4} alt="gofer logo" className={styled.home1} />
+                <img
+                  src={Phone4}
+                  loading="lazy"
+                  alt="gofer logo"
+                  className={styled.home1}
+                />
               </div>
             </Slider>
           </article>

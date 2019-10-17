@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import "../../css/rider.sec.css"
 import {Link} from 'gatsby'
+
 class RiderSec extends React.Component {
 
   render() {
@@ -35,6 +36,7 @@ class RiderSec extends React.Component {
               <div className="card">
                 <div className="cardimage-container">
                   <img
+                    loading="lazy"
                     className="cardimage"
                     src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2126&q=80"
                     alt=""
@@ -61,6 +63,7 @@ class RiderSec extends React.Component {
               <div className="card">
                 <div className="cardimage-container">
                   <img
+                    loading="lazy"
                     className="cardimage"
                     src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2126&q=80"
                     alt=""
@@ -78,6 +81,7 @@ class RiderSec extends React.Component {
               <div className="card">
                 <div className="cardimage-container">
                   <img
+                    loading="lazy"
                     className="cardimage"
                     src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2126&q=80"
                     alt=""
@@ -95,6 +99,7 @@ class RiderSec extends React.Component {
               <div className="card">
                 <div className="cardimage-container">
                   <img
+                    loading="lazy"
                     className="cardimage"
                     src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2126&q=80"
                     alt=""

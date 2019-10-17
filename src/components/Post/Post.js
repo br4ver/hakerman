@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "gatsby-image"
+import Img from "gatsby-image"
 import styles from "../../css/tour.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import PropTypes from "prop-types"
@@ -48,9 +48,9 @@ const Post = ({ post }) => {
         </div>
       </div>
       <div className={styles.imgContainer}>
-        <Image
-          fluid={mainImage}
+        <Img
           loading="lazy"
+          fluid={mainImage}
           className={styles.img}
           alt="single tour"
         />

@@ -7,7 +7,7 @@ const getAbout = graphql`
     aboutImage: file(relativePath: { eq: "goferphone.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }

@@ -2,15 +2,36 @@ import React from "react"
 import Title from "../Title"
 import styles from "../../css/services.module.css"
 import "aos/dist/aos.css"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+import Aosinit from '../../constants/aosinit'
 
-import merchant from '../../images/Merchants1.webp'
-import merchant2 from "../../images/Merchants2.webp"
-import merchant3 from "../../images/Merchants3.webp"
-class MerchantServices extends React.Component {
+const MerchantServices = () => {
+  const data = useStaticQuery(graphql`
+    fragment mercImage on File {
+      childImageSharp {
+        fluid(maxWidth: 200) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    query {
+      image1: file(relativePath: { eq: "M1.png" }) {
+        ...mercImage
+      }
 
-  render() {
+      image2: file(relativePath: { eq: "M2.png" }) {
+        ...mercImage
+      }
+
+      image3: file(relativePath: { eq: "M3.png" }) {
+        ...mercImage
+      }
+    }
+  `)    
     return (
-      <section id="merchant-benefits" className={styles.services}>
+      <div id="merchant-benefits" className={styles.services}>
+        <Aosinit />
         <Title title="our" subtitle="services" />
         <div>
           <div className={styles.center}>
@@ -19,9 +40,14 @@ class MerchantServices extends React.Component {
               data-aos="fade-right"
               data-aos-duration="2000"
             >
-              <span>
-                <img className={styles.img} src={merchant} alt="" />
-              </span>
+              <div className={styles.imgCont}>
+                <Img
+                  loading="lazy"
+                  fluid={data.image1.childImageSharp.fluid}
+                  alt="about image"
+                />
+              </div>
+
               <h4>Reach more diners</h4>
               <p>Integrated delivery platform to bridge you to customers.</p>
             </article>
@@ -30,9 +56,14 @@ class MerchantServices extends React.Component {
               data-aos="fade-down"
               data-aos-duration="2500"
             >
-              <span>
-                <img className={styles.img} src={merchant2} alt="" />
-              </span>
+              <div className={styles.imgCont}>
+                <Img
+                  loading="lazy"
+                  fluid={data.image2.childImageSharp.fluid}
+                  alt="about image"
+                />
+              </div>
+
               <h4>Grow your business</h4>
               <p>A partnership that cares for you and your business</p>
             </article>
@@ -41,9 +72,14 @@ class MerchantServices extends React.Component {
               data-aos="fade-left"
               data-aos-duration="2500"
             >
-              <span>
-                <img className={styles.img} src={merchant3} alt="" />
-              </span>
+              <div className={styles.imgCont}>
+                <Img
+                  loading="lazy"
+                  fluid={data.image3.childImageSharp.fluid}
+                  alt="about image"
+                />
+              </div>
+
               <h4>Road Partner</h4>
               <p>
                 Access to our fleet of rider partner delivering your cooked
@@ -52,9 +88,8 @@ class MerchantServices extends React.Component {
             </article>
           </div>
         </div>
-      </section>
+      </div>
     )
   }
-}
 
 export default MerchantServices

@@ -1,11 +1,11 @@
-import React, { Component } from "react"
+import React from "react"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import "../../css/rider.sec.css"
 import {Link} from 'gatsby'
-export default class MerchantSec extends Component {
-  render() {
+
+const MerchantSec = () => {
     const settings = {
       dots: true,
       infinite: true,
@@ -115,4 +115,4 @@ export default class MerchantSec extends Component {
       </section>
     )
   }
-}
+export default MerchantSec
