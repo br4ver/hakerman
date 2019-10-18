@@ -20,7 +20,7 @@ const getImage = graphql`
 const Post = ({ post }) => {
   const data = useStaticQuery(getImage)
   const img = data.file.childImageSharp.fluid
-  const { title, author, slug, image } = post
+  const { title, slug, image } = post
   console.log(data)
 
   // let mainImage
@@ -32,8 +32,14 @@ const Post = ({ post }) => {
   let mainImage = image ? image[0].fluid : img
 
   return (
-    <article className={styles.tour}>
+    <article
+      className={styles.tour}
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      data-aos-duration="1500"
+    >
       <div className={styles.footer}>
+        <div className={styles.border}></div>
         <h3>{title}</h3>
         <AniLink
           aria-label="link-singlepost"
@@ -45,15 +51,14 @@ const Post = ({ post }) => {
           <h6 className={styles.tag}>Featured</h6>
           <div className={styles.details}></div>
         </div>
-      </div>
-      <div className={styles.imgContainer}>
-        <Img
-          loading="lazy"
-          fluid={mainImage}
-          className={styles.img}
-          alt="single tour"
-        />
-        <div className={styles.link}>{author}</div>
+        <div className={styles.fpImg}>
+          <Img
+            className={styles.img}
+            loading="lazy"
+            fluid={mainImage}
+            alt="single tour"
+          />
+        </div>
       </div>
     </article>
   )

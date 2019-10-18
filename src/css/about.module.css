@@ -1,9 +1,11 @@
 .about {
-  padding: 4rem 0;
+  margin-top: 7rem;
+  height: 100vh;
 }
 .about-center {
   width: 80vw;
   margin: 0 auto;
+  height: 100vh;
 }
 .about-img {
   margin: 3rem 0;
@@ -43,6 +45,10 @@
     align-items: center;
     margin-top: 3rem;
   }
+  .about {
+  margin-top: 0;
+  height: 100vh;
+}
 .down-load{
   top: -50px;
   font-size: 5em;

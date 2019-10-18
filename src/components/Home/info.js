@@ -13,21 +13,27 @@ class Info extends React.Component {
     const settings = {
       dots: true,
       lazyLoad: true,
-      infinite: true,
       speed: 500,
       autoplay: true,
-      arrows: true,
+      arrows: false,
       slidesToShow: 1,
       slidesToScroll: 1,
       initialSlide: 0,
       adaptiveHeight: true,
+      fade: true,
+      className: "slick-slider-fade",
     }
     return (
       <section id="home-howitwork">
-        <div className={styled.leftDownload}>
+        <div
+          className={styled.leftDownload}
+          data-aos="fade-up"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="2000"
+        >
           <article>
             <Slider ref={slider => (this.slider = slider)} {...settings}>
-              <div >
+              <div>
                 <img
                   loading="lazy"
                   src={Phone1}
@@ -35,7 +41,7 @@ class Info extends React.Component {
                   className={styled.home1}
                 />
               </div>
-              <div >
+              <div>
                 <img
                   src={Phone2}
                   loading="lazy"
@@ -43,7 +49,7 @@ class Info extends React.Component {
                   className={styled.home1}
                 />
               </div>
-              <div >
+              <div>
                 <img
                   src={Phone3}
                   loading="lazy"
@@ -51,7 +57,7 @@ class Info extends React.Component {
                   className={styled.home1}
                 />
               </div>
-              <div >
+              <div>
                 <img
                   src={Phone4}
                   loading="lazy"

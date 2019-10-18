@@ -1,7 +1,6 @@
 import React from "react"
 import Post from "../Post/Post"
 import { useStaticQuery, graphql } from "gatsby"
-import Title from "../Title"
 import styles from "../../css/items.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
@@ -35,16 +34,39 @@ const FeaturedPost = () => {
   const posts = response.featuredPost.edges
 
   return (
-    <section id="home-featurepost" className={styles.tours}>
-      <Title title="Latest" subtitle="Update" />
-      <div className={styles.center}>
-        {posts.map(({ node }) => {
-          return <Post key={node.contentful_id} post={node} />
-        })}
+    <section id="home-featurepost">
+      <div className={styles.tours}>
+        <div className={styles.center}>
+          {posts.map(({ node }) => {
+            return <Post key={node.contentful_id} post={node} />
+          })}
+        </div>
+        <div
+          className={styles.rightFp}
+          data-aos="fade-left"
+          data-aos-offset="500"
+          data-aos-duration="500"
+        >
+          <h3 className={styles.titleFp}>Latest Updates</h3>
+          <p>
+            Flexitarian biodiesel put a bird on it, YOLO poke aesthetic seitan
+            la croix microdosing whatever disrupt deep v keffiyeh post-ironic
+            kickstarter. Gluten-free pork belly kogi synth twee street art.
+            Slow-carb butcher gentrify beard sartorial kombucha ugh palo santo
+            lo-fi.
+          </p>
+          <div id="footer-legal" className={styles.linkFp}>
+            <AniLink
+              aria-label="all-post"
+              fade
+              to="/blogs"
+              className={styles.btnRead}
+            >
+              All Posts <span>&rarr;</span>
+            </AniLink>
+          </div>
+        </div>
       </div>
-      <AniLink aria-label="all-post" fade to="/blogs" className="btn-read">
-        all Posts
-      </AniLink>
     </section>
   )
 }
