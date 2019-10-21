@@ -69,7 +69,7 @@ module.exports = {
       options: {
         spaceId: "1l3lduuea9n7",
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: "cIkocFgYMK4OwTDOQAlbGTk3WLgj-4FvuRG14OCgVyU",
+        accessToken: "hPRFCtHdqIfK5VKWttIQI3by7s4XvprSbf6Swtg9Crw",
       },
     },
     {

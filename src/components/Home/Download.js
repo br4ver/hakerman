@@ -43,6 +43,7 @@ const Download = () => {
             data-aos-duration="500"
             className={styles.aboutInfo}
           >
+
             <h2>
               <span>Download</span>
               <span>Now</span>
