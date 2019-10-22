@@ -92,17 +92,33 @@ display: block;
   font-weight: bold;
   letter-spacing: var(--mainSpacing);
   }
-  .nav-links p:hover {
+  .navp:hover,
+    .navp:hover svg {
   color: var(--goferBlue);
+
+}
+.chev{
+  padding-top: 5px;
+  margin-left: 5px  ;
 }
 
 @media screen and (min-width: 576px) {
+
   .navbar {
     padding: 0 2rem;
     background: var(--primaryColor);
   }
 }
-@media screen and (max-width: 546px) {
+@media screen and (max-width: 546px) {  
+  .Soccer-content{
+    margin-left: 25px;
+  }
+    .navp:hover,
+    .navp:hover svg {
+  color: var(--mainWhite);
+
+}
+
   .navbar {
     padding: 0 2rem;
     background: var(--primaryColor);
@@ -116,6 +132,7 @@ display: block;
 }
 
 @media screen and (min-width: 992px) {
+  
   .logo-btn {
     display: none;
   }

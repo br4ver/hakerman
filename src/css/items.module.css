@@ -5,6 +5,15 @@
   flex-direction: row;
   margin-bottom: 4rem;
 }
+.help-tours {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 10vh;
+  margin-bottom: 4rem;
+  justify-content: center;
+}
 .cut{
   display: flex;
   flex-direction: row;

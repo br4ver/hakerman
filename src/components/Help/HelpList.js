@@ -18,7 +18,7 @@ export default class HelpList extends Component {
 
   render() {
     return (
-      <section className={styles.tours}>
+      <section className={styles.helpTours}>
         <Title title="Getting" subtitle="Started" />
         <div className={styles.helpCenter}>
           {this.state.sortedHelps.map(({ node }) => {

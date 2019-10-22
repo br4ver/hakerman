@@ -46,9 +46,8 @@ const MerchantServices = () => {
                   alt="about image"
                 />
               </div>
-
-              <h4>Reach more diners</h4>
-              <p>Integrated delivery platform to bridge you to customers.</p>
+              <h4>Grow your business</h4>
+              <p>A partnership that cares for you and your business</p>
             </article>
             <article
               className={styles.service}
@@ -62,9 +61,11 @@ const MerchantServices = () => {
                   alt="about image"
                 />
               </div>
-
-              <h4>Grow your business</h4>
-              <p>A partnership that cares for you and your business</p>
+              <h4>Road Partner</h4>
+              <p>
+                Access to our fleet of rider partner delivering your cooked
+                meals to customers
+              </p>
             </article>
             <article
               className={styles.service}
@@ -78,12 +79,8 @@ const MerchantServices = () => {
                   alt="about image"
                 />
               </div>
-
-              <h4>Road Partner</h4>
-              <p>
-                Access to our fleet of rider partner delivering your cooked
-                meals to customers
-              </p>
+              <h4>Reach more diners</h4>
+              <p>Integrated delivery platform to bridge you to customers.</p>
             </article>
           </div>
         </div>

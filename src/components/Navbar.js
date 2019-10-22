@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import styles from "../css/navbar.module.css"
-import { FaBars } from "react-icons/fa"
+import { FaBars, FaChevronDown } from "react-icons/fa"
 import logo from "../images/gofer1.webp"
 
 
@@ -40,7 +40,10 @@ const Navbar = () => {
           </div>
           <div>
             <div className={styles.down}>
-              <p className={styles.napv}>Become a Partner</p>
+              <p className={styles.navp}>
+                Become a Partner
+                <FaChevronDown className={styles.chev}/>
+              </p>
               <div className={styles.SoccerContent}>
                 <AniLink aria-label="link-rider" fade to="/rider">
                   Rider
@@ -58,7 +61,12 @@ const Navbar = () => {
             </AniLink>
           </div>
           <div>
-            <AniLink aria-label="link-help" fade to="/help" className="btn-help">
+            <AniLink
+              aria-label="link-help"
+              fade
+              to="/help"
+              className="btn-help"
+            >
               Help
             </AniLink>
           </div>

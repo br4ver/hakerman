@@ -77,8 +77,8 @@ const Services = () =>  {
                   alt="about image"
                 />
               </div>
-              <h4>Track</h4>
-              <p>Trace your order from meal prep to delivery.</p>
+              <h4>Time-saving</h4>
+              <p>Spend more time in your career or to the one you love.</p>
             </article>
           </div>
         </div>
