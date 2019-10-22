@@ -5,3 +5,96 @@
   justify-content: center;
   align-items: center;
 }
+.error-container {
+  width: 600px;
+  margin: auto;
+  margin-right: 27%;
+  text-align: right;
+}
+.error-text{
+  padding-bottom: 3em;
+  color: #ffffff;
+
+}
+.error-link{
+  text-decoration: none;
+  color: #ffffff;
+}
+.error-text h1{
+
+  font-size: 2em;
+}
+
+/*Neon*/
+.error-p {
+  text-align: right;
+  font-size: 10em;
+  margin: 20px 0 20px 0;
+}
+
+.error-a {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+
+.error-p:nth-child(1) a {
+  color: #00DBC7;
+  font-family: 'gilroy-extrabold';
+}
+
+.error-p:nth-child(1) a {
+  -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon3 1.5s ease-in-out infinite alternate;
+  animation: neon3 1.5s ease-in-out infinite alternate;
+}
+.error-p .error-a:hover {
+  color: #ffffff;
+}
+/*glow for webkit*/
+
+@-webkit-keyframes neon3 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00DBC7, 0 0 70px #00DBC7, 0 0 80px #00DBC7, 0 0 100px #00DBC7, 0 0 150px #00DBC7;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00DBC7, 0 0 35px #00DBC7, 0 0 40px #00DBC7, 0 0 50px #00DBC7, 0 0 75px #00DBC7;
+  }
+}
+/*glow for mozilla*/
+@-moz-keyframes neon3 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+  }
+}
+
+/*glow*/
+
+@keyframes neon3 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00DBC7, 0 0 70px #00DBC7, 0 0 80px #00DBC7, 0 0 100px #00DBC7, 0 0 150px #00DBC7;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00DBC7, 0 0 35px #00DBC7, 0 0 40px #00DBC7, 0 0 50px #00DBC7, 0 0 75px #00DBC7;
+  }
+}
+
+/*REEEEEEEEEEESPONSIVE*/
+
+@media (max-width: 650px) {
+  #container {
+    width: 100%;
+  }
+  .error-p {
+    font-size: 7.5em;
+  }
+  .error-container{
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+}

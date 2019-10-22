@@ -72,24 +72,6 @@ module.exports = {
         accessToken: "hPRFCtHdqIfK5VKWttIQI3by7s4XvprSbf6Swtg9Crw",
       },
     },
-    {
-      resolve: "gatsby-plugin-lunr",
-      options: {
-        languages: [{ name: "en" }],
-        fields: [
-          { name: "answer", store: true, attributes: { boost: 20 } },
-          { name: "question", store: true, attributes: { boost: 5 } },
-          { name: "title" },
-        ],
-        resolvers: {
-          allContentfulHelp: {
-            answer: edges => edges.node.customer.answer,
-            question: edges => edges.node.customer.question,
-          },
-        },
-        filename: "search_index.json",
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
