@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/SEO/SEO"
 import StyledError from "../components/StyledError"
 import Errortext from '../components/Home/errortext'
+import { graphql } from "gatsby"
 export default function error({data}) {
   return (
     <Layout>

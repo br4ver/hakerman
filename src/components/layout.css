@@ -38,7 +38,6 @@
 }
 
 body {
-  font-family: gilroy-light;
   color: var(--mainBlack);
   background: var(--mainPrimary);
   line-height: 1.4;
@@ -53,7 +52,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: gilroy-extrabold;
+
   margin-bottom: 1.25rem;
   letter-spacing: var(--mainSpacing);
   text-shadow: 13px 13px 30px -9px rgba(0,0,0,0.63);

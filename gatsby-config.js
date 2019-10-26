@@ -24,14 +24,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        custom: {
-          families: ["gilroy-extrabold", "gilroy-light"],
-        },
-      },
-    },
-    {
       resolve: "gatsby-plugin-nprogress",
       options: {
         color: "#ff0076",
@@ -70,6 +62,20 @@ module.exports = {
         spaceId: "1l3lduuea9n7",
         // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: "hPRFCtHdqIfK5VKWttIQI3by7s4XvprSbf6Swtg9Crw",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://hakkerman.netlify.com",
+        sitemap: 'https://hakkerman.netlify.com/sitemap.xml',
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-typography",
+      options: {
+        pathToConfigModule: "config/typography.js",
       },
     },
     `gatsby-transformer-sharp`,
