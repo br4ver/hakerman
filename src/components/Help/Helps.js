@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const getHelp = graphql`
   query {
-    helps: allContentfulHelp {
+    helps: allContentfulHelp(sort: { fields: sort, order: ASC }) {
       edges {
         node {
           title
@@ -13,6 +13,7 @@ const getHelp = graphql`
             answer
           }
           contentful_id
+          sort
           category
           slug
           images {

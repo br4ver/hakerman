@@ -61,14 +61,14 @@ module.exports = {
       options: {
         spaceId: "1l3lduuea9n7",
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: "hPRFCtHdqIfK5VKWttIQI3by7s4XvprSbf6Swtg9Crw",
+        accessToken: "hFKtA1LUAXyhpt-9Ah65WaZzmSPiraAHeVE33FbgBuQ",
       },
     },
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
         host: "https://hakkerman.netlify.com",
-        sitemap: 'https://hakkerman.netlify.com/sitemap.xml',
+        sitemap: "https://hakkerman.netlify.com/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
