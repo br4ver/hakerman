@@ -143,19 +143,7 @@ main {
   display: flex;
   flex-direction: column;
 }
-.btn-help {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--mainWhite);
-  border: 1px solid var(--mainWhite);
-  transition: var(--mainTransition);
-  cursor: pointer;
-  border-radius: 5px;
-}
-.btn-help:hover {
-  background: var(--mainWhite);
-  color: var(--primaryColor);
-}
+
 
 /* supertitle */
 .titleContainer {

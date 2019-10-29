@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
           <AniLink aria-label="link-gofer" fade to="/">
-            <img src={logo} alt="gofer logo" className="goferlogo" />
+            <img className={styles.goferlogo} src={logo} alt="gofer logo"/>
           </AniLink>
           <button
             aria-label="button"
@@ -65,7 +65,7 @@ const Navbar = () => {
               aria-label="link-help"
               fade
               to="/help"
-              className="btn-help"
+              className={styles.btnHelp}
             >
               Help
             </AniLink>

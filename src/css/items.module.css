@@ -24,7 +24,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  padding-top: 4rem;
   padding-bottom: 4rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -82,7 +81,13 @@ transition: .2s;
   flex-direction: column-reverse;
 }
 }
-
+@media (max-width: 600px){
+  .right-fp{
+ height: 400px;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+}
 
 
 

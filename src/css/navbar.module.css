@@ -1,4 +1,4 @@
-@media screen and (min-width:546px){
+@media screen and (min-width:990px){
 li a, .dropbtn {
 display: inline-block;
 color: var(--primaryColor);
@@ -35,7 +35,10 @@ text-align: left;
 display: block;
 }  
 }
-
+.goferlogo {
+  height: 40px;
+  margin-bottom: 0;
+}
 
 
 
@@ -63,9 +66,11 @@ display: block;
   transition: var(--mainTransition);
   height: 0;
   overflow: hidden;
+  align-items: center;
 }
 .show-nav {
-  height: 250px;
+  height: 100%;
+  transition: var(--mainTransition)
 }
 .nav-links a {
   display: block;
@@ -91,6 +96,7 @@ display: block;
   transition: var(--mainTransition);
   font-weight: bold;
   letter-spacing: var(--mainSpacing);
+  margin-bottom: 0;
   }
   .navp:hover,
     .navp:hover svg {
@@ -109,14 +115,17 @@ display: block;
     background: var(--primaryColor);
   }
 }
-@media screen and (max-width: 546px) {  
+@media screen and (max-width: 990px) {  
   .Soccer-content{
     margin-left: 25px;
+  }
+  .btn-help{
+      margin-bottom: 2em;
   }
     .navp:hover,
     .navp:hover svg {
   color: var(--mainWhite);
-
+    
 }
 
   .navbar {
@@ -146,6 +155,7 @@ display: block;
   .nav-links {
     height: auto;
     display: flex;
+    margin-bottom: 0;
   }
   .nav-social-links {
     display: flex;
@@ -158,4 +168,18 @@ display: block;
 }
 .navhelp {
   border-width: 2px;
+}
+.btn-help {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--mainWhite);
+  border: 1px solid var(--mainWhite);
+  transition: var(--mainTransition);
+  cursor: pointer;
+  border-radius: 5px;
+  align-items: center;
+}
+.btn-help:hover {
+  background: var(--mainWhite);
+  color: var(--primaryColor);
 }
