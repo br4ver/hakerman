@@ -15,13 +15,11 @@ class Info extends React.Component {
       lazyLoad: true,
       speed: 500,
       autoplay: true,
-      arrows: false,
+      arrows: true,
       slidesToShow: 1,
       slidesToScroll: 1,
       initialSlide: 0,
       adaptiveHeight: true,
-      fade: true,
-      className: "slick-slider-fade",
     }
     return (
       <section id="home-howitwork">
