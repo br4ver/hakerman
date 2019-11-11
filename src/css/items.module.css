@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   margin-bottom: 4rem;
+  overflow-x: hidden;
 }
 .help-tours {
   text-align: center;
