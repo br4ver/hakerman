@@ -19,7 +19,8 @@ const Download = () => {
   return (
     <section id="home-download" className={styles.about}>
       <div className={styles.aboutCenter}>
-        <article
+        <div>
+                  <article
           data-aos="fade-right"
           data-aos-easing="ease-in-sine"
           data-aos-once="true"
@@ -39,7 +40,9 @@ const Download = () => {
             <Img fluid={aboutImage.childImageSharp.fluid} alt="about image" />
           </div>
         </article>
-        <article
+        </div>
+        <div>
+                  <article
           id="trigger-download"
           data-aos="fade-down"
           data-aos-once="true"
@@ -53,6 +56,8 @@ const Download = () => {
             Download
           </button>
         </article>
+        </div>
+
       </div>
     </section>
   )
