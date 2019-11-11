@@ -31,6 +31,7 @@ export default styled(StyledHero)`
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  position: fixed;
   z-index: -10;
   opacity: 1 !important;
   display: flex;
