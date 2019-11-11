@@ -25,12 +25,14 @@ const data = useStaticQuery(getImage)
 }
 
 export default styled(StyledHero)`
-min-height:${props => (props.home ? "calc(100vh - 62px)":"50vh")} ;
-background-position: center;
-background-size: cover;
-opacity: 1 !important;
-display: flex;
-justify-content: flex-start;
-align-items: center;
-
+  min-height: ${props => (props.home ? "calc(100vh - 62px)" : "50vh")};
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  opacity: 1 !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 `

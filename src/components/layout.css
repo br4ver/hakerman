@@ -42,9 +42,7 @@ body {
   background: var(--mainPrimary);
   line-height: 1.4;
   font-size: 1rem;
-    overflow-y: auto;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
+
 }
 a {
   text-decoration: none;
