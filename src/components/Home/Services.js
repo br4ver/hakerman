@@ -39,6 +39,7 @@ const Services = () =>  {
               className={styles.service}
               data-aos="fade-right"
               data-aos-duration="2000"
+              data-aos-once="true"
             >
               <div className={styles.imgCont}>
                 <Img
@@ -54,6 +55,7 @@ const Services = () =>  {
               className={styles.service}
               data-aos="fade-down"
               data-aos-duration="2500"
+              data-aos-once="true"
             >
               <div className={styles.imgCont}>
                 <Img
@@ -69,6 +71,7 @@ const Services = () =>  {
               className={styles.service}
               data-aos="fade-left"
               data-aos-duration="2500"
+              data-aos-once="true"
             >
               <div className={styles.imgCont}>
                 <Img

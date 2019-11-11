@@ -22,12 +22,14 @@ const Download = () => {
         <article
           data-aos="fade-right"
           data-aos-easing="ease-in-sine"
+          data-aos-once="true"
           className={styles.aboutImg}
         >
           <h4
             className={styles.downLoad}
             data-aos="fade-down"
             data-aos-easing="ease-in-sine"
+            data-aos-once="true"
             data-aos-anchor="#trigger-download"
             data-aos-duration="1500"
           >
@@ -38,15 +40,16 @@ const Download = () => {
           </div>
         </article>
         <article
-        id="trigger-download"
+          id="trigger-download"
           data-aos="fade-down"
+          data-aos-once="true"
           data-aos-easing="linear"
           data-aos-duration="500"
           className={styles.aboutInfo}
         >
           <h2>Download Now</h2>
 
-          <button type="button" className="btn-primary" >
+          <button type="button" className="btn-primary">
             Download
           </button>
         </article>

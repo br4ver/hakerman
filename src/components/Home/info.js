@@ -25,8 +25,9 @@ class Info extends React.Component {
       <section id="home-howitwork">
         <div
           className={styled.leftDownload}
-          data-aos="fade-up"
+          data-aos="fade-in"
           data-aos-easing="ease-in-sine"
+          data-aos-once="true"
           data-aos-duration="2000"
         >
           <article>
