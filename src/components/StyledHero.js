@@ -18,19 +18,22 @@ const getImage = graphql`
 const StyledHero = ({ img, className, children, home }) => {
   const data = useStaticQuery(getImage)
   return (
-    <BackgroundImage
+    <div className="heroWrapper">
+          <BackgroundImage
       className={className}
       fluid={img || data.defaultBcg.childImageSharp.fluid}
       home={home}
     >
       {children}
     </BackgroundImage> 
+    </div>
+
 
   )
 }
 
 export default styled(StyledHero)`
-  min-height: ${props => (props.home ? "calc(100vh - 65px)" : "50vh")};
+  height: 100%;
   background-position: center;
   background-size: cover;
   -webkit-background-size: cover;
