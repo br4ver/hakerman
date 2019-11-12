@@ -2,6 +2,7 @@ import React from "react"
 import styles from "../../css/about.module.css"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import {Link} from 'gatsby'
 const getAbout = graphql`
   query aboutImage {
     aboutImage: file(relativePath: { eq: "goferphone.png" }) {
@@ -42,7 +43,7 @@ const Download = () => {
         </article>
         </div>
         <div>
-                  <article
+        <article
           id="trigger-download"
           data-aos="fade-down"
           data-aos-once="true"
@@ -52,9 +53,12 @@ const Download = () => {
         >
           <h2>Download Now</h2>
 
-          <button type="button" className="btn-primary">
-            Download
-          </button>
+          
+            <Link className="btn-primary">
+          Download
+          </Link>
+            
+        
         </article>
         </div>
 
