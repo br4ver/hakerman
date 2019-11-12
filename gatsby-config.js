@@ -105,7 +105,7 @@ module.exports = {
       resolve: `gatsby-plugin-gtag`,
       options: {
         trackingId: website.googleAnalyticsID,
-        head: false,
+        head: true,
       },
     },
     {
