@@ -18,7 +18,6 @@ const getImage = graphql`
 const StyledHero = ({ img, className, children, home }) => {
   const data = useStaticQuery(getImage)
   return (
-    <div className="heroWrapper">
     <BackgroundImage
       className={className}
       fluid={img || data.defaultBcg.childImageSharp.fluid}
@@ -26,7 +25,6 @@ const StyledHero = ({ img, className, children, home }) => {
     >
       {children}
     </BackgroundImage> 
-    </div>
 
   )
 }
@@ -38,8 +36,9 @@ export default styled(StyledHero)`
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  opacity: 1 !important;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  z-index: -1;
+  position: absolute;
 `

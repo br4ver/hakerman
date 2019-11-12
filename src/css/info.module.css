@@ -11,6 +11,7 @@
     margin: auto;
     text-align: left;
     height: 70vh;
+    margin-block-start: 3em;
 }
 .right-download{
     flex-flow: row wrap;
