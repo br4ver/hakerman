@@ -66,13 +66,11 @@ h6 {
     color: var(--mainBlack);
     
   }
-.defaultHero {
-  min-height: calc(100vh - 62px);
-  background: url("../images/defaultBcg.jpg") center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.heroWrapper {
+  overflow: hidden;
+  height: calc(100vh - 65px);
 }
+
 .btn-white{
   text-transform: uppercase;
   text-decoration: none;
