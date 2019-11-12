@@ -52,7 +52,7 @@ const Download = () => {
             className={styles.aboutInfo}
           >
             <h2>Download Now</h2>
-              <Link className="btn-primary" to="/">
+              <Link className="btn-primary" to="/" id="download-btn">
               Download
               </Link>
           </article>
