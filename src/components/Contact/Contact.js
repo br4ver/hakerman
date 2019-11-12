@@ -43,6 +43,7 @@ const Contact = () => {
                 type="submit"
                 value="Submit here"
                 className={styles.submit}
+                id="contact-submit-btn"
               />
             </div>
           </form>

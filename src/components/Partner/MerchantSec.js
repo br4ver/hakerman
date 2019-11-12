@@ -48,6 +48,7 @@ const MerchantSec = () => {
                       aria-label="link-merchant-registration"
                       to="/merchant/#merchant-registration"
                       className="txbtn"
+                      id="link-mform"
                     >
                       Sign Up
                     </Link>

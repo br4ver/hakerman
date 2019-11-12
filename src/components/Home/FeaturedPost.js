@@ -60,6 +60,7 @@ const FeaturedPost = () => {
               aria-label="all-post"
               fade
               to="/blogs"
+              id="all-post-link"
               className={styles.btnRead}
             >
               All Posts <span>&rarr;</span>

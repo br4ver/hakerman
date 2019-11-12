@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <AniLink aria-label="link-gofer" fade to="/">
+          <AniLink aria-label="link-gofer" fade to="/" id="navlink-logo">
             <img className={styles.goferlogo} src={logo} alt="gofer logo"/>
           </AniLink>
           <button
@@ -34,7 +34,7 @@ const Navbar = () => {
           }
         >
           <div>
-            <AniLink fade to="/">
+            <AniLink fade to="/" id="navlink-home">
               Home
             </AniLink>
           </div>
@@ -45,10 +45,10 @@ const Navbar = () => {
                 <FaChevronDown className={styles.chev}/>
               </p>
               <div className={styles.SoccerContent}>
-                <AniLink aria-label="link-rider" fade to="/rider">
+                <AniLink aria-label="link-rider" id="navlink-rider" fade to="/rider">
                   Rider
                 </AniLink>
-                <AniLink aria-label="link-merchant" fade to="/merchant">
+                <AniLink aria-label="link-merchant" id="navlink-merchant" fade to="/merchant">
                   Merchant
                 </AniLink>
               </div>
@@ -56,7 +56,7 @@ const Navbar = () => {
           </div>
 
           <div>
-            <AniLink aria-label="link-about" fade to="/about">
+            <AniLink aria-label="link-about" fade to="/about" id="navlink-about">
               About Us
             </AniLink>
           </div>
@@ -66,6 +66,7 @@ const Navbar = () => {
               fade
               to="/help"
               className={styles.btnHelp}
+              id="navlink-help"
             >
               Help
             </AniLink>

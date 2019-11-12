@@ -203,7 +203,7 @@ const MerchantReg = () => {
               </div>
             </div>
             <input className={styles.modalState} id="modal-1" type="checkbox" />
-            <button type="submit" className={styles.contactBtn}>
+            <button type="submit" className={styles.contactBtn} id="merchant-reg-btn">
               Register
             </button>
           </form>

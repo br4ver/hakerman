@@ -163,7 +163,7 @@ const RiderReg = () => {
                 </p>
               </div>
             </div>
-            <button type="submit" className={styles.contactBtn}>
+            <button type="submit" className={styles.contactBtn} id="rider-reg-btn">
               Register
             </button>
           </form>

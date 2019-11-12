@@ -34,6 +34,7 @@ const HelpContact = () => {
                 type="submit"
                 value="Submit here"
                 className={styles.btnPrimary}
+                id="faq-submit-btn"
               />
 
             </div>

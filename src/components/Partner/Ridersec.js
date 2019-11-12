@@ -54,6 +54,7 @@ class RiderSec extends React.Component {
                       aria-label="link-rider-registration"
                       to="/rider/#rider-registration"
                       className="txbtn"
+                      id="link-rform"
                     >
                       Sign Up
                     </Link>
