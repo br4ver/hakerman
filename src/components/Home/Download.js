@@ -53,7 +53,7 @@ const Download = () => {
             <h2>Download Now</h2>
 
             <button type="button" className="btn-primary">
-              <a href="https://google.com">Download</a>
+              <a href="/">Download</a>
             </button>
           </article>
         </div>
