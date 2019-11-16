@@ -1,36 +1,52 @@
 import React from "react"
 import Layout from "../components/Layout"
-import StyledHero from "../components/StyledHero"
-import { graphql } from "gatsby"
 import SEO from "../components/SEO/SEO"
-import IceBear from '../images/Return of Craboo - San Diego Comic Con - We Bare Bears - Cartoon Network (online-video-cutter.com).mp4'
-const about = ({ data }) => {
-  return (
-    <Layout>
-      <SEO title="About" />
-      <StyledHero img={data.aboutBcg.childImageSharp.fluid} />
-      <video
-        className="video-player"
-        height="100%"
-        width="100%"
-        loop
-        muted
-        autoPlay
-      >
-        <source src={IceBear} type="video/mp4" />
-      </video>
-    </Layout>
-  )
-}
-export const query = graphql`
-  query {
-    aboutBcg: file(relativePath: { eq: "defaultBcg.webp" }) {
-      childImageSharp {
-        fluid(quality: 90, maxWidth: 4160) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
+import styles from "../css/aboutus.module.css"
+import YouTube from "react-youtube"
+
+class about extends React.Component {
+  _onReady(event) {
+    // access to player in all event handlers via event.target
+    event.target.mute();
   }
-`
+
+  _onEnd(event) {
+    event.target.playVideo()
+  }
+
+  render() {
+    const videoOptions = {
+      playerVars: {
+        // https://developers.google.com/youtube/player_parameters
+        autoplay: 1,
+        controls: 0,
+        rel: 0,
+        showinfo: 0,
+        loop: 1,
+        volume: 1,
+        muted: 1,
+      },
+    }
+
+    return (
+      <Layout>
+        <SEO title="About" />
+        <div className={styles.videoBackground}>
+          <div className={styles.videoForeground}>
+            <YouTube
+              videoId="JCjIrEQCzWM"
+              opts={videoOptions}
+              className={styles.videoIframe}
+              onReady={this._onReady}
+              onEnd={this._onEnd}
+              muted
+            />
+          </div>
+        </div>
+      </Layout>
+    )
+  }
+}
+
+
 export default about
