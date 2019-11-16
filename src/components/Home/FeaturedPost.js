@@ -34,28 +34,46 @@ const FeaturedPost = () => {
   const posts = response.featuredPost.edges
 
   return (
-    <section id="home-featurepost">
+    <section id="home-featurepost" className={styles.fpHolder}>
+      <div
+        className={styles.bgColor}
+        data-aos="slide-right"
+        data-aos-offset="200"
+        data-aos-duration="1100"
+        data-aos-once="true"
+      ></div>
       <div className={styles.tours}>
-        <div className={styles.center}>
-          {posts.map(({ node }) => {
-            return <Post key={node.contentful_id} post={node} />
-          })}
-        </div>
-        <div
-          className={styles.rightFp}
-          data-aos="fade-left"
-          data-aos-offset="500"
-          data-aos-duration="500"
-        >
-          <h3 className={styles.titleFp}>Latest Updates</h3>
-          <p>
+        <div className={styles.rightFp}>
+          <h3
+            className={styles.titleFp}
+            data-aos="fade-in"
+            data-aos-offset="100"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            Latest Updates
+          </h3>
+          <p
+            data-aos="fade-in"
+            data-aos-offset="150"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
             Flexitarian biodiesel put a bird on it, YOLO poke aesthetic seitan
             la croix microdosing whatever disrupt deep v keffiyeh post-ironic
-            kickstarter. Gluten-free pork belly kogi synth twee street art.
-            Slow-carb butcher gentrify beard sartorial kombucha ugh palo santo
-            lo-fi.
+            kickstarter.
           </p>
-          <div id="footer-legal" className={styles.linkFp}>
+          <div
+            id="footer-legal"
+            className={styles.linkFp}
+            data-aos="fade-in"
+            data-aos-offset="150"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
             <AniLink
               aria-label="all-post"
               fade
@@ -66,6 +84,21 @@ const FeaturedPost = () => {
               All Posts <span>&rarr;</span>
             </AniLink>
           </div>
+        </div>
+        <div className={styles.center}>
+          <h4
+            className={styles.featureUpdate}
+            data-aos="fade-down"
+            data-aos-easing="ease-in-sine"
+            data-aos-anchor="#fp-trigger"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            Updates
+          </h4>
+          {posts.map(({ node }) => {
+            return <Post key={node.contentful_id} post={node} />
+          })}
         </div>
       </div>
     </section>
