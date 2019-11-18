@@ -309,22 +309,26 @@ background-size: 80px;
 margin-top: 1em;
 margin-bottom: 1em;
 margin-left: .5em;
-width: 97% !important;
+width: 95% !important;
 }
+.slider-box{
+  width: 200px;
+}
+
 .slider-box2{
-margin-top: 1em;
+margin-top: 0;
 height: auto; 
 margin-bottom: 4em;
 }
 .slider-box2 p{
-font-size: .8em;
-margin-bottom: 10px;
+font-size: .7em;
+margin-bottom: 8px;
 }
 .slider-box2 h3{
-font-size: 1.2em;
+font-size: 1em;
 }
 .slider-box2 h5{
-font-size: .8em;
+font-size: .6em;
 margin-bottom: 5px;
 }
 .slider-box2 .slick-list{

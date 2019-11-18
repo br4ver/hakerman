@@ -118,14 +118,14 @@ transition: .2s;
   .right-fp{
     margin-top:0;
     margin-bottom: 1rem;
-    width: 60%;
+    width: 85%;
     height: 400px;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 4rem 0rem 2rem 4rem;
+    padding: 2rem 0rem 2rem 2rem;
 }
 .bg-color{
-  width: 90%;
+  width: 85vw;
 
 }
 .feature-update{

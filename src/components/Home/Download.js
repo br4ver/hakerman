@@ -70,9 +70,9 @@ const Download = () => {
             to="/"
             id="download-btn"
             data-aos="fade-up"
-            data-aos-offset="250"
-            data-aos-delay="500"
-            data-aos-duration="500"
+            data-aos-offset="350"
+            data-aos-duration="600"
+            data-aos-delay="900"
           >
             <Img
               fluid={gplayImage.childImageSharp.fluid}
