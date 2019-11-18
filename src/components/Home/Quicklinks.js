@@ -47,7 +47,7 @@ const Quicklinks = () => {
               </AniLink>
             </div>
           </div>
-          <div>
+          <div className={styles.footLinks}>
             <h6 className={styles.title}>Legal</h6>
             <div className={styles.links}>
               <AniLink aria-label="footer-terms" fade to="/terms">

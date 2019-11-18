@@ -58,20 +58,9 @@ export default class AsNavFor extends Component {
             <Slider
               asNavFor={this.state.nav2}
               ref={slider => (this.slider1 = slider)}
-              arrows={false}
+              arrows={true}
               lazyLoad={true}
-              responsive={[
-                {
-                  breakpoint: 700,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    initialSlide: 1,
-                    arrows:true,
-                    dots:true
-                  },
-                },
-              ]}
+              dots={true}
             >
               <div>
                 <h3>

@@ -41,15 +41,16 @@ const Post = ({ post }) => {
       data-aos-once="true"
     >
       <div className={styles.footer}>
-        <AniLink
+        <div className={styles.info}>              
+        <h3>{title}</h3>
+          <h6 className={styles.tag}>Featured</h6>   
+         <AniLink
           aria-label="link-singlepost"
           fade
-          className={styles.stretchedLink}
+          className={styles.stretchedLinks}
           to={`/blog/${slug}`}
-        ></AniLink>
-        <div className={styles.info}>
-          <h3>{title}</h3>
-          <h6 className={styles.tag}>Featured</h6>
+        >Read More</AniLink>
+
           <div className={styles.details}></div>
         </div>
 

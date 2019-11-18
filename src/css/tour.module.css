@@ -16,9 +16,13 @@
   text-align: left;
 }
 .help:hover {
-  box-shadow: var(--llightShadow);
+  box-shadow: var(--lightShadow);
 }
-
+.stretched-links{
+  top: 85%;
+  left: 30%;
+  position: absolute;
+}
 div .footer .stretched-link {
   position: absolute;
   width: 100%;
@@ -51,17 +55,17 @@ div .footer .stretched-link {
   padding: 1rem;
   height: 400px;
   align-content: center;
-  text-align: left;
   position: relative;
   background: #ffffff;
   width: 100%;
   box-shadow: 0 .5rem 1.6rem rgba(0, 0, 0, .2);
   border-radius: 10px;
   overflow: hidden;
+  text-align: center;
 }
 .footer h3{
   margin-top: 0;
-  color: #FFF;
+  color: #333335;
 }
 .titlelink {
   text-transform: capitalize;
@@ -204,7 +208,6 @@ div .footer .stretched-link {
     padding: 2em 2em 1em;
   } 
 }
-
 
 
 .border {

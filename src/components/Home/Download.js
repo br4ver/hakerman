@@ -71,7 +71,7 @@ const Download = () => {
             id="download-btn"
             data-aos="fade-up"
             data-aos-duration="600"
-            data-aos-delay="900"
+            data-aos-delay="200"
             data-aos-once="true"
           >
             <Img
