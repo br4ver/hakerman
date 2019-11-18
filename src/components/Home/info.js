@@ -30,7 +30,7 @@ export default class AsNavFor extends Component {
         <div
           className={styled.bgColor}
           data-aos="slide-right"
-          data-aos-offset="450"
+          data-aos-offset="100"
           data-aos-duration="1100"
           data-aos-once="true"
         ></div>
@@ -39,7 +39,7 @@ export default class AsNavFor extends Component {
           data-aos="fade-down"
           data-aos-easing="ease-in-sine"
           data-aos-duration="1000"
-          data-aos-offset="500"
+          data-aos-offset="100"
           data-aos-delay="400"
           data-aos-once="true"
         >
@@ -49,7 +49,7 @@ export default class AsNavFor extends Component {
           <div
             className="slider-box"
             data-aos="zoom-in"
-            data-aos-offset="450"
+            data-aos-offset="100"
             data-aos-delay="800"
             data-aos-duration="500"
             data-aos-easing="ease-in-out-sine"
@@ -98,7 +98,7 @@ export default class AsNavFor extends Component {
           <div
             className="slider-box2"
             data-aos="fade-left"
-            data-aos-offset="450"
+            data-aos-offset="100"
             data-aos-duration="1100"
             data-aos-once="true"
           >

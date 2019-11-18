@@ -29,7 +29,7 @@ const Download = () => {
       <div
         className={styles.bgColor}
         data-aos="slide-left"
-        data-aos-offset="450"
+        data-aos-offset="100"
         data-aos-duration="1100"
         data-aos-once="true"
       ></div>
@@ -39,7 +39,7 @@ const Download = () => {
           data-aos="fade-down"
           data-aos-easing="ease-in-sine"
           data-aos-duration="1000"
-          data-aos-offset="500"
+          data-aos-offset="100"
           data-aos-delay="600"
           data-aos-once="true"
         >
@@ -48,7 +48,7 @@ const Download = () => {
         <div className={styles.aboutImg}>
           <div
             data-aos="zoom-in-up"
-            data-aos-offset="450"
+            data-aos-offset="100"
             data-aos-delay="800"
             data-aos-duration="500"
             data-aos-easing="ease-in-out-sine"
@@ -70,9 +70,9 @@ const Download = () => {
             to="/"
             id="download-btn"
             data-aos="fade-up"
-            data-aos-offset="150"
             data-aos-duration="600"
             data-aos-delay="900"
+            data-aos-once="true"
           >
             <Img
               fluid={gplayImage.childImageSharp.fluid}

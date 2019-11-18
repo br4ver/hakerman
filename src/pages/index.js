@@ -9,6 +9,7 @@ import Scroll from "../components/Home/scrollindicator"
 import Title from '../components/Home/superBanner'
 import FeaturedPost from '../components/Home/FeaturedPost'
 import SEO from "../components/SEO/SEO"
+import Quicklinks from "../components/Home/Quicklinks"
 export default ({ data }) => (
   <Layout>
     <SEO
@@ -21,6 +22,7 @@ export default ({ data }) => (
     <Info />
     <Download />
     <FeaturedPost />
+    <Quicklinks/>
   </Layout>
 )
 

@@ -31,15 +31,17 @@
 .copyright {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
-  font-size: 12px;
+  font-size: 13px;
+  padding-top: 12px;
 }
 .footerrow {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1170px;
   margin: 0 auto;
   justify-content: space-between;
+  margin-bottom: -30px;
 }
 .footerdesc {
   flex: 1 0 30%;
@@ -48,17 +50,23 @@
   margin: 0 0 1.45rem;
   
 }
-.footerdesc1 {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 0 1.45rem;
-  flex-wrap: wrap;
-}
+
 .footerdesc1 {
   display: flex;
+  padding-top: 1.5em;
+
+  max-width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 0 1.45rem;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-bottom: 2px solid rgba(68, 68, 68, 0.767);
+
+}
+.quick-links{
+  background-color: var(--primaryColor);
+  width: 100vw;
 }
 .footerrow h5 {
   margin-bottom: 5px;
