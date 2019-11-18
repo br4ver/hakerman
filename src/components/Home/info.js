@@ -59,6 +59,19 @@ export default class AsNavFor extends Component {
               asNavFor={this.state.nav2}
               ref={slider => (this.slider1 = slider)}
               arrows={false}
+              dots={true}
+              lazyLoad={true}
+              responsive={[
+                {
+                  breakpoint: 700,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1,
+                    arrows:true
+                  },
+                },
+              ]}
             >
               <div>
                 <h3>
@@ -96,8 +109,8 @@ export default class AsNavFor extends Component {
               swipeToSlide={true}
               focusOnSelect={true}
               vertical={true}
-              verticalSwiping={true}
               arrows={false}
+              swipe={false}
               adaptiveHeight={true}
               initialSlide={0}
               responsive={[
@@ -107,6 +120,7 @@ export default class AsNavFor extends Component {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 1,
+                    fade: true,
                   },
                 },
               ]}

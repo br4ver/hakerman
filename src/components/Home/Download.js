@@ -70,7 +70,7 @@ const Download = () => {
             to="/"
             id="download-btn"
             data-aos="fade-up"
-            data-aos-offset="350"
+            data-aos-offset="150"
             data-aos-duration="600"
             data-aos-delay="900"
           >

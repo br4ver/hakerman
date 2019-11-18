@@ -259,6 +259,9 @@ color: #00dbc7;
 .slick-current p {
 display: inline;
 }
+.slick-prev::before, .slick-next::before{
+  color:#333335,
+}
 .info-step1{
 border-radius: 4px;
 background: #fff;
@@ -284,21 +287,21 @@ max-height: 120px;
 }
 
 .card-1{
-background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
+/* background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png); */
 background-repeat: no-repeat;
 background-position: right;
 background-size: 80px;
 }
 
 .card-2{
-background-image: url(https://ionicframework.com/img/getting-started/components-card.png);
+/* background-image: url(https://ionicframework.com/img/getting-started/components-card.png); */
 background-repeat: no-repeat;
 background-position: right;
 background-size: 80px;
 }
 
 .card-3{
-background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
+/* background-image: url(https://ionicframework.com/img/getting-started/theming-card.png); */
 background-repeat: no-repeat;
 background-position: right;
 background-size: 80px;
@@ -312,7 +315,7 @@ margin-left: .5em;
 width: 95% !important;
 }
 .slider-box{
-  width: 200px;
+  width: 100vw;
 }
 
 .slider-box2{
@@ -334,5 +337,9 @@ margin-bottom: 5px;
 .slider-box2 .slick-list{
 overflow: hidden;
 height: auto;
+}
+.slider-box .slick-list{
+width: 200px;
+margin: auto;
 }
 } 
