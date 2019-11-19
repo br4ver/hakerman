@@ -266,7 +266,7 @@ display: inline;
   left: 25px !important;
 }
 .slick-dots{
-  bottom: -10px;
+  bottom: -10px !important;
 }
 .slick-prev::before, .slick-next::before{
   color:#333335 !important;
