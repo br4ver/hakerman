@@ -116,11 +116,12 @@ export default class AsNavFor extends Component {
               initialSlide={0}
               responsive={[
                 {
-                  breakpoint: 700,
+                  breakpoint: 500,
                   settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 1,
+                    fade:true
                   },
                 },
               ]}

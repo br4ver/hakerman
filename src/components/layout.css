@@ -83,11 +83,11 @@ h6 {
 }
 .btn-merchant{
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: .8rem;
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
-  border: 1.5px solid var(--primaryColor);
-  padding: 0.6rem .9rem;
+  border: 1.5px solid #ffffff;
+  padding: 0.4rem .7rem;
   display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;
@@ -98,6 +98,16 @@ h6 {
 .btn-merchant:hover {
   background: var(--primaryColor);
   color: var(--mainWhite);
+}
+/* Merchant Arengu form*/
+.af-legal-required{
+  display: flex !important;
+}
+.af-form{
+  max-width: 550px !important;
+}
+.af-step-navigation{
+  text-align: left !important;
 }
 
 .btn-read:hover {

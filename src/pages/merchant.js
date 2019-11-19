@@ -7,6 +7,8 @@ import MerchantSec from "../components/Partner/MerchantSec"
 import MerchantServices from "../components/Partner/MerchantServices"
 import Title from "../components/Home/superBanner"
 import SEO from "../components/SEO/SEO"
+import Merchantlinks from "../components/Partner/Merchantlinks"
+
 export default class merchant extends Component {
   render() {
     return (
@@ -18,6 +20,7 @@ export default class merchant extends Component {
         <MerchantServices/>
         <MerchantSec/>
         <MerchantReg />
+        <Merchantlinks/>
       </Layout>
     )
   }

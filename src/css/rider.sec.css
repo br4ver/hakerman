@@ -6,33 +6,34 @@
   justify-content: space-around;
   align-items: center;
 }
-img {
-  max-width: 100%;
-}
+
 
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: auto;
   margin: auto;
+  overflow: visible;
 }
 
 .card {
   position: relative;
-  width: 400px;
-  height: 60vh;
-  border-radius: 10px;
+  width: 300px;
+  height: 450px;
+  border-radius: 19px;
   padding: 2rem;
   color: #aaa;
+  background-color: #00dbc7;
   /* box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2); */
-  overflow: hidden;
-  margin: 3rem;
+  margin: 2rem;
   text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
 }
 
 .cardimage-container {
   margin: -2rem -2rem 1rem -2rem;
+  height: auto;
 }
 
 .cardline {
@@ -41,26 +42,39 @@ img {
 }
 
 .cardimage {
+  position: absolute;
+  top: -6%;
+  right: 21%;
+  width: 150px;
   opacity: 0;
+  z-index: 2;
   animation: ImageFadeIn 0.8s 1.4s forwards;
 }
 
 .cardtitle {
-  color: #00dbc7;
+  color: #ffffff;
   margin-top: 0.5rem;
-  font-weight: 800;
+  font-weight: 400;
   letter-spacing: 0.01em;
   text-align: center;
+  font-size: 1em;
 }
 
 .cardcontent {
+  position: absolute;
+  top: 65%;
+  left: 0;
+  width: 100%;
+  text-align: center;
   margin-top: -1rem;
   opacity: 0;
+  padding-left: .5em;
+  padding-right: .5em;
   animation: ContentFadeIn 0.8s 1.6s forwards;
 }
 .cardcontent .btn-merchant a {
   text-decoration: none;
-  color: var(--primarColor);
+  color: #ffffff;
 }
 .cardcontent .btn-merchant a:hover {
   text-decoration: none;
@@ -69,9 +83,7 @@ img {
 .cardcontent h4 {
   margin-top: 2rem;
 }
-.cardcontent .btn-merchant {
-  margin-top: 1rem;
-}
+
 
 .cardsvg {
   position: absolute;
@@ -79,7 +91,7 @@ img {
   top: 115px;
 }
 .riderservice {
-  height: 75vh;
+  height: 70vh;
 }
 
 @media screen and (max-width: 800px) {
@@ -90,6 +102,9 @@ img {
     margin-top: 0;
     font-size: 0.8rem;
   }
+  .riderservice {
+  height: 100vh;
+}
 }
 
 @keyframes LineFadeIn {

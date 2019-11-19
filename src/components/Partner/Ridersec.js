@@ -33,7 +33,7 @@ class RiderSec extends React.Component {
       ],
     }
     return (
-      <section className="riderservice">
+      <section className="riderservice" id="rider-howitwork">
         <Slider ref={slider => (this.slider = slider)} {...settings}>
           <div>
             <div className="container">

@@ -1,8 +1,9 @@
 import React from "react"
 import styles from "../../css/contact.module.css"
 import  rider from '../../images/help4.png'
-import {Link} from 'gatsby'
 import "aos/dist/aos.css"
+import { ArenguForm } from "gatsby-plugin-arengu-forms"
+
 const RiderReg = () => {
 
   return (
@@ -16,108 +17,16 @@ const RiderReg = () => {
           <div className={styles.contactLeft}>
             <img loading="lazy" src={rider} alt="fdfdf" />
           </div>
-          <form action="" className={styles.contactLogin} autoComplete="off">
+          <div className={styles.contactLogin}>
             <h4 className={styles.contactTitle}>
-              Become a <span className={styles.contactSpace}>Rider</span>
+              Become a <span className={styles.contactSpace}>Partner</span>
             </h4>
-            <p className={styles.contactText}>Be a festive foodie hero!</p>
-            <div className={styles.floatingLabel}>
-              <input
-                className={styles.regCheck}
-                placeholder="Name"
-                type="text"
-                name="ridername"
-                id="rider-name"
-                autoComplete="off"
-              />
-              <label>Name:</label>
-              <div className={styles.icon}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <title>single-01</title>
-                  <g fill="#608cee">
-                    <path
-                      fill="#2e2e2e"
-                      d="M12,13c3.309,0,6-2.691,6-6V6c0-3.309-2.691-6-6-6S6,2.691,6,6v1C6,10.309,8.691,13,12,13z"
-                    ></path>{" "}
-                    <path
-                      data-color="color-2"
-                      d="M19.322,15.981c-4.704-1.303-9.939-1.303-14.644,0C2.513,16.581,1,18.564,1,20.805V24h22 v-3.195C23,18.564,21.487,16.581,19.322,15.981z"
-                    ></path>
-                  </g>
-                </svg>
-              </div>
-            </div>
-            <div className={styles.floatingLabel}>
-              <input
-                className={styles.regCheck}
-                placeholder="Contact"
-                type="tel"
-                name="ridercontact"
-                pattern="[0-9]{11}"
-                id="rider-contact"
-                autoComplete="off"
-              />
-              <label>Contact No.:</label>
-              <div className={styles.icon}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="48"
-                  height="48"
-                  viewBox="0 0 48 48"
-                >
-                  <title>phone-2</title>
-                  <g>
-                    <path
-                      fill="#335262"
-                      d="M38,47C17.598,47,1,30.402,1,10c0-0.265,0.105-0.52,0.293-0.707l6-6c0.391-0.391,1.023-0.391,1.414,0l10,10 c0.391,0.391,0.391,1.023,0,1.414L13.414,20L28,34.586l5.293-5.293c0.391-0.391,1.023-0.391,1.414,0l10,10 c0.391,0.391,0.391,1.023,0,1.414l-6,6C38.52,46.895,38.265,47,38,47z"
-                    ></path>
-                  </g>
-                </svg>
-              </div>
-            </div>
-            <div className={styles.floatingLabel}>
-              <input
-                className={styles.regCheck}
-                placeholder="Address"
-                type="text"
-                name="rideraddress"
-                id="rider-address"
-                autoComplete="off"
-              />
-              <label>Address:</label>
-              <div className={styles.icon}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="48"
-                  height="48"
-                  viewBox="0 0 48 48"
-                >
-                  <title>ic_location_on_48px</title>
-                  <g fill="#2e2e2e">
-                    <path d="M24 4c-7.73 0-14 6.27-14 14 0 10.5 14 26 14 26s14-15.5 14-26c0-7.73-6.27-14-14-14zm0 19c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"></path>
-                  </g>
-                </svg>
-              </div>
-            </div>
-            <div className={styles.regcheckBox}>
-              <input value="Read" type="checkbox" name="Terms" />{" "}
-              <p className={styles.termLabel}>
-                I have read the{" "}
-                <Link
-                  aria-label="link-terms-rider"
-                  className={styles.linkTerms}
-                  to="/terms"
-                >
-                  Terms and Conditions
-                </Link>
-                .
-              </p>
-            </div>
+            <p className={styles.contactText}>
+              Earn more by having your meals delivered straight to hungry
+              customers.
+            </p>
+
+            <ArenguForm id="157414686695086993" />
             <div className={styles.floatingLabel}>
               <div className={styles.instruction}>
                 <div className={styles.infoIcon}>
@@ -163,10 +72,7 @@ const RiderReg = () => {
                 </p>
               </div>
             </div>
-            <button type="submit" className={styles.contactBtn} id="rider-reg-btn">
-              Register
-            </button>
-          </form>
+          </div>
         </div>
       </div>
     </section>

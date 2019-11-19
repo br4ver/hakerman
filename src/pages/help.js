@@ -9,7 +9,6 @@ const help = ({ data }) => {
     return (
       <Layout>
         <StyledHero img={data.helpBg.childImageSharp.fluid} />
-
         <Helps />
       </Layout>
     )

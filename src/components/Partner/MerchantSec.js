@@ -4,30 +4,32 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import "../../css/rider.sec.css"
 import {Link} from 'gatsby'
+import Riderimg from '../../images/goferphone21.png'
 
 const MerchantSec = () => {
     const settings = {
       dots: true,
       infinite: true,
-      lazyload:true,
+      lazyload: true,
       speed: 500,
-      autoplay: true,
+      autoplaySpeed: 6000,
+      autoplay: false,
       arrows: true,
       slidesToShow: 4,
       slidesToScroll: 4,
       initialSlide: 0,
       responsive: [
         {
-          breakpoint: 1200,
+          breakpoint: 1024,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
           },
         },
       ],
-    };
+    }
     return (
-      <section className="riderservice">
+      <section className="riderservice" id="merchant-sec">
         <Slider {...settings}>
           <div>
             <div className="container">
@@ -36,7 +38,7 @@ const MerchantSec = () => {
                   <img
                     loading="lazy"
                     className="cardimage"
-                    src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2126&q=80"
+                    src={Riderimg}
                     alt=""
                   />
                 </div>
@@ -64,7 +66,7 @@ const MerchantSec = () => {
                   <img
                     loading="lazy"
                     className="cardimage"
-                    src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2126&q=80"
+                    src={Riderimg}
                     alt=""
                   />
                 </div>
@@ -84,7 +86,7 @@ const MerchantSec = () => {
                   <img
                     loading="lazy"
                     className="cardimage"
-                    src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2126&q=80"
+                    src={Riderimg}
                     alt=""
                   />
                 </div>
@@ -100,8 +102,9 @@ const MerchantSec = () => {
               <div className="card">
                 <div className="cardimage-container">
                   <img
+                    loading="lazy"
                     className="cardimage"
-                    src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2126&q=80"
+                    src={Riderimg}
                     alt=""
                   />
                 </div>

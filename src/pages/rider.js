@@ -7,6 +7,7 @@ import RiderServices from "../components/Partner/RiderServices"
 import Title from "../components/Home/superBanner"
 import SEO from "../components/SEO/SEO"
 import RiderSec from "../components/Partner/Ridersec"
+import Riderlinks from '../components/Partner/riderlinks'
 export default class rider extends Component {
   render() {
     return (
@@ -18,6 +19,7 @@ export default class rider extends Component {
         <RiderServices />
         <RiderSec/>
         <RiderReg />
+        <Riderlinks/>
       </Layout>
     )
   }

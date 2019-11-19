@@ -110,7 +110,6 @@ li {
 }
 .links a {
   padding-top: 1em;
-  padding-bottom: 1em
 }
 .footerdesc1 {
   display: flex;
@@ -130,7 +129,7 @@ li {
     margin-right: 1em;
 }
 .footerdesc1 {
-  height: 275px;
+  height: 210px;
   width: 90%;
   -webkit-overflow-scrolling: touch;
 }
@@ -138,8 +137,8 @@ li {
     display: none;
   }
   .foot-links{
-  width: 225px;
-  height: 275px;
+  width: 235px;
+  height: 210px;
   background: rgba(255, 255, 255, .5);
   margin-bottom: .5em;
   padding: 1rem 1rem 1rem 1rem;
