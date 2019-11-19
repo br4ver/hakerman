@@ -14,7 +14,7 @@ const Title = ({title, subtitle, className}) => {
 
 export default styled(Title)`
   text-transform: uppercase;
-  font-size: 1 rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
   h1 {
     text-align: center;

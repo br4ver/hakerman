@@ -195,8 +195,8 @@ main {
   position: relative;
   --maskX: 0;
   --maskY: 00;
-  max-width: 80vw;
-  margin-left: 0;
+  max-width: 90vw;
+  margin-left: 5px;
 }
   .titleContainer h1 {
   margin-left: 5vw;
@@ -259,8 +259,18 @@ color: #00dbc7;
 .slick-current p {
 display: inline;
 }
+.slick-next{
+  right: 25px !important;
+}
+.slick-prev{
+  left: 25px !important;
+}
+.slick-dots{
+  bottom: -10px;
+}
 .slick-prev::before, .slick-next::before{
-  color:#333335,
+  color:#333335 !important;
+  font-size: 25px;
 }
 .info-step1{
 border-radius: 4px;
