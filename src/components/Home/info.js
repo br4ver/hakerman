@@ -63,7 +63,7 @@ export default class AsNavFor extends Component {
               dots={false}
               responsive={[
                 {
-                  breakpoint: 700,
+                  breakpoint: 400,
                   settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,

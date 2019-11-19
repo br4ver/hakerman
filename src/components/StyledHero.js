@@ -18,7 +18,7 @@ const getImage = graphql`
 const StyledHero = ({ img, className, children, home }) => {
   const data = useStaticQuery(getImage)
   return (
-          <BackgroundImage
+    <BackgroundImage
       className={className}
       fluid={img || data.defaultBcg.childImageSharp.fluid}
       home={home}
@@ -31,7 +31,7 @@ const StyledHero = ({ img, className, children, home }) => {
 }
 
 export default styled(StyledHero)`
-  min-height: ${props => (props.home ? "calc(900px)" : "400px")};
+  min-height: ${props => (props.home ? "525px" : "500px")};
   background: ${props =>
     props.home
       ? "linear-gradient(0deg, #FFFFFF 0%, rgba(196, 196, 196, 0) 50.06%);"
@@ -46,4 +46,7 @@ export default styled(StyledHero)`
   align-items: center;
   z-index: -1;
   position: absolute;
+  @media (min-width: 479px) {
+    min-height: ${props => (props.home ? "calc(100vh - 65px)" : "300px")};
+  }
 `
