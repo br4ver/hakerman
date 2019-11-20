@@ -57,6 +57,9 @@
   z-index: 1;
     animation: fadeIn 2s ease-in-out;
 }
+.g-play{
+  color: #00dbc7;
+}
 @keyframes fadeIn{
   0% {
     opacity:0;

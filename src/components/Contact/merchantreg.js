@@ -13,7 +13,7 @@ const MerchantReg = () => {
           <div className={styles.contactLeft}></div>
           <div className={styles.contactLogin}>
             <h4 className={styles.contactTitle}>
-              Become a <span className={styles.contactSpace}>Partner</span>
+              Be Our <span className={styles.contactSpace}>Partner</span>
             </h4>
             <p className={styles.contactText}>
               Earn more by having your meals delivered straight to hungry

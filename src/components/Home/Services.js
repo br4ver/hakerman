@@ -65,7 +65,10 @@ const Services = () =>  {
                 />
               </div>
               <h4>Explore and Tap</h4>
-              <p>Effortless ordering in a tap.</p>
+              <p>
+                Order from various diners in the city and track your meal up to
+                your doorstep.
+              </p>
             </article>
             <article
               className={styles.service}
@@ -81,7 +84,7 @@ const Services = () =>  {
                 />
               </div>
               <h4>Time-saving</h4>
-              <p>Spend more time in your career or to the one you love.</p>
+              <p>Have more time for the things that really matter to you.</p>
             </article>
           </div>
         </div>

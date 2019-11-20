@@ -31,7 +31,7 @@ const RiderServices = () => {
     return (
       <section id="rider-benefits" className={styles.services}>
         <Aosinit />
-        <Title title="our" subtitle="services" />
+        <Title title="Why Partner" subtitle="With Us " />
         <div>
           <div className={styles.center}>
             <article
@@ -47,7 +47,7 @@ const RiderServices = () => {
                 />
               </div>
               <h4>Work Whenever, Wherever</h4>
-              <p>Own your working time.</p>
+              <p>Work for your goals.</p>
             </article>
             <article
               className={styles.service}

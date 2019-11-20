@@ -47,6 +47,6 @@ export default styled(StyledHero)`
   z-index: -1;
   position: absolute;
   @media (min-width: 479px) {
-    min-height: ${props => (props.home ? "calc(100vh - 65px)" : "300px")};
+    min-height: ${props => (props.home ? "calc(100vh - 65px)" : "50vh")};
   }
 `

@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import {Link} from 'gatsby'
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -121,7 +122,7 @@ export default class AsNavFor extends Component {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 1,
-                    fade:true
+                    fade: true,
                   },
                 },
               ]}
@@ -129,22 +130,22 @@ export default class AsNavFor extends Component {
               <div className="info-step1 card-1">
                 <h5>Step 1</h5>
                 <h3>Download the app</h3>
-                <p>Click google play button on our download section.</p>
+                <p>Get the app on <Link to="/#home-download" className={styled.gPlay}>Google Play Store</Link> </p>
               </div>
               <div className="info-step1 card-2">
                 <h5>Step 2</h5>
-                <h3>Complete your profile</h3>
-                <p>Click google play button on our download section.</p>
+                <h3>Set your profile</h3>
+                <p>Complete your profile to start.</p>
               </div>
               <div className="info-step1 card-3">
                 <h5>Step 3</h5>
-                <h3>Check out</h3>
-                <p>Click google play button on our download section.</p>
+                <h3>Add to cart</h3>
+                <p>Select a meal and tap Add to cart</p>
               </div>
               <div className="info-step1">
                 <h5>Step 4</h5>
-                <h3>Enjoy the meal</h3>
-                <p>Click google play button on our download section.</p>
+                <h3>Enjoy your meal</h3>
+                <p>Confirm order and enjoy your meal</p>
               </div>
             </Slider>
           </div>

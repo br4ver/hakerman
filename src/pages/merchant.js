@@ -13,14 +13,14 @@ export default class merchant extends Component {
   render() {
     return (
       <Layout>
-        <SEO title=" gofer Partner"/>
+        <SEO title=" gofer Partner" />
         <StyledHero img={this.props.data.merchantBcg.childImageSharp.fluid}>
-          <Title text="GOOD FOOD FOR EVERY MOOD" />
+          <Title text="Connecting you to a community of diners." />
         </StyledHero>
-        <MerchantServices/>
-        <MerchantSec/>
+        <MerchantServices />
+        <MerchantSec />
         <MerchantReg />
-        <Merchantlinks/>
+        <Merchantlinks />
       </Layout>
     )
   }
