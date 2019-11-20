@@ -1,11 +1,10 @@
 import React from "react"
 import styles from "../../css/contact.module.css"
-import  rider from '../../images/help4.png'
+import rider from "../../images/help4.png"
 import "aos/dist/aos.css"
 import { ArenguForm } from "gatsby-plugin-arengu-forms"
 
 const RiderReg = () => {
-
   return (
     <section id="rider-registration" className={styles.contact}>
       <div className={styles.contactBody}>
@@ -21,10 +20,8 @@ const RiderReg = () => {
             <h4 className={styles.contactTitle}>
               Become a <span className={styles.contactSpace}>Partner</span>
             </h4>
-            <p className={styles.contactText}>
-              Earn more by having your meals delivered straight to hungry
-              customers.
-            </p>
+            <p className={styles.contactText}>Be at your best today.</p>
+            <p className={styles.contactText1}>Apply to gofer driver-partner</p>
 
             <ArenguForm id="157414686695086993" />
             <div className={styles.floatingLabel}>

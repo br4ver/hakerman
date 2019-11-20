@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import {Link} from 'gatsby'
+import scrollTo from "gatsby-plugin-smoothscroll"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -27,7 +27,7 @@ export default class AsNavFor extends Component {
 
   render() {
     return (
-      <div className={styled.scHolder}>
+      <div className={styled.scHolder} id="home-howitwork">
         <div
           className={styled.bgColor}
           data-aos="slide-right"
@@ -130,7 +130,15 @@ export default class AsNavFor extends Component {
               <div className="info-step1 card-1">
                 <h5>Step 1</h5>
                 <h3>Download the app</h3>
-                <p>Get the app on <Link to="/#home-download" className={styled.gPlay}>Google Play Store</Link> </p>
+                <p>
+                  Get the app on{" "}
+                  <button
+                    onClick={() => scrollTo("#home-download")}
+                    className={styled.gPlay}
+                  >
+                    Google Play Store
+                  </button>{" "}
+                </p>
               </div>
               <div className="info-step1 card-2">
                 <h5>Step 2</h5>

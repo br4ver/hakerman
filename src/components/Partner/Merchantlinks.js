@@ -1,7 +1,8 @@
 import React from 'react'
 import styles from "../../css/footer.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import { Link } from "gatsby"
+import scrollTo from "gatsby-plugin-smoothscroll"
+import {Link} from 'gatsby'
 const Merchantlinks = () => {
     return (
       <div className={styles.quickLinks}>
@@ -9,14 +10,20 @@ const Merchantlinks = () => {
           <div className={styles.footLinks}>
             <h6 className={styles.title}>Getting Started</h6>
             <div className={styles.links}>
-              <Link aria-label="footer-benefits" to="/merchant/#merchant-benefits">
+              <button
+                aria-label="footer-benefits"
+                onClick={() => scrollTo("#merchant-benefits")}
+              >
                 Benefits
-              </Link>
+              </button>
             </div>
             <div className={styles.links}>
-              <Link aria-label="footer-howitwork" to="/merchant/#merchant-sec">
+              <button
+                aria-label="footer-howitwork"
+                onClick={() => scrollTo("#merchant-sec")}
+              >
                 How it works
-              </Link>
+              </button>
             </div>
             <div className={styles.links}>
               <Link aria-label="footer-download" to="/#home-download">

@@ -2,7 +2,7 @@ import React from "react"
 import styles from "../../css/about.module.css"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { Link } from 'gatsby'
+import { Link } from "gatsby"
 const getAbout = graphql`
   query aboutImage {
     aboutImage: file(relativePath: { eq: "goferphone21.png" }) {
@@ -23,7 +23,7 @@ const getAbout = graphql`
 `
 
 const Download = () => {
-  const { aboutImage,gplayImage } = useStaticQuery(getAbout)
+  const { aboutImage, gplayImage } = useStaticQuery(getAbout)
   return (
     <section id="home-download" className={styles.dlHolder}>
       <div
@@ -63,9 +63,9 @@ const Download = () => {
         </div>
 
         <div className={styles.dlText}>
-          <h2>Select.</h2>
-          <h2>Order.</h2>
-          <h2>Eatwild.</h2>
+          <h2>Hungry?</h2>
+          <h2>Got tasks to do?</h2>
+          <h2>A minute is all you need.</h2>
           <Link
             to="/"
             id="download-btn"

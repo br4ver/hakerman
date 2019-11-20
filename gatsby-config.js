@@ -79,6 +79,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-arengu-forms`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,

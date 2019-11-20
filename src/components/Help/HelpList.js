@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import styles from "../../css/items.module.css"
 import Help from "./Help"
-import Title from "../Title"
 
 export default class HelpList extends Component {
   state = {
@@ -19,7 +18,6 @@ export default class HelpList extends Component {
   render() {
     return (
       <section className={styles.helpTours}>
-        <Title title="Getting" subtitle="Started" />
         <div className={styles.helpCenter}>
           {this.state.sortedHelps.map(({ node }) => {
             return <Help key={node.contentful_id} help={node} />

@@ -1,0 +1,23 @@
+.subs-body {
+  margin: 0;
+  background: linear-gradient(
+    0deg,
+    #00dbc7 -0.58%,
+    rgba(0, 219, 199, 0) 87.55%
+  );
+  display: flex;
+  justify-content: center;
+}
+.subs-card {
+  max-width: 1170px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.subs-card h2 {
+  font-size: 2em;
+  margin-bottom: 0;
+  color: #2f2478;
+}
