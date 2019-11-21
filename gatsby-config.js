@@ -1,7 +1,7 @@
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
-const website = require('./config/website')
+const website = require("./config/website")
 
 const pathPrefix = website.pathPrefix === "/" ? "" : website.pathPrefix
 
@@ -61,7 +61,7 @@ module.exports = {
       options: {
         spaceId: "1l3lduuea9n7",
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: "hFKtA1LUAXyhpt-9Ah65WaZzmSPiraAHeVE33FbgBuQ",
+        accessToken: "83JOG4QueXCHtdZ9XBmDgzbI0WO3sce3_ecYQ8PuKf0",
       },
     },
     {
