@@ -1,12 +1,11 @@
 import React from "react"
 import styles from "../../css/tour.module.css"
-import {Link} from "gatsby"
+import { Link } from "gatsby"
 import Img from "gatsby-image"
 
 const Help = ({ help }) => {
-  const { title, slug, images } = help
-  console.log(images);
-
+  const { title, slug, images, description } = help
+  console.log(images)
 
   return (
     <article className={styles.help}>
@@ -20,11 +19,7 @@ const Help = ({ help }) => {
         </div>
         <div className={styles.cardContent}>
           <h3>{title}</h3>
-          <p>
-            Blossom dorset heath scabious ipsum. Grape hyacinth bee balm bird of
-            paradise obedient plant african lily lily. Spring foxglove florist’s
-            nighmare primrose.
-          </p>
+          <p>{description}</p>
           <p>
             <Link to={`/help/${slug}`}>View All</Link>
           </p>

@@ -16,6 +16,7 @@ const getHelp = graphql`
           sort
           category
           slug
+          description
           images {
             fluid {
               ...GatsbyContentfulFluid_tracedSVG

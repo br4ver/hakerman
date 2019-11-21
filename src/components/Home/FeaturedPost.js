@@ -42,6 +42,16 @@ const FeaturedPost = () => {
         data-aos-duration="1100"
         data-aos-once="true"
       ></div>
+      <h4
+        className={styles.featureUpdate}
+        data-aos="fade-down"
+        data-aos-easing="ease-in-sine"
+        data-aos-anchor="#fp-trigger"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
+        Updates
+      </h4>
       <div className={styles.tours}>
         <div className={styles.rightFp}>
           <h3
@@ -61,9 +71,8 @@ const FeaturedPost = () => {
             data-aos-duration="1000"
             data-aos-once="true"
           >
-            Flexitarian biodiesel put a bird on it, YOLO poke aesthetic seitan
-            la croix microdosing whatever disrupt deep v keffiyeh post-ironic
-            kickstarter.
+            Have some fresh pick of updates from your favorite local food
+            delivery here in Dagupan City.
           </p>
           <div
             id="footer-legal"
@@ -86,16 +95,6 @@ const FeaturedPost = () => {
           </div>
         </div>
         <div className={styles.center}>
-          <h4
-            className={styles.featureUpdate}
-            data-aos="fade-down"
-            data-aos-easing="ease-in-sine"
-            data-aos-anchor="#fp-trigger"
-            data-aos-duration="1000"
-            data-aos-once="true"
-          >
-            Updates
-          </h4>
           {posts.map(({ node }) => {
             return <Post key={node.contentful_id} post={node} />
           })}

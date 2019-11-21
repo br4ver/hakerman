@@ -1,17 +1,15 @@
 import React from "react"
-import { graphql} from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import styles from "../css/template.module.css"
 import Day from "../components/SingleHelp/Day"
 import StyledHero from "../components/StyledHero"
 import HeroTitle from "../components/Home/superBanner"
 import HelpContact from "../components/Contact/helpContact"
+import Quicklinks from "../components/Home/Quicklinks"
+import Subscribe from "../components/Subscribe"
 const Template = ({ data }) => {
-  const {
-    title,
-    customer,
-  } = data.tour
-
+  const { title, customer } = data.tour
 
   return (
     <Layout>
@@ -42,35 +40,37 @@ const Template = ({ data }) => {
           </article>
         </div>
       </section>
+      <Subscribe />
+      <Quicklinks />
     </Layout>
   )
 }
 
 export const query = graphql`
-         query($slug: String!) {
-           tour: contentfulHelp(slug: { eq: $slug }) {
-             title
-             category
-             customer {
-               question
-               answer
-             }
-           }
-           customerBg: file(relativePath: { eq: "help.png" }) {
-             childImageSharp {
-               fluid(quality: 90, maxWidth: 4160) {
-                 ...GatsbyImageSharpFluid_withWebp
-               }
-             }
-           }
-           faqImage: file(relativePath: { eq: "goferphone.png" }) {
-             childImageSharp {
-               fluid(maxWidth: 800) {
-                 ...GatsbyImageSharpFluid_tracedSVG
-               }
-             }
-           }
-         }
-       `
+  query($slug: String!) {
+    tour: contentfulHelp(slug: { eq: $slug }) {
+      title
+      category
+      customer {
+        question
+        answer
+      }
+    }
+    customerBg: file(relativePath: { eq: "help.png" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 4160) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    faqImage: file(relativePath: { eq: "goferphone.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
+`
 
 export default Template

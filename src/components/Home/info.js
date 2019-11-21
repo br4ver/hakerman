@@ -142,13 +142,13 @@ export default class AsNavFor extends Component {
               </div>
               <div className="info-step1 card-2">
                 <h5>Step 2</h5>
-                <h3>Set your profile</h3>
-                <p>Complete your profile to start.</p>
+                <h3>Search your restaurant</h3>
+                <p>Select from various restaurants around the city.</p>
               </div>
               <div className="info-step1 card-3">
                 <h5>Step 3</h5>
-                <h3>Add to cart</h3>
-                <p>Select a meal and tap Add to cart</p>
+                <h3>Track your order</h3>
+                <p>Real-time tracking of your meal</p>
               </div>
               <div className="info-step1">
                 <h5>Step 4</h5>

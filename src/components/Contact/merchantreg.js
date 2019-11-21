@@ -16,8 +16,13 @@ const MerchantReg = () => {
               Be Our <span className={styles.contactSpace}>Partner</span>
             </h4>
             <p className={styles.contactText}>
-              Earn more by having your meals delivered straight to hungry
-              customers.
+              <span className={styles.highLight}>Extend</span> your restaurant.
+            </p>
+            <p className={styles.contactText}>
+              Be <span className={styles.highLight}>Exposed.</span>
+            </p>
+            <p className={styles.contactText1}>
+              <span className={styles.highLight}>Earn</span> more.
             </p>
 
             <ArenguForm id="157414509594544219" />

@@ -1,47 +1,16 @@
-import React from 'react'
-import Title from '../Title'
-import styles from '../../css/contact.module.css'
-
+import React from "react"
+import Title from "../Title"
+import styles from "../../css/contact.module.css"
+import { ArenguForm } from "gatsby-plugin-arengu-forms"
 const HelpContact = () => {
-    return (
-      <section className={styles.contact}>
-        <Title title="Have" subtitle="Questions?" />
-        <div className={styles.helpcenter}>
-          <form action="https://formspree.io/norbzqwerty@gmail.com" method="POST" className={styles.form} >
-            <div>
-              <label>Email</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                className={styles.formControl}
-                placeholder="JuanDelaCruz@Email.com"
-              />
-            </div>
-            <div>
-              <label>Question</label>
-              <textarea
-                name="message"
-                id="message"
-                rows="10"
-                className={styles.formControl}
-                placeholder="How can i..."
-              />
-            </div>
-            <div>
- 
-              <input
-                type="submit"
-                value="Submit here"
-                className={styles.btnPrimary}
-                id="faq-submit-btn"
-              />
-
-            </div>
-          </form>
-        </div>
-      </section>
-    )
+  return (
+    <section className={styles.contact2}>
+      <div className={styles.helpcenter}>
+        <h4>Have Questions?</h4>
+        <ArenguForm id="157432225128445589" />
+      </div>
+    </section>
+  )
 }
 
 export default HelpContact

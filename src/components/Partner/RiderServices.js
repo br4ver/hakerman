@@ -27,63 +27,62 @@ const RiderServices = () => {
         ...riderImage
       }
     }
-  `) 
-    return (
-      <section id="rider-benefits" className={styles.services}>
-        <Aosinit />
-        <Title title="Why Partner" subtitle="With Us " />
-        <div>
-          <div className={styles.center}>
-            <article
-              className={styles.service}
-              data-aos="fade-right"
-              data-aos-duration="2000"
-            >
-              <div className={styles.imgCont}>
-                <Img
-                  loading="lazy"
-                  fluid={data.image1.childImageSharp.fluid}
-                  alt="about image"
-                />
-              </div>
-              <h4>Work Whenever, Wherever</h4>
-              <p>Work for your goals.</p>
-            </article>
-            <article
-              className={styles.service}
-              data-aos="fade-down"
-              data-aos-duration="2500"
-            >
-              <div className={styles.imgCont}>
-                <Img
-                  loading="lazy"
-                  fluid={data.image2.childImageSharp.fluid}
-                  alt="about image"
-                />
-              </div>
-              <h4>Earn for your goals.</h4>
-              <p>Earn for your goals by partnering with us.</p>
-            </article>
-            <article
-              className={styles.service}
-              data-aos="fade-left"
-              data-aos-duration="2500"
-            >
-              <div className={styles.imgCont}>
-                <Img
-                  loading="lazy"
-                  fluid={data.image3.childImageSharp.fluid}
-                  alt="about image"
-                />
-              </div>
-              <h4>We value your safety</h4>
-              <p>Safety training and Insurance coverage during your booking.</p>
-            </article>
-          </div>
+  `)
+  return (
+    <section id="rider-benefits" className={styles.services}>
+      <Aosinit />
+      <Title title="Why Partner" subtitle="With Us " />
+      <div>
+        <div className={styles.center}>
+          <article
+            className={styles.service}
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <div className={styles.imgCont}>
+              <Img
+                loading="lazy"
+                fluid={data.image1.childImageSharp.fluid}
+                alt="about image"
+              />
+            </div>
+            <h4>Work Whenever, Wherever</h4>
+            <p>Work for your goals.</p>
+          </article>
+          <article
+            className={styles.service}
+            data-aos="fade-down"
+            data-aos-duration="2500"
+          >
+            <div className={styles.imgCont}>
+              <Img
+                loading="lazy"
+                fluid={data.image2.childImageSharp.fluid}
+                alt="about image"
+              />
+            </div>
+            <h4>Earn for your goals.</h4>
+            <p>Have your dreams within your reach by partnering with us</p>
+          </article>
+          <article
+            className={styles.service}
+            data-aos="fade-left"
+            data-aos-duration="2500"
+          >
+            <div className={styles.imgCont}>
+              <Img
+                loading="lazy"
+                fluid={data.image3.childImageSharp.fluid}
+                alt="about image"
+              />
+            </div>
+            <h4>We value your safety</h4>
+            <p>Safety training and Insurance coverage during your booking.</p>
+          </article>
         </div>
-      </section>
-    )
-  }
-
+      </div>
+    </section>
+  )
+}
 
 export default RiderServices

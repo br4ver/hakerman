@@ -1,13 +1,20 @@
 .contact {
   padding: 0 0;
 }
+.contact2 {
+  padding-top: 27%;
+}
 .center {
   width: 80vw;
   margin: 0 auto;
   align-content: center;
 }
 .helpcenter {
+  border: 1px solid rgb(99, 184, 246);
+  border-radius: 5px;
+  padding: 15px 15px 0px 15px;
   margin: 0 auto;
+  background-color: rgb(245, 252, 255);
 }
 @media screen and (max-width: 700px) {
   .helpcenter {
@@ -78,7 +85,7 @@
 }
 
 .contact-title {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
   color: #000;
   opacity: 0.85;
@@ -106,24 +113,25 @@ label {
   color: rgba(#000, 1);
   font-weight: 700;
 }
+.high-light {
+  color: #00dbc7;
+  font-family: "gilroy-extrabold";
+}
 .contact-text {
   line-height: 155%;
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 16px;
   color: #000;
-  opacity: 0.65;
-  font-weight: 400;
-  max-width: 200px;
+  letter-spacing: 3px;
 }
 .contact-text1 {
   line-height: 155%;
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 16px;
   color: #000;
-  opacity: 0.65;
   font-weight: 400;
-  max-width: 200px;
   margin-bottom: 40px;
+  letter-spacing: 3px;
 }
 
 a.discrete {
@@ -343,7 +351,7 @@ input:focus {
   }
   .contact-login {
     width: 80vw;
-    padding: 2em 2em 1em;
+    padding: 2em 1em 1em;
   }
 }
 

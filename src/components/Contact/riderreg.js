@@ -20,8 +20,9 @@ const RiderReg = () => {
             <h4 className={styles.contactTitle}>
               Become a <span className={styles.contactSpace}>Partner</span>
             </h4>
-            <p className={styles.contactText}>Be at your best today.</p>
-            <p className={styles.contactText1}>Apply to gofer driver-partner</p>
+            <p className={styles.contactText1}>
+              Be a gofer driver-partner today!
+            </p>
 
             <ArenguForm id="157414686695086993" />
             <div className={styles.floatingLabel}>
