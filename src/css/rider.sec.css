@@ -138,6 +138,9 @@
   .riderservice {
     height: 100vh;
   }
+  .card2 {
+    width: 260px;
+  }
 }
 
 @keyframes LineFadeIn {
