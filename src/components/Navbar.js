@@ -4,7 +4,6 @@ import styles from "../css/navbar.module.css"
 import { FaBars, FaChevronDown } from "react-icons/fa"
 import logo from "../images/gofer1.webp"
 
-
 const Navbar = () => {
   const [isOpen, setNav] = useState()
   const toggleNav = () => {
@@ -15,7 +14,7 @@ const Navbar = () => {
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
           <AniLink aria-label="link-gofer" fade to="/" id="navlink-logo">
-            <img className={styles.goferlogo} src={logo} alt="gofer logo"/>
+            <img className={styles.goferlogo} src={logo} alt="gofer logo" />
           </AniLink>
           <button
             aria-label="button"
@@ -42,13 +41,23 @@ const Navbar = () => {
             <div className={styles.down}>
               <p className={styles.navp}>
                 Become a Partner
-                <FaChevronDown className={styles.chev}/>
+                <FaChevronDown className={styles.chev} />
               </p>
               <div className={styles.SoccerContent}>
-                <AniLink aria-label="link-rider" id="navlink-rider" fade to="/rider">
-                  Rider
+                <AniLink
+                  aria-label="link-rider"
+                  id="navlink-rider"
+                  fade
+                  to="/rider"
+                >
+                  Driver
                 </AniLink>
-                <AniLink aria-label="link-merchant" id="navlink-merchant" fade to="/merchant">
+                <AniLink
+                  aria-label="link-merchant"
+                  id="navlink-merchant"
+                  fade
+                  to="/merchant"
+                >
                   Merchant
                 </AniLink>
               </div>
@@ -56,7 +65,12 @@ const Navbar = () => {
           </div>
 
           <div>
-            <AniLink aria-label="link-about" fade to="/about" id="navlink-about">
+            <AniLink
+              aria-label="link-about"
+              fade
+              to="/about"
+              id="navlink-about"
+            >
               About Us
             </AniLink>
           </div>

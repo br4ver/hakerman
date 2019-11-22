@@ -3,19 +3,18 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import "../../css/rider.sec.css"
-import {Link} from 'gatsby'
-import Riderimg1 from '../../images/help1.png'
+import { Link } from "gatsby"
+import Riderimg1 from "../../images/hiwd1.png"
 import Riderimg2 from "../../images/help2.png"
 import Riderimg3 from "../../images/help3.png"
 import Riderimg4 from "../../images/help4.png"
 
 class RiderSec extends React.Component {
-
   render() {
     const settings = {
       dots: true,
       infinite: true,
-      lazyload:true,
+      lazyload: true,
       speed: 500,
       autoplay: true,
       arrows: true,
@@ -37,84 +36,72 @@ class RiderSec extends React.Component {
         <Slider ref={slider => (this.slider = slider)} {...settings}>
           <div>
             <div className="container">
-              <div className="card">
-                <div className="cardimage-container">
+              <div className="card2">
+                <div className="cardimage-container2">
                   <img
                     loading="lazy"
-                    className="cardimage"
+                    className="cardimage2"
                     src={Riderimg1}
                     alt="Step 1"
                   />
                 </div>
-                <div className="cardcontent">
-                  <h4>Step 1</h4>
-                  <h2 className="cardtitle">Fill up the form</h2>
-                  <button type="Button" className="btn-merchant">
-                    <Link
-                      aria-label="link-rider-registration"
-                      to="/rider/#rider-registration"
-                      className="txbtn"
-                      id="link-rform"
-                    >
-                      Sign Up
-                    </Link>
-                  </button>
+                <div className="cardcontent2">
+                  <h5>Step 1</h5>
+                  <h2 className="cardtitle">Log In</h2>
                 </div>
               </div>
             </div>
           </div>
           <div>
             <div className="container">
-              <div className="card">
-                <div className="cardimage-container">
+              <div className="card2">
+                <div className="cardimage-container2">
                   <img
                     loading="lazy"
-                    className="cardimage"
+                    className="cardimage2"
                     src={Riderimg2}
                     alt="Step 2"
                   />
                 </div>
-                <div className="cardcontent">
-                  <h4>Step 2</h4>
-                  <h2 className="cardtitle">Click Submit</h2>
+                <div className="cardcontent2">
+                  <h5>Step 2</h5>
+                  <h2 className="cardtitle">Be available</h2>
                 </div>
               </div>
             </div>
           </div>
           <div>
             <div className="container">
-              <div className="card">
-                <div className="cardimage-container">
+              <div className="card2">
+                <div className="cardimage-container2">
                   <img
                     loading="lazy"
-                    className="cardimage"
+                    className="cardimage2"
                     src={Riderimg3}
                     alt="Step 3"
                   />
                 </div>
-                <div className="cardcontent">
-                  <h4>Step 3</h4>
-                  <h2 className="cardtitle">Prepare the listed requirements</h2>
+                <div className="cardcontent2">
+                  <h5>Step 3</h5>
+                  <h2 className="cardtitle">Accept order</h2>
                 </div>
               </div>
             </div>
           </div>
           <div>
             <div className="container">
-              <div className="card">
-                <div className="cardimage-container">
+              <div className="card2">
+                <div className="cardimage-container2">
                   <img
                     loading="lazy"
-                    className="cardimage"
+                    className="cardimage2"
                     src={Riderimg4}
                     alt="Step 4"
                   />
                 </div>
-                <div className="cardcontent">
-                  <h4>Step 4</h4>
-                  <h2 className="cardtitle">
-                    Wait for the representative to contact you
-                  </h2>
+                <div className="cardcontent2">
+                  <h5>Step 4</h5>
+                  <h2 className="cardtitle">End transaction</h2>
                 </div>
               </div>
             </div>

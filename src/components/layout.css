@@ -84,7 +84,7 @@ h6 {
   font-size: 0.8rem;
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
-  border: 1.5px solid #ffffff;
+  border: 1.5px solid var(--primaryColor);
   padding: 0.4rem 0.7rem;
   display: inline-block;
   transition: var(--mainTransition);
@@ -276,7 +276,7 @@ main {
 }
 .slider-box {
   max-width: 500px;
-  width: 350px;
+  width: 325px;
   height: 100%;
   position: relative;
   outline: none;
@@ -307,6 +307,9 @@ main {
 .slider-box2 .slick-current {
   color: #00dbc7;
 }
+.slick-current .info-step1 {
+  border-left: 10px solid #ff0076;
+}
 .slick-current p {
   display: inline;
 }
@@ -334,6 +337,7 @@ main {
   padding: 14px 80px 18px 36px;
   cursor: pointer;
   margin-bottom: 1em;
+  border-left: 10px solid #00dbc7;
 }
 
 .info-step1 h3 {
