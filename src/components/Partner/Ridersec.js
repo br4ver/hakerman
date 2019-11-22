@@ -3,11 +3,10 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import "../../css/rider.sec.css"
-import { Link } from "gatsby"
 import Riderimg1 from "../../images/hiwd1.png"
-import Riderimg2 from "../../images/help2.png"
-import Riderimg3 from "../../images/help3.png"
-import Riderimg4 from "../../images/help4.png"
+import Riderimg2 from "../../images/hiwd2.png"
+import Riderimg3 from "../../images/hiwd3.png"
+import Riderimg4 from "../../images/hiwd4.png"
 
 class RiderSec extends React.Component {
   render() {

@@ -71,8 +71,8 @@ const FeaturedPost = () => {
             data-aos-duration="1000"
             data-aos-once="true"
           >
-            Have some fresh pick of updates from your favorite local food
-            delivery here in Dagupan City.
+            Have some fresh pick of updates from your favorite local online
+            mobile food delivery here in Dagupan City.
           </p>
           <div
             id="footer-legal"
