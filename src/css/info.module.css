@@ -1,21 +1,21 @@
-.center-download{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-      align-items: center;
+.center-download {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
-.left-download{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    text-align: left;
-    height: 70vh;
-    margin-block-start: 3em;
+.left-download {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: left;
+  height: 70vh;
+  margin-block-start: 3em;
 }
-.bg-color{
+.bg-color {
   position: absolute;
-  height: 550px;
+  height: 500px;
   width: 85vw;
   border-radius: 0px 50px 50px 0px;
   background-color: var(--primaryColor);
@@ -24,61 +24,61 @@
   top: 10%;
   z-index: -2;
 }
-.hiw-text{
+.hiw-text {
   top: 0;
   left: 2%;
   font-size: 3em;
   position: absolute;
-  color: rgba(46,46, 46, 0.08);
+  color: rgba(46, 46, 46, 0.08);
 }
-.sc-holder{
+.sc-holder {
   position: relative;
 }
-.right-download{
-    flex-flow: row wrap;
-    width: 55%;
-    text-align: center;
-    margin: auto;
-      align-items: center;
+.right-download {
+  flex-flow: row wrap;
+  width: 55%;
+  text-align: center;
+  margin: auto;
+  align-items: center;
   justify-content: center;
 }
-.left-download .home1{
+.left-download .home1 {
   height: 70vh;
   object-fit: cover;
 }
-.txt-bg{
+.txt-bg {
   position: relative;
 }
-.info-txt{
+.info-txt {
   position: absolute;
   text-align: center;
-  right:40%;
+  right: 40%;
   top: 40%;
   z-index: 1;
-    animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 2s ease-in-out;
 }
-.g-play{
+.g-play {
   color: #00dbc7;
   border: none;
   background: none;
 }
-@keyframes fadeIn{
+@keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
-@media screen and (min-width: 768px){
-  .bg-color{
-  height: 550px;
-  width: 50vw;
-}
-.hiw-text{
-  top: -8%;
-  left: 25%;
-  font-size: 7em;
-}
+@media screen and (min-width: 768px) {
+  .bg-color {
+    height: 550px;
+    width: 50vw;
+  }
+  .hiw-text {
+    top: -8%;
+    left: 25%;
+    font-size: 7em;
+  }
 }

@@ -1,5 +1,4 @@
 import React from "react"
-import Title from "../Title"
 import styles from "../../css/contact.module.css"
 import { ArenguForm } from "gatsby-plugin-arengu-forms"
 const HelpContact = () => {

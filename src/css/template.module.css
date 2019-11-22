@@ -6,7 +6,7 @@
   margin: 0 auto;
 }
 .help-img {
-  margin: 1rem 0;
+  margin-top: 2rem;
   position: relative;
 }
 .help-info {
@@ -17,10 +17,10 @@
   width: 100%;
   display: block;
 }
-.contacthelp{
+.contacthelp {
   height: 4rem;
 }
-.left{
+.left {
   width: 40vw;
   margin: auto;
 }
@@ -64,7 +64,12 @@
   margin: 2rem 0;
 }
 .journey {
-  margin: 3rem 0;
+  margin: 0;
+  border: 1px solid rgb(217, 186, 232);
+  border-radius: 5px;
+  padding: 35px 15px 0px 15px;
+  margin: 0 auto;
+  background-color: rgb(252, 250, 255);
 }
 @media screen and (min-width: 768px) {
   .help-center {
@@ -75,19 +80,18 @@
     margin-top: 3rem;
     text-align: left;
   }
-
 }
 @media screen and (min-width: 992px) {
   .journey,
   .desc {
-    width: 70vw;
+    width: 40vw;
   }
 }
 @media screen and (min-width: 1200px) {
   .center {
     width: 40vw;
   }
-  .left{
+  .left {
     width: 40vw;
   }
   .images {
@@ -95,8 +99,8 @@
     grid-column-gap: 50px;
   }
 }
-@media screen and (max-width: 700px){
-  .help-img{
+@media screen and (max-width: 700px) {
+  .help-img {
     padding: none;
   }
 }

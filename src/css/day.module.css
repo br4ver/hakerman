@@ -1,11 +1,12 @@
 .day {
-  margin: 2rem 0;
-  border: 1px solid var(--mainGrey);
+  margin-bottom: 2rem;
+  border: 1px solid rgb(217, 186, 232);
   padding: 0.9rem 1.6rem;
   border-radius: 10px;
   max-width: 40vw;
   display: flex;
   flex-wrap: wrap;
+  background-color: #ffffff;
 }
 .day h4 {
   display: flex;

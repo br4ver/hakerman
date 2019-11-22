@@ -14,13 +14,12 @@ const Template = ({ data }) => {
   return (
     <Layout>
       <StyledHero img={data.customerBg.childImageSharp.fluid}>
-        <HeroTitle text="Frequently Asked Questions" />
+        <HeroTitle text={title} />
       </StyledHero>
       <section className={styles.template}>
         <div className={styles.helpCenter}>
           <article className={styles.helpInfo}>
             <div className={styles.center}>
-              <h2>{title}</h2>
               <div className={styles.info}></div>
               <div className={styles.journey}>
                 {customer.map((item, index) => {
