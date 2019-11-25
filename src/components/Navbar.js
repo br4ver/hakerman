@@ -3,7 +3,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import styles from "../css/navbar.module.css"
 import { FaBars, FaChevronDown } from "react-icons/fa"
 import logo from "../images/gofer1.webp"
-
+import DarkModeToggle from "./DarkModeToggle"
 const Navbar = () => {
   const [isOpen, setNav] = useState()
   const toggleNav = () => {
@@ -63,7 +63,6 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-
           <div>
             <AniLink
               aria-label="link-about"
@@ -86,6 +85,7 @@ const Navbar = () => {
             </AniLink>
           </div>
         </div>
+        <DarkModeToggle />
       </div>
     </nav>
   )

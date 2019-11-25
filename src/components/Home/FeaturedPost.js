@@ -36,14 +36,14 @@ const FeaturedPost = () => {
   return (
     <section id="home-featurepost" className={styles.fpHolder}>
       <div
-        className={styles.bgColor}
+        className="blog-bgcolor"
         data-aos="slide-right"
         data-aos-offset="200"
         data-aos-duration="1100"
         data-aos-once="true"
       ></div>
       <h4
-        className={styles.featureUpdate}
+        className="feature-update"
         data-aos="fade-down"
         data-aos-easing="ease-in-sine"
         data-aos-anchor="#fp-trigger"
@@ -55,7 +55,7 @@ const FeaturedPost = () => {
       <div className={styles.tours}>
         <div className={styles.rightFp}>
           <h3
-            className={styles.titleFp}
+            className="title-fp"
             data-aos="fade-in"
             data-aos-offset="100"
             data-aos-delay="500"
@@ -76,7 +76,7 @@ const FeaturedPost = () => {
           </p>
           <div
             id="footer-legal"
-            className={styles.linkFp}
+            className="link-fp"
             data-aos="fade-in"
             data-aos-offset="150"
             data-aos-delay="300"
@@ -88,7 +88,7 @@ const FeaturedPost = () => {
               fade
               to="/blogs"
               id="all-post-link"
-              className={styles.btnRead}
+              className="btnread-fp"
             >
               All Posts <span>&rarr;</span>
             </AniLink>

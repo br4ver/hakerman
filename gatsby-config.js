@@ -78,6 +78,15 @@ module.exports = {
         pathToConfigModule: "config/typography.js",
       },
     },
+    {
+      resolve: "gatsby-plugin-use-dark-mode",
+      options: {
+        classNameDark: "dark-mode",
+        classNameLight: "light-mode",
+        storageKey: "darkMode",
+        minify: true,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-arengu-forms`,

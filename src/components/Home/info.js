@@ -29,14 +29,14 @@ export default class AsNavFor extends Component {
     return (
       <div className={styled.scHolder} id="home-howitwork">
         <div
-          className={styled.bgColor}
+          className="hiw-bgcolor"
           data-aos="slide-right"
           data-aos-offset="100"
           data-aos-duration="1100"
           data-aos-once="true"
         ></div>
         <h4
-          className={styled.hiwText}
+          className="hiw-text"
           data-aos="fade-down"
           data-aos-easing="ease-in-sine"
           data-aos-duration="1000"

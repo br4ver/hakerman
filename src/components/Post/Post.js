@@ -40,16 +40,18 @@ const Post = ({ post }) => {
       id="fp-trigger"
       data-aos-once="true"
     >
-      <div className={styles.footer}>
-        <div className={styles.info}>              
-        <h3>{title}</h3>
-          <h6 className={styles.tag}>Featured</h6>   
-         <AniLink
-          aria-label="link-singlepost"
-          fade
-          className={styles.stretchedLinks}
-          to={`/blog/${slug}`}
-        >Read More</AniLink>
+      <div className="container-footer">
+        <div className={styles.info}>
+          <h3>{title}</h3>
+          <h6 className={styles.tag}>Featured</h6>
+          <AniLink
+            aria-label="link-singlepost"
+            fade
+            className="stretched-links"
+            to={`/blog/${slug}`}
+          >
+            Read More
+          </AniLink>
 
           <div className={styles.details}></div>
         </div>

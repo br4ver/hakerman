@@ -1,5 +1,6 @@
 .contact {
   padding: 0 0;
+  margin: auto;
 }
 
 .center {
@@ -72,20 +73,9 @@
   color: var(--primaryColor);
 }
 
-.contact-body {
-  width: auto;
-  margin: 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: #f3f2f2;
-}
-
 .contact-title {
   font-size: 28px;
   font-weight: 600;
-  color: #000;
   opacity: 0.85;
 }
 label {
@@ -96,19 +86,18 @@ label {
 }
 .contact-login {
   padding: 40px 30px;
-  background: #fefefe;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-bottom: 20px;
   width: 565px;
+  color: #000;
 }
-.contact-login .contact-title {
-  margin-bottom: 20px;
-  color: rgba(#000, 0.5);
+body.dark-mode .contact-login {
+  color: #fff;
 }
+
 .contact-login .contact-space {
-  color: rgba(#000, 1);
   font-weight: 700;
 }
 .high-light {
@@ -119,14 +108,12 @@ label {
   line-height: 155%;
   margin-bottom: 5px;
   font-size: 16px;
-  color: #000;
   letter-spacing: 3px;
 }
 .contact-text1 {
   line-height: 155%;
   margin-bottom: 5px;
   font-size: 16px;
-  color: #000;
   font-weight: 400;
   margin-bottom: 40px;
   letter-spacing: 3px;
@@ -322,10 +309,12 @@ input:focus {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: #fff;
+  background-color: #fff;
   max-width: 80vw;
   margin: 80px 0;
-  border-radius: 20px;
+}
+body.dark-mode .contact-session {
+  background-color: #2e2e2e;
 }
 .contact-left {
   width: 300px;
@@ -335,8 +324,6 @@ input:focus {
   position: relative;
   background-image: url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-size: cover;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
 }
 @media (max-width: 790px) {
   .floating-label .info-icon {

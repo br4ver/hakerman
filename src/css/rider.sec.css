@@ -28,6 +28,7 @@
   margin: 2rem;
   text-align: center;
 }
+
 .card2 {
   position: relative;
   width: 300px;
@@ -40,6 +41,31 @@
   margin: 2rem;
   text-align: center;
   margin-top: 5em;
+}
+body.dark-mode .card2 {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  border-radius: 19px;
+  padding: 2rem;
+  color: #aaa;
+  overflow: visible;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+  margin: 2rem;
+  text-align: center;
+  margin-top: 5em;
+  background-color: #2e2e2e;
+}
+.session {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fff;
+  max-width: 80vw;
+  margin: 80px 0;
+}
+body.dark-mode .session {
+  background-color: #2e2e2e;
 }
 
 .cardimage-container {

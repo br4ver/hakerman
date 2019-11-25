@@ -1,5 +1,4 @@
 .services {
-  background: var(--mainWhite);
   padding: 4rem 0;
 }
 .center {
@@ -20,19 +19,17 @@
   width: 300px;
 }
 .service span {
-
   padding: 0.5rem;
   display: inline-block;
   font-size: 2rem;
   margin-bottom: 1.5rem;
-
 }
-.img-cont{
+.img-cont {
   width: 150px;
   align-items: center;
   margin-bottom: 1em;
 }
-.img-cont img{
+.img-cont img {
   width: 150px;
 }
 .service h4 {

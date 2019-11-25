@@ -13,24 +13,7 @@
   height: 70vh;
   margin-block-start: 3em;
 }
-.bg-color {
-  position: absolute;
-  height: 500px;
-  width: 85vw;
-  border-radius: 0px 50px 50px 0px;
-  background-color: var(--primaryColor);
-  background-color: #00dbc7;
-  left: 0;
-  top: 10%;
-  z-index: -2;
-}
-.hiw-text {
-  top: 0;
-  left: 2%;
-  font-size: 3em;
-  position: absolute;
-  color: rgba(46, 46, 46, 0.08);
-}
+
 .sc-holder {
   position: relative;
 }
@@ -68,17 +51,5 @@
   }
   100% {
     opacity: 1;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .bg-color {
-    height: 550px;
-    width: 50vw;
-  }
-  .hiw-text {
-    top: -8%;
-    left: 25%;
-    font-size: 7em;
   }
 }

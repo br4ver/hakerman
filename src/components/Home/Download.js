@@ -27,7 +27,7 @@ const Download = () => {
   return (
     <section id="home-download" className={styles.dlHolder}>
       <div
-        className={styles.bgColor}
+        className="dl-bgcolor"
         data-aos="slide-left"
         data-aos-offset="100"
         data-aos-duration="1100"
@@ -35,7 +35,7 @@ const Download = () => {
       ></div>
       <div className={styles.aboutCenter}>
         <h4
-          className={styles.downLoad}
+          className="down-load"
           data-aos="fade-down"
           data-aos-easing="ease-in-sine"
           data-aos-duration="1000"

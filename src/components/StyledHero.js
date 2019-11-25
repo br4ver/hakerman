@@ -24,9 +24,7 @@ const StyledHero = ({ img, className, children, home }) => {
       home={home}
     >
       {children}
-    </BackgroundImage> 
-
-
+    </BackgroundImage>
   )
 }
 
