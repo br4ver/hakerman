@@ -8,15 +8,14 @@ if (typeof window !== "undefined") {
   require("smooth-scroll")('a[href*="#"]')
 }
 
-const Layout = ({children}) => {
- 
-    return (
-        <main>
-            <Navbar/>
-            {children}
-            <Footer/>
-        </main>
-    )
+const Layout = ({ children }) => {
+  return (
+    <main>
+      <Navbar />
+      {children}
+      <Footer />
+    </main>
+  )
 }
 
 export default Layout

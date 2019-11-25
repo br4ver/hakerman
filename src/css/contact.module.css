@@ -339,6 +339,9 @@ input:focus {
   border-bottom-left-radius: 4px;
 }
 @media (max-width: 790px) {
+  .floating-label .info-icon {
+    right: 35%;
+  }
   .contact-left {
     width: 100%;
   }
