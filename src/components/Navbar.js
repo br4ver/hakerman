@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import styles from "../css/navbar.module.css"
 import { FaBars, FaChevronDown } from "react-icons/fa"
-import logo from "../images/gofer1.webp"
 import DarkModeToggle from "./DarkModeToggle"
 const Navbar = () => {
   const [isOpen, setNav] = useState()
@@ -10,12 +9,18 @@ const Navbar = () => {
     setNav(isOpen => !isOpen)
   }
   return (
-    <nav className={styles.navbar}>
+    <nav className="navbar">
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <AniLink aria-label="link-gofer" fade to="/" id="navlink-logo">
-            <img className={styles.goferlogo} src={logo} alt="gofer logo" />
-          </AniLink>
+          <div className="navlogo">
+            <AniLink
+              aria-label="link-gofer"
+              fade
+              to="/"
+              id="navlink-logo"
+            ></AniLink>
+          </div>
+
           <button
             aria-label="button"
             type="button"
@@ -38,12 +43,12 @@ const Navbar = () => {
             </AniLink>
           </div>
           <div>
-            <div className={styles.down}>
+            <div className="down">
               <p className={styles.navp}>
                 Become a Partner
                 <FaChevronDown className={styles.chev} />
               </p>
-              <div className={styles.SoccerContent}>
+              <div className="Soccer-content">
                 <AniLink
                   aria-label="link-rider"
                   id="navlink-rider"

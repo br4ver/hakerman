@@ -8,13 +8,7 @@
   margin: 0 auto;
   align-content: center;
 }
-.helpcenter {
-  border: 1px solid rgb(99, 184, 246);
-  border-radius: 5px;
-  padding: 15px 15px 0px 15px;
-  margin: 0 auto;
-  background-color: rgb(245, 252, 255);
-}
+
 @media screen and (max-width: 700px) {
   .helpcenter {
     width: 100%;
@@ -78,6 +72,9 @@
   font-weight: 600;
   opacity: 0.85;
 }
+body.dark-mode .contact-title {
+  color: #fff;
+}
 label {
   font-size: 12.5px;
   color: #000;
@@ -109,6 +106,10 @@ body.dark-mode .contact-login {
   margin-bottom: 5px;
   font-size: 16px;
   letter-spacing: 3px;
+  color: #000;
+}
+body.dark-mode .contact-text {
+  color: #fff;
 }
 .contact-text1 {
   line-height: 155%;
@@ -117,8 +118,11 @@ body.dark-mode .contact-login {
   font-weight: 400;
   margin-bottom: 40px;
   letter-spacing: 3px;
+  color: #000;
 }
-
+body.dark-mode .contact-text1 {
+  color: #fff;
+}
 a.discrete {
   color: rgba(#000, 0.4);
   font-size: 14px;
@@ -322,7 +326,18 @@ body.dark-mode .contact-session {
   min-height: 100%;
   flex: 0 0 auto;
   position: relative;
-  background-image: url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url("../images/4352.jpg");
+  background-position: left -90px bottom 0px;
+  background-size: cover;
+}
+.contact-left2 {
+  width: 300px;
+  height: auto;
+  min-height: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  background-image: url("../images/4353.jpg");
+  background-position: left 30% bottom 0px;
   background-size: cover;
 }
 @media (max-width: 790px) {
@@ -336,10 +351,6 @@ body.dark-mode .contact-session {
     flex-direction: column;
     margin-top: 50px;
     margin-bottom: 50px;
-  }
-  .contact-login {
-    width: 80vw;
-    padding: 2em 1em 1em;
   }
 }
 

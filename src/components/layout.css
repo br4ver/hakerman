@@ -17,7 +17,8 @@
   --primaryColor: #00dbc7;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
-  --mainBlack: #2e2e2e;
+  --mainBlack: #333335;
+  --bgBlack: #1a1919;
   --mainGrey: #ececec;
   --darkGrey: #cfcfcf;
   --goferBlue: #2f2478;
@@ -47,7 +48,7 @@ body.light-mode {
 }
 body.dark-mode {
   background-color: #1a1919;
-  color: #999;
+  color: #fefefe;
   line-height: 1.4;
   font-size: 1rem;
 }
@@ -63,6 +64,84 @@ h6 {
   margin-bottom: 1.25rem;
   letter-spacing: var(--mainSpacing);
   text-shadow: 13px 13px 30px -9px rgba(0, 0, 0, 0.63);
+}
+
+.navbar {
+  padding: 0 2rem;
+  background-color: var(--primaryColor);
+}
+body.dark-mode .navbar {
+  padding: 0 2rem;
+  background-color: var(--mainBlack);
+}
+
+@media screen and (min-width: 990px) {
+  li a,
+  .dropbtn {
+    display: inline-block;
+    color: var(--primaryColor);
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover,
+  .down:hover .dropbtn {
+    background-color: var(--primaryColor);
+  }
+
+  li.down {
+    display: inline-block;
+  }
+
+  .Soccer-content {
+    display: none;
+    position: fixed;
+    background-color: var(--primaryColor);
+    min-width: 160px;
+    z-index: 1;
+  }
+  body.dark-mode .Soccer-content {
+    background-color: var(--mainBlack);
+  }
+  .Soccer-content a {
+    color: var(--mainWhite);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .down:hover .Soccer-content {
+    display: block;
+  }
+}
+
+.navlogo {
+  background-image: url("../images/gofer1.webp");
+  width: 140px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body.dark-mode .navlogo {
+  background-image: url("../images/gofer2.webp");
+}
+/*footer*/
+.quick-links {
+  background-color: var(--primaryColor);
+  width: 100vw;
+}
+body.dark-mode .quick-links {
+  background-color: var(--bgBlack);
+}
+.footer {
+  margin-top: auto;
+  background: var(--primaryColor);
+  padding: 2rem;
+  color: var(--mainWhite);
+}
+body.dark-mode .footer {
+  background-color: var(--bgBlack);
 }
 /*dark mode*/
 .dark-mode-toggle {
@@ -324,9 +403,21 @@ main {
 .af-step-step-JMB4 .af-step-button {
   margin: 0 15px;
 }
+body.dark-mode .af-field-label label {
+  color: #fff;
+}
+.af-legal-required a {
+  color: var(--primaryColor);
+}
+.af-legal label {
+  margin-top: 20px;
+}
+body.dark-mode .af-legal label {
+  color: #f7f7f7;
+}
 @media screen and (min-width: 700px) {
   .af-step-step-JMB4 .af-field-legal {
-    left: 91px;
+    left: 130px;
   }
   .af-step-step-JMB4 .af-field {
     width: 500px;
@@ -367,7 +458,7 @@ main {
 .slider-box2 p {
   display: none;
   margin-bottom: 0;
-  color: #2e2e2e;
+  color: #333335;
 }
 
 .slider-box2 .slick-list {
@@ -518,7 +609,7 @@ body.dark-mode .info-step1 h3 {
   z-index: -2;
 }
 body.dark-mode .hiw-bgcolor {
-  background-color: #2e2e2e;
+  background-color: #333335;
 }
 .hiw-text {
   top: 0;
@@ -543,7 +634,7 @@ body.dark-mode .hiw-text {
   z-index: -2;
 }
 body.dark-mode .dl-bgcolor {
-  background-color: #2e2e2e;
+  background-color: #333335;
 }
 .down-load {
   top: 35px;
@@ -616,7 +707,7 @@ body.dark-mode .stretched-links {
   margin-right: 2rem;
 }
 body.dark-mode .blog-bgcolor {
-  background-color: #2e2e2e;
+  background-color: #333335;
 }
 .feature-update {
   top: 23%;
@@ -641,7 +732,7 @@ body.dark-mode .feature-update {
   text-align: center;
 }
 body.dark-mode .container-footer {
-  background: #2e2e2e;
+  background: #333335;
 }
 .container-footer h3 {
   margin-top: 0;
@@ -652,6 +743,116 @@ body.dark-mode .container-footer h3 {
 }
 
 /*rider*/
+.contact-login {
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  width: 565px;
+  color: #000;
+  width: 80vw;
+  padding: 2em 1em 1em;
+}
+body.dark-mode .contact-login h4 {
+  color: #fff;
+}
+body.dark-mode .contact-login p {
+  color: #fff;
+}
+.contact-login .contact-space {
+  font-weight: 700;
+}
+/*help*/
+.help-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  max-width: 80vw;
+  max-width: 80vw;
+  margin-bottom: 10vh;
+  border-radius: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+body.dark-mode .help-card {
+  background: #333335;
+}
+.card-pic-wrap {
+  border-radius: 20px 0 0 20px;
+  width: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  border-radius: 20px 20px 0 0;
+  background: linear-gradient(to bottom, #00dbc7, #00dbc8);
+}
+body.dark-mode .card-pic-wrap {
+  background: #797979;
+}
+.card-pic-wrap .helpImg {
+  position: relative;
+  left: -10%;
+  width: 350px;
+  -webkit-box-reflect: below -1px -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(transparent),
+      color-stop(90%, transparent),
+      to(rgba(250, 250, 250, 0.15))
+    );
+}
+.journey {
+  margin: 0;
+  border: 1px solid rgb(217, 186, 232);
+  border-radius: 5px;
+  padding: 35px 15px 0px 15px;
+  margin: 0 auto;
+  background-color: rgb(252, 250, 255);
+}
+body.dark-mode .journey {
+  background-color: var(--mainBlack);
+}
+.helpcenter {
+  border: 1px solid rgb(99, 184, 246);
+  border-radius: 5px;
+  padding: 15px 15px 0px 15px;
+  margin: 0 auto;
+  background-color: rgb(245, 252, 255);
+}
+body.dark-mode .helpcenter {
+  background-color: var(--mainBlack);
+}
+
+/*susbscribe*/
+.subs-body {
+  margin: 0;
+  background: linear-gradient(
+    0deg,
+    #00dbc7 -0.58%,
+    rgba(0, 219, 199, 0) 87.55%
+  );
+  display: flex;
+  justify-content: center;
+}
+body.dark-mode .subs-body {
+  background: var(--bgBlack);
+}
+.subs-card {
+  max-width: 1170px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.subs-card h2 {
+  font-size: 2em;
+  margin-bottom: 0;
+  color: #2f2478;
+}
+body.dark-mode .subs-card h2 {
+  color: var(--mainWhite);
+}
 /*Media*/
 @media screen and (min-width: 768px) {
   .hiw-bgcolor {
@@ -696,5 +897,23 @@ body.dark-mode .container-footer h3 {
     margin: 0 auto;
     position: absolute;
     right: -3%;
+  }
+  .contact-login {
+    width: 565px;
+  }
+  body.dark-mode .contact-login {
+    width: 565px;
+  }
+  .help-card {
+    flex-direction: row;
+    background: #fff;
+    margin-bottom: 10vh;
+    border-radius: 20px;
+  }
+  .card-pic-wrap {
+    width: 300px;
+  }
+  .card-pic-wrap .helpImg {
+    position: absolute;
   }
 }

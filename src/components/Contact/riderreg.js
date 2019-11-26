@@ -1,6 +1,5 @@
 import React from "react"
 import styles from "../../css/contact.module.css"
-import rider from "../../images/help4.png"
 import "aos/dist/aos.css"
 import { ArenguForm } from "gatsby-plugin-arengu-forms"
 
@@ -8,12 +7,10 @@ const RiderReg = () => {
   return (
     <section id="rider-registration" className={styles.contact}>
       <div className="session" data-aos="fade-down" data-aos-duration="2000">
-        <div className={styles.contactLeft}>
-          <img loading="lazy" src={rider} alt="fdfdf" />
-        </div>
-        <div className={styles.contactLogin}>
+        <div className={styles.contactLeft}></div>
+        <div className="contact-login">
           <h4 className={styles.contactTitle}>
-            Become a <span className={styles.contactSpace}>Partner</span>
+            Become a <span className="contact-space">Partner</span>
           </h4>
           <p className={styles.contactText1}>
             Be a gofer driver-partner today!

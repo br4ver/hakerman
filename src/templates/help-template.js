@@ -21,7 +21,7 @@ const Template = ({ data }) => {
           <article className={styles.helpInfo}>
             <div className={styles.center}>
               <div className={styles.info}></div>
-              <div className={styles.journey}>
+              <div className="journey">
                 {customer.map((item, index) => {
                   return (
                     <Day

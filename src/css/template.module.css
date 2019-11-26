@@ -63,14 +63,7 @@
 .template h2 {
   margin: 2rem 0;
 }
-.journey {
-  margin: 0;
-  border: 1px solid rgb(217, 186, 232);
-  border-radius: 5px;
-  padding: 35px 15px 0px 15px;
-  margin: 0 auto;
-  background-color: rgb(252, 250, 255);
-}
+
 @media screen and (min-width: 768px) {
   .help-center {
     display: grid;
