@@ -115,8 +115,17 @@ body.dark-mode .navbar {
     display: block;
   }
 }
+.home-link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-indent: -1000%;
+}
 
 .navlogo {
+  position: relative;
   background-image: url("../images/gofer1.webp");
   width: 140px;
   height: 40px;
@@ -160,7 +169,7 @@ body.dark-mode .footer {
   transition: color 0.3s ease;
 }
 .dark-mode-toggle :last-child {
-  color: var(--mainBlack);
+  color: var(--mainWhite);
 }
 .dark-mode-toggle :focus {
   outline: none;
@@ -316,7 +325,6 @@ main {
   --maskX: 0;
   --maskY: 00;
   max-width: 60vw;
-  margin-left: 10vw;
 }
 .titleContainer h1 {
   font-size: 90px;
@@ -362,8 +370,7 @@ main {
     position: relative;
     --maskX: 0;
     --maskY: 00;
-    max-width: 90vw;
-    margin-left: 5px;
+    max-width: 95vw;
   }
   .titleContainer h1 {
     margin-left: 5vw;

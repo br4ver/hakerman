@@ -17,6 +17,7 @@ const Navbar = () => {
               aria-label="link-gofer"
               fade
               to="/"
+              className="home-link"
               id="navlink-logo"
             ></AniLink>
           </div>

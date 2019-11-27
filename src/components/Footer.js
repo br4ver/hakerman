@@ -12,6 +12,7 @@ const Footer = () => {
             aria-label="logo-gofer"
             fade
             to="/"
+            className="home-link"
             id="navlink-logo"
           ></AniLink>
         </div>

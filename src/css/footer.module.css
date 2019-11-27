@@ -108,27 +108,23 @@ li {
     list-style: none;
     text-align: left;
   }
-  .links a {
-    padding-top: 1em;
-  }
+
   .footerdesc1 {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
-    justify-content: left;
+    justify-content: space-between;
     margin-top: 2em;
     padding-left: 0;
     padding-top: 0;
-    box-shadow: inset 0px 0px 8px -10px #333335,
-      inset -11px 0px 8px -10px #333335;
   }
   .footerdesc1 .foot-links {
     flex: 0 0 auto;
     margin-right: 1em;
   }
   .footerdesc1 {
-    height: 210px;
+    height: 200px;
     width: 90%;
     -webkit-overflow-scrolling: touch;
   }
@@ -137,10 +133,13 @@ li {
   }
   .foot-links {
     width: 235px;
-    height: 210px;
+    height: 160px;
     background: rgba(255, 255, 255, 0.5);
-    margin-bottom: 0.5em;
     padding: 1rem 1rem 1rem 1rem;
     margin-right: 0;
+    margin: 1rem;
+    box-shadow: 3px 3px 18px -5px black;
+    border-radius: 1rem;
+    background-color: #2f2478;
   }
 }
