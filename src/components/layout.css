@@ -325,6 +325,7 @@ main {
   --maskX: 0;
   --maskY: 00;
   max-width: 60vw;
+  margin-left: 10%;
 }
 .titleContainer h1 {
   font-size: 90px;
@@ -371,6 +372,7 @@ main {
     --maskX: 0;
     --maskY: 00;
     max-width: 95vw;
+    margin-left: 0;
   }
   .titleContainer h1 {
     margin-left: 5vw;
