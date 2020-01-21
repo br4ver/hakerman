@@ -34,9 +34,10 @@ const Post = ({ post }) => {
   return (
     <article
       className={styles.tour}
-      data-aos="fade-up"
+      data-aos="zoom-in-up"
       data-aos-anchor-placement="center-bottom"
-      data-aos-duration="1500"
+      data-aos-delay="500"
+      data-aos-duration="500"
       id="fp-trigger"
       data-aos-once="true"
     >

@@ -46,7 +46,7 @@ const Riderlinks = () => {
           </div>
           <div className={styles.links}>
             <AniLink aria-label="footer-help" fade to="/help">
-              Knowledge Base
+              Help Center
             </AniLink>
           </div>
           <div className={styles.links}>

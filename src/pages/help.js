@@ -5,7 +5,7 @@ import Helps from "../components/Help/Helps"
 import { graphql } from "gatsby"
 import Title from "../components/Home/superBanner"
 import Subscribe from "../components/Subscribe"
-import Quicklinks from "../components/Home/Quicklinks"
+import Quicklink from "../components/Home/Quicklink"
 const help = ({ data }) => {
   return (
     <Layout>
@@ -14,14 +14,14 @@ const help = ({ data }) => {
       </StyledHero>
       <Helps />
       <Subscribe />
-      <Quicklinks />
+      <Quicklink />
     </Layout>
   )
 }
 
 export const query = graphql`
   query {
-    helpBg: file(relativePath: { eq: "help.jpg" }) {
+    helpBg: file(relativePath: { eq: "hellp.jpg" }) {
       childImageSharp {
         fluid(quality: 100, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp

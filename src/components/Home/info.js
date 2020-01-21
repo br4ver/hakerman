@@ -132,7 +132,7 @@ export default class AsNavFor extends Component {
                 <h5>Step 1</h5>
                 <h3>Download the app</h3>
                 <p>
-                  Get the app on
+                  Get the app on {" "}
                   <button
                     onClick={() => scrollTo("#home-download")}
                     className={styled.gPlay}
@@ -149,12 +149,12 @@ export default class AsNavFor extends Component {
               <div className="info-step1 card-3">
                 <h5>Step 3</h5>
                 <h3>Track your order</h3>
-                <p>Never lose your order again with real-time tracking.</p>
+                <p>Never lose track of your order again with real-time tracking.</p>
               </div>
               <div className="info-step1">
                 <h5>Step 4</h5>
                 <h3>Enjoy your meal</h3>
-                <p>Confirm and be ready to enjoy your meal.</p>
+                <p>Dig-in and enjoy.</p>
               </div>
             </Slider>
           </div>

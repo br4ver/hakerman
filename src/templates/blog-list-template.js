@@ -8,6 +8,8 @@ import Title from "../components/Title"
 import StyledHero from "../components/StyledHero"
 import HeroTitle from "../components/Home/superBanner"
 import SEO from "../components/SEO"
+import Quicklink from "../components/Home/Quicklink"
+
 
 const Blog = props => {
   const { currentPage, numPages } = props.pageContext
@@ -63,6 +65,7 @@ const Blog = props => {
           )}
         </section>
       </section>
+      <Quicklink/>
     </Layout>
   )
 }
@@ -88,7 +91,7 @@ export const query = graphql`
                }
              }
            }
-           blogsBg: file(relativePath: { eq: "rider.jpg" }) {
+           blogsBg: file(relativePath: { eq: "update.jpg" }) {
              childImageSharp {
                fluid(quality: 90, maxWidth: 4160) {
                  ...GatsbyImageSharpFluid_withWebp

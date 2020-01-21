@@ -27,7 +27,7 @@ export default class rider extends Component {
 
 export const query = graphql`
   query {
-    defaultBcg: file(relativePath: { eq: "defaultBcg.webp" }) {
+    defaultBcg: file(relativePath: { eq: "4352.jpg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp

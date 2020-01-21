@@ -3,10 +3,11 @@
   margin: auto;
 }
 
-.center {
-  width: 80vw;
-  margin: 0 auto;
-  align-content: center;
+
+.contact-title{
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 25px;
 }
 
 @media screen and (max-width: 700px) {
@@ -16,10 +17,7 @@
 }
 
 @media screen and (min-width: 992px) {
-  .center {
-    width: 40vw;
-    margin: 0 auto;
-  }
+
 }
 .contact label {
   text-transform: capitalize;
@@ -68,8 +66,7 @@
 }
 
 .contact-title {
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 24px;
   opacity: 0.85;
 }
 body.dark-mode .contact-title {

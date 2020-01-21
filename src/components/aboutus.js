@@ -1,8 +1,5 @@
 import React from "react"
 import styles from "../css/aboutus.module.css"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import StyledHero from "../components/StyledHero"
 import aboutimg from "../images/gofer.png"
 import aboutimg2 from "../images/rider2.png"
 import aboutimg3 from "../images/aboutbg.png"
@@ -41,10 +38,10 @@ const getAboutus = () => {
             <div className={styles.gridDiv}>
               <p>
                 Ever remember bonding with the squad on a Friday night, with
-                drinks and jenga on deck?
+                drinks and Jenga on deck?
                 <br />
                 <br />
-                Maybe a time when there's nothing on the fridge and there's an
+                A time when there's nothing on the fridge and there's an
                 unexpected guest?
                 <br />
                 <br />
@@ -53,7 +50,7 @@ const getAboutus = () => {
                 <br />
                 <br />
                 Or maybe you just want to slow down and enjoy that episode on
-                netflix with your fave meal
+                Netflix with your fave meal.
               </p>
             </div>
           </div>
@@ -65,12 +62,19 @@ const getAboutus = () => {
             <div className={styles.center}>
               <p>
                 An opportunity to reconnect and to celebrate those moments with
-                your friends, family, special someone 😉, or yourself. This is
-                what inspired us in creating gofer. To achieve this, we have
-                created a mobile application (yes, another mobile application
-                🙄) that connects you to your favorite restaurant and have your
+                your friends, family, special someone{" "}
+                <span role="img" aria-label="Wink Emoji">
+                  😉
+                </span>
+                , or yourself. This is what inspired us in creating gofer. To
+                achieve this, we have created a mobile application (yes, another
+                mobile application
+                <span role="img" aria-label="Rolling Eyes">
+                  🙄
+                </span>
+                ) that connects you to your favorite restaurant and have your
                 fave meal delivered to your doorstep, making your day a little
-                brighter
+                brighter!
               </p>
             </div>
             <div className={styles.gridDiv}>
@@ -99,7 +103,7 @@ const getAboutus = () => {
         <div className={styles.container2}>
           <div className={styles.center1}>
             <p>
-              At the center of it all, we strive to bring you closer{" "}
+              We strive to bring you closer{" "}
               <span className={styles.aboutHl}>
                 with the people you care and love{" "}
               </span>

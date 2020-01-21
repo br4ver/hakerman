@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 
 const getLegal = graphql`
   query termImage {
-    termImage: file(relativePath: { eq: "term.png" }) {
+    termImage: file(relativePath: { eq: "term.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 4000) {
           ...GatsbyImageSharpFluid_tracedSVG

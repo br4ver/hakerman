@@ -144,7 +144,6 @@ body.dark-mode .quick-links {
   background-color: var(--bgBlack);
 }
 .footer {
-  margin-top: auto;
   background: var(--primaryColor);
   padding: 2rem;
   color: var(--mainWhite);
@@ -416,7 +415,7 @@ body.dark-mode .af-field-label label {
   color: #fff;
 }
 .af-legal-required a {
-  color: var(--primaryColor);
+  color: var(--goferPink);
 }
 .af-legal label {
   margin-top: 20px;
@@ -832,6 +831,29 @@ body.dark-mode .helpcenter {
   background-color: var(--mainBlack);
 }
 
+/*Contact*/
+.contact {
+  width: 100%;
+    padding: 0 0;
+  margin: auto;
+  background: linear-gradient(
+    0deg,
+    #00dbc7 -0.58%,
+    rgba(0, 219, 199, 0) 87.55%
+  );
+}
+body.dark-mode .contact {
+  background: var(--bgBlack);
+}
+
+  .center {
+    width: 80vw;
+    margin-top: 80px;
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 80px;
+  }
+
 /*susbscribe*/
 .subs-body {
   margin: 0;
@@ -934,4 +956,16 @@ body.dark-mode .bg-light {
   .card-pic-wrap .helpImg {
     position: absolute;
   }
+  .center {
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+      background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+}
+body.dark-mode .center{
+  background: var(--bgBlack);
+}
 }

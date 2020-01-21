@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const getImage = graphql`
   query {
-    defaultBcg: file(relativePath: { eq: "defaultBcg.webp" }) {
+    defaultBcg: file(relativePath: { eq: "defaultBcg.jpg" }) {
       childImageSharp {
         fluid(quality: 100, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp

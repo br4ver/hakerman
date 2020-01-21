@@ -1,17 +1,19 @@
 import React from "react"
 import Layout from "../components/Layout"
-import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
 import Contact from "../components/Contact/Contact"
 import SEO from "../components/SEO/SEO"
+import Quicklink from "../components/Home/Quicklink"
+
+
 const contact = ({data}) => {
   return (
     <Layout>
-      <SEO title="Blog"/>
-    <StyledHero img={data.contactBcg.childImageSharp.fluid}/>
-    <Contact/>
+      <SEO title="Blog" />
+      <Contact />
+      <Quicklink />
     </Layout>
-    )
+  )
 }
 export const query = graphql`
   query {
