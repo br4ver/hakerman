@@ -64,7 +64,6 @@ const Download = () => {
 
         <div className={styles.dlText}>
           <h2>Hungry?</h2>
-          <h2>Got tasks to do?</h2>
           <h2>A minute is all you need.</h2>
           <Link
             to="/"
