@@ -34,9 +34,9 @@
 }
 
 .dl-text {
-  padding-left: 14%;
+  padding-left: 0;
   padding-right: 0;
-  text-align: right;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,7 +62,7 @@
     );
 }
 .g-play {
-  left: 20px;
+  margin: auto;
   width: 200px;
 }
 .dl-holder {

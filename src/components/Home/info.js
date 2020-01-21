@@ -5,10 +5,10 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import "../../css/rider.sec.css"
 import styled from "../../css/info.module.css"
-import Phone1 from "../../images/step1.png"
-import Phone2 from "../../images/step2.png"
-import Phone3 from "../../images/step3.png"
-import Phone4 from "../../images/step4.png"
+import Phone1 from "../../images/HIW1.png"
+import Phone2 from "../../images/HIW2.png"
+import Phone3 from "../../images/HIW3.png"
+import Phone4 from "../../images/HIW4.png"
 export default class AsNavFor extends Component {
   constructor(props) {
     super(props)
@@ -62,6 +62,7 @@ export default class AsNavFor extends Component {
               arrows={false}
               lazyLoad={true}
               dots={false}
+              fade={true}
               responsive={[
                 {
                   breakpoint: 480,
@@ -131,29 +132,29 @@ export default class AsNavFor extends Component {
                 <h5>Step 1</h5>
                 <h3>Download the app</h3>
                 <p>
-                  Get the app on{" "}
+                  Get the app on
                   <button
                     onClick={() => scrollTo("#home-download")}
                     className={styled.gPlay}
                   >
                     Google Play Store
-                  </button>{" "}
+                  </button>
                 </p>
               </div>
               <div className="info-step1 card-2">
                 <h5>Step 2</h5>
                 <h3>Search your restaurant</h3>
-                <p>Select from various restaurants around the city.</p>
+                <p>Discover various restaurants in the city.</p>
               </div>
               <div className="info-step1 card-3">
                 <h5>Step 3</h5>
                 <h3>Track your order</h3>
-                <p>Real-time tracking of your meal</p>
+                <p>Never lose your order again with real-time tracking.</p>
               </div>
               <div className="info-step1">
                 <h5>Step 4</h5>
                 <h3>Enjoy your meal</h3>
-                <p>Confirm order and enjoy your meal</p>
+                <p>Confirm and be ready to enjoy your meal.</p>
               </div>
             </Slider>
           </div>

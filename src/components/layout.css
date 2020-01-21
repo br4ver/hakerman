@@ -451,7 +451,7 @@ body.dark-mode .af-legal label {
 }
 .slider-box {
   max-width: 500px;
-  width: 325px;
+  width: 430px;
   height: 100%;
   position: relative;
   outline: none;
@@ -609,7 +609,7 @@ body.dark-mode .info-step1 h3 {
 /* HIW */
 .hiw-bgcolor {
   position: absolute;
-  height: 500px;
+  height: 390px;
   width: 85vw;
   border-radius: 0px 50px 50px 0px;
   background-color: var(--primaryColor);
@@ -634,7 +634,7 @@ body.dark-mode .hiw-text {
 /*Download*/
 .dl-bgcolor {
   height: 550px;
-  width: 85vw;
+  width: 90vw;
   border-radius: 50px 0px 0px 50px;
   background-color: var(--primaryColor);
   position: absolute;
@@ -861,6 +861,15 @@ body.dark-mode .subs-body {
 }
 body.dark-mode .subs-card h2 {
   color: var(--mainWhite);
+}
+/*about*/
+.bg-light {
+  background: var(--mainWhite);
+  color: #333;
+}
+body.dark-mode .bg-light {
+  background: var(--bgBlack);
+  color:var(--mainWhite);
 }
 /*Media*/
 @media screen and (min-width: 768px) {

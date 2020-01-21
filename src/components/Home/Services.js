@@ -23,7 +23,7 @@ const Services = () => {
         ...serviceImage
       }
 
-      image3: file(relativePath: { eq: "C3.png" }) {
+      image3: file(relativePath: { eq: "group.png" }) {
         ...serviceImage
       }
     }
@@ -64,7 +64,7 @@ const Services = () => {
                 alt="about image"
               />
             </div>
-            <h4>Explore and Tap</h4>
+            <h4>Explore and Track</h4>
             <p>
               Order from a wide selection of restaurants in the city and track
               your meal up to your doorstep.
@@ -83,8 +83,11 @@ const Services = () => {
                 alt="about image"
               />
             </div>
-            <h4>Save Time</h4>
-            <p>Have more time for the things that really matter to you.</p>
+            <h4>No minimum order</h4>
+            <p>
+              Order any food you want. From small to large meals, never limit
+              yourself to what you can eat.
+            </p>
           </article>
         </div>
       </div>
