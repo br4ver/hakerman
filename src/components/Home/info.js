@@ -44,7 +44,7 @@ export default class AsNavFor extends Component {
           data-aos-delay="400"
           data-aos-once="true"
         >
-          How it work
+          How it works?
         </h4>
         <div className="slider-holder">
           <div

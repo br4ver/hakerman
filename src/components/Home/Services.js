@@ -85,8 +85,8 @@ const Services = () => {
             </div>
             <h4>No minimum order</h4>
             <p>
-              Order any food you want. From small to large meals, never limit
-              yourself to what you can eat.
+              Order any food you want. From small to large meals, no minimum
+              amount required.
             </p>
           </article>
         </div>
