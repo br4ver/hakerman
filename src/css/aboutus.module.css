@@ -29,7 +29,10 @@ body {
   filter: blur(2px);
   -webkit-filter: blur(2px);
 }
-
+.about-hl{
+  font-weight: bold;
+  color: #00dbc7;
+}
 .content {
   position: absolute;
   z-index: 1;
