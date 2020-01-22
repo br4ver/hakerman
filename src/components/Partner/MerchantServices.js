@@ -31,7 +31,7 @@ const MerchantServices = () => {
   return (
     <div id="merchant-benefits" className={styles.services}>
       <Aosinit />
-      <Title title="our" subtitle="services" />
+      <Title title="OUR" subtitle="SERVICES" />
       <div>
         <div className={styles.center}>
           <article

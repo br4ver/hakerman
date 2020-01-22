@@ -66,8 +66,8 @@ const Services = () => {
             </div>
             <h4>Explore and Track</h4>
             <p>
-              Order from a wide selection of restaurants in the city and track
-              your meal up to your doorstep.
+              Select various restaurants around the city and track your meal up
+              to your doorstep.
             </p>
           </article>
           <article

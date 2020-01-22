@@ -43,19 +43,51 @@ const RiderReg = () => {
             <div className={styles.modal__inner}>
               <label className={styles.modal__close} htmlFor="modal-1"></label>
               <h2>Requirements</h2>
-              <p>
-                Man braid godard banjo chia wolf cliche. Pickled letterpress
-                migas, truffaut humblebrag tousled roof party. Pabst microdosing
-                bushwick chia jianbing williamsburg activated charcoal narwhal
-                truffaut, skateboard vexillologist bicycle rights ethical plaid.
-                Farm-to-table asymmetrical skateboard williamsburg pok pok next
-                level, cardigan tattooed raclette 90's knausgaard salvia. Tacos
-                semiotics schlitz palo santo echo park celiac coloring book
-                cliche brunch. Disrupt vegan chillwave ennui, etsy you probably
-                haven't heard of them quinoa semiotics irony meditation
-                live-edge activated charcoal. VHS trust fund kogi, kinfolk
-                taiyaki offal tbh vaporware lo-fi squid meggings coloring book.
-              </p>
+              <p>Please bring the following:</p>
+              <div className={styles.modalP1}>
+                <p>
+                  ✔ Driver's License{" "}
+                  <span className={styles.modalSpan}>
+                    (Original and Photocopy)
+                  </span>
+                  <br />✔ Motorcycle Image Softcopy{" "}
+                  <span className={styles.modalSpan}>
+                    (Front, Back, and side)
+                  </span>
+                  <br />✔ Mobile Phone{" "}
+                  <span className={styles.modalSpan}>
+                    (Android Version 5.0 or newer)
+                  </span>
+                </p>
+                <p>
+                  ✔ ORCR{" "}
+                  <span className={styles.modalSpan}>
+                    (Original and Photocopy)
+                  </span>
+                </p>
+                <p className={styles.modalHint}>
+                  -If borrowed motorcycle – Authorization Letter and photocopy
+                  of Valid ID.
+                  <br />
+                  -If a second owner – duly notarized deed of sale.
+                  <br />
+                  -If reacquired motorcycle – repossession certificate.
+                </p>
+                <h3 className={styles.modalReq1}>1</h3>
+              </div>
+              <div className={styles.modalP2}>
+                <p>
+                  Police/NBI Clearance
+                  <br />
+                  Tin number
+                  <br />
+                  Medical Certificate
+                  <br />
+                  Email Address
+                </p>
+                <h3 className={styles.modalReq2}>2</h3>
+              </div>
+              <p>Items with (✔) symbol are mandatory.</p>
             </div>
           </div>
         </div>
