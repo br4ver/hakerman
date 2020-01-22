@@ -1,22 +1,39 @@
 .contact {
   padding: 0 0;
   margin: auto;
+  margin-top: 4rem;
 }
 
 
 .contact-title{
   text-align: center;
-  font-size: 2rem;
+  font-size: .7rem;
+  padding-top: 3rem;
 }
 
 @media screen and (max-width: 700px) {
   .helpcenter {
     width: 100%;
   }
+  .contact-title{
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 3rem;
+}
+.contact-title p{
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 3rem;
+  padding: 20px;
+}
 }
 
 @media screen and (min-width: 992px) {
-
+  .contact-title{
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 3rem;
+}
 }
 .contact label {
   text-transform: unset;
@@ -65,7 +82,7 @@
 }
 
 .contact-title {
-  font-size: 2rem;
+  font-size: 1rem;
   opacity: 0.85;
 }
 body.dark-mode .contact-title {
@@ -332,8 +349,8 @@ body.dark-mode .contact-session {
   min-height: 100%;
   flex: 0 0 auto;
   position: relative;
-  background-image: url("../images/4353.jpg");
-  background-position: left 30% bottom 0px;
+  background-image: url("../images/878.jpg");
+  background-position: left 0 bottom 0px;
   background-size: cover;
 }
 @media (max-width: 790px) {
@@ -361,6 +378,7 @@ body.dark-mode .contact-session {
   text-align: left;
   background: rgba(0, 0, 0, 0.9);
   transition: opacity 0.25s ease;
+  z-index: 3;
 }
 
 .modal__bg {
@@ -406,7 +424,7 @@ body.dark-mode .contact-session {
   border-color: rgb(232, 188, 186);
   border-radius: 10px;
   border-width: 1px;
-  width: 90%;
+  width: 100%;
   border-style: solid;
   margin: auto;
   margin-top: 10px;
@@ -439,7 +457,7 @@ body.dark-mode .contact-session {
   border-color: rgb(186, 227, 232);
   border-radius: 10px;
   border-width: 1px;
-  width: 90%;
+  width: 100%;
   border-style: solid;
   margin: auto;
   margin-top: 10px;
@@ -493,8 +511,11 @@ body.dark-mode .contact-session {
   font-size: 12px;
 }
 .modal-hint{
-  font-size: 15px;
+  font-size: 12px !important;
   padding-left: 25px;
+}
+.modal-symb{
+  color: #2ecc71;
 }
 .modal__close {
   position: absolute;
@@ -530,7 +551,7 @@ body.dark-mode .contact-session {
 
 @media screen and (max-width: 768px) {
   .modal__inner {
-    width: 90%;
+    width: 95%;
     height: 90%;
     box-sizing: border-box;
   }

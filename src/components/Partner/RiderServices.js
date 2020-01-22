@@ -38,6 +38,7 @@ const RiderServices = () => {
             className={styles.service}
             data-aos="fade-right"
             data-aos-duration="2000"
+            data-aos-once="true"
           >
             <div className={styles.imgCont}>
               <Img
@@ -53,6 +54,7 @@ const RiderServices = () => {
             className={styles.service}
             data-aos="fade-down"
             data-aos-duration="2500"
+            data-aos-once="true"
           >
             <div className={styles.imgCont}>
               <Img
@@ -61,13 +63,14 @@ const RiderServices = () => {
                 alt="about image"
               />
             </div>
-            <h4>Earn for your goals.</h4>
-            <p>Have your dreams within your reach by partnering with us</p>
+            <h4>Earn for your goals</h4>
+            <p>Have your dreams within your reach by partnering with us.</p>
           </article>
           <article
             className={styles.service}
             data-aos="fade-left"
             data-aos-duration="2500"
+            data-aos-once="true"
           >
             <div className={styles.imgCont}>
               <Img

@@ -14,7 +14,7 @@ const MerchantReg = () => {
             <span className={styles.highLight}>Extend</span> your restaurant.
           </p>
           <p className={styles.contactText}>
-            Be <span className={styles.highLight}>Exposed.</span>
+            <span className={styles.highLight}>Gain</span> more customers.
           </p>
           <p className={styles.contactText1}>
             <span className={styles.highLight}>Earn</span> more.

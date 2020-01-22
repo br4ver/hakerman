@@ -46,32 +46,34 @@ const RiderReg = () => {
               <p>Please bring the following:</p>
               <div className={styles.modalP1}>
                 <p>
-                  ✔ Driver's License{" "}
+                  <span className={styles.modalSymb}>✔</span> Driver's License{" "}
                   <span className={styles.modalSpan}>
                     (Original and Photocopy)
                   </span>
-                  <br />✔ Motorcycle Image Softcopy{" "}
+                  <br />
+                  <span className={styles.modalSymb}>✔</span> Motorcycle Image
+                  Softcopy{" "}
                   <span className={styles.modalSpan}>
                     (Front, Back, and side)
                   </span>
-                  <br />✔ Mobile Phone{" "}
+                  <br />
+                  <span className={styles.modalSymb}>✔</span> Mobile Phone{" "}
                   <span className={styles.modalSpan}>
                     (Android Version 5.0 or newer)
                   </span>
                 </p>
                 <p>
-                  ✔ ORCR{" "}
+                  <span className={styles.modalSymb}>✔</span> ORCR{" "}
                   <span className={styles.modalSpan}>
                     (Original and Photocopy)
                   </span>
                 </p>
                 <p className={styles.modalHint}>
-                  -If borrowed motorcycle – Authorization Letter and photocopy
+                  • If borrowed motorcycle – Authorization Letter and photocopy
                   of Valid ID.
                   <br />
-                  -If a second owner – duly notarized deed of sale.
-                  <br />
-                  -If reacquired motorcycle – repossession certificate.
+                  • If a second owner – duly notarized deed of sale.
+                  <br />• If reacquired motorcycle – repossession certificate.
                 </p>
                 <h3 className={styles.modalReq1}>1</h3>
               </div>
@@ -87,7 +89,10 @@ const RiderReg = () => {
                 </p>
                 <h3 className={styles.modalReq2}>2</h3>
               </div>
-              <p>Items with (✔) symbol are mandatory.</p>
+              <p>
+                Items with (<span className={styles.modalSymb}>✔</span>) symbol
+                are mandatory.
+              </p>
             </div>
           </div>
         </div>

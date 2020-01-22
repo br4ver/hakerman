@@ -38,6 +38,7 @@ const MerchantServices = () => {
             className={styles.service}
             data-aos="fade-right"
             data-aos-duration="2000"
+            data-aos-once="true"
           >
             <div className={styles.imgCont}>
               <Img
@@ -47,12 +48,13 @@ const MerchantServices = () => {
               />
             </div>
             <h4>Grow your business</h4>
-            <p>A partnership that cares for you and your business</p>
+            <p>A partnership that cares for you and your business.</p>
           </article>
           <article
             className={styles.service}
             data-aos="fade-down"
             data-aos-duration="2500"
+            data-aos-once="true"
           >
             <div className={styles.imgCont}>
               <Img
@@ -63,14 +65,15 @@ const MerchantServices = () => {
             </div>
             <h4>Road Partner</h4>
             <p>
-              Access to our fleet of rider partner delivering your cooked meals
-              to customers
+              Access to our fleet of drivers that delivers your cooked meals to
+              customers.
             </p>
           </article>
           <article
             className={styles.service}
             data-aos="fade-left"
             data-aos-duration="2500"
+            data-aos-once="true"
           >
             <div className={styles.imgCont}>
               <Img

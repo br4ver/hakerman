@@ -66,13 +66,12 @@ const getAboutus = () => {
                 <span role="img" aria-label="Wink Emoji">
                   😉
                 </span>
-                , or yourself. This is what inspired us in creating gofer. To
-                achieve this, we have created a mobile application (yes, another
-                mobile application
-                <span role="img" aria-label="Rolling Eyes">
+                , or yourself.</p>
+                <div className={styles.center2P}>This is what inspired us in creating gofer.</div> 
+                <p> Toachieve this, we have created a mobile application (yes, another
+                mobile application<span role="img" aria-label="Rolling Eyes">
                   🙄
-                </span>
-                ) that connects you to your favorite restaurant and have your
+                </span>) that connects you to your favorite restaurant and have your
                 fave meal delivered to your doorstep, making your day a little
                 brighter!
               </p>
@@ -103,12 +102,11 @@ const getAboutus = () => {
         <div className={styles.container2}>
           <div className="center1">
             <p>
-              We strive to bring you closer{" "}
-              <span className={styles.aboutHl}>
-                with the people you care and love{" "}
-              </span>
-              and <span className={styles.aboutHl}>spend more time</span> to do
-              the things you like.
+              We strive to bring you closer with the people you{" "}
+              <span className={styles.aboutHl}>care</span> and{" "}
+              <span className={styles.aboutHl}>love </span>
+              and spend more time to do the things you{" "}
+              <span className={styles.aboutHl}>like</span>.
             </p>
           </div>
         </div>

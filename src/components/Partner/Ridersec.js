@@ -32,6 +32,17 @@ class RiderSec extends React.Component {
     }
     return (
       <section className="riderservice" id="rider-howitwork">
+        <h4
+          className="hiw-text"
+          data-aos="fade-down"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1000"
+          data-aos-offset="100"
+          data-aos-delay="400"
+          data-aos-once="true"
+        >
+          How it works?
+        </h4>
         <Slider ref={slider => (this.slider = slider)} {...settings}>
           <div>
             <div className="container">

@@ -33,6 +33,17 @@ const MerchantSec = () => {
   }
   return (
     <section className="riderservice" id="merchant-sec">
+      <h4
+        className="hiw-text"
+        data-aos="fade-down"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="1000"
+        data-aos-offset="100"
+        data-aos-delay="400"
+        data-aos-once="true"
+      >
+        How it works?
+      </h4>
       <Slider {...settings}>
         <div>
           <div className="container">
@@ -76,7 +87,7 @@ const MerchantSec = () => {
               <div className="cardcontent">
                 <h4>Step 2</h4>
                 <h1 className="cardtitle">
-                  Wait for the representative to reach you.
+                  Our representatives will get in touch as soon as possible.
                 </h1>
               </div>
             </div>
@@ -113,7 +124,7 @@ const MerchantSec = () => {
               </div>
               <div className="cardcontent">
                 <h4>Step 4</h4>
-                <h2 className="cardtitle">Reach more customers</h2>
+                <h2 className="cardtitle">Reach more customers!</h2>
               </div>
             </div>
           </div>

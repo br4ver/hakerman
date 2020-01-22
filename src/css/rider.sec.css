@@ -44,6 +44,7 @@ body.dark-mode .card {
   margin: 2rem;
   text-align: center;
   margin-top: 5em;
+  background-color: #fff;
 }
 body.dark-mode .card2 {
   background-color: #2e2e2e;
@@ -145,6 +146,7 @@ body.dark-mode .session {
 }
 .riderservice {
   height: 70vh;
+  position: relative;
 }
 
 @media screen and (max-width: 800px) {
