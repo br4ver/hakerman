@@ -80,7 +80,7 @@ const RiderServices = () => {
               />
             </div>
             <h4>We value your safety</h4>
-            <p>Safety training and insurance coverage during your booking.</p>
+            <p>Safety training coverage during your booking.</p>
           </article>
         </div>
       </div>
