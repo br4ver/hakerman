@@ -83,7 +83,7 @@ const MerchantServices = () => {
               />
             </div>
             <h4>Reach more customers</h4>
-            <p>Your own digital storefront bridging you to customers.</p>
+            <p>Let your digital storefront connect you to your customers.</p>
           </article>
         </div>
       </div>

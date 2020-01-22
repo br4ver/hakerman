@@ -64,7 +64,7 @@ const RiderServices = () => {
               />
             </div>
             <h4>Earn for your goals</h4>
-            <p>Have your dreams within your reach by partnering with us.</p>
+            <p>Reach your dreams by partnering with us.</p>
           </article>
           <article
             className={styles.service}
@@ -80,7 +80,7 @@ const RiderServices = () => {
               />
             </div>
             <h4>We value your safety</h4>
-            <p>Safety training coverage during your booking.</p>
+            <p>Safety training and perks coverage during your trip.</p>
           </article>
         </div>
       </div>
