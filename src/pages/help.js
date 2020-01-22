@@ -10,7 +10,7 @@ const help = ({ data }) => {
   return (
     <Layout>
       <StyledHero img={data.helpBg.childImageSharp.fluid}>
-        <Title text="Frequently Ask Questions" />
+        <Title text="Frequently Asked Questions" />
       </StyledHero>
       <Helps />
       <Subscribe />

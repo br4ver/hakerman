@@ -59,7 +59,7 @@ const getAboutus = () => {
       <section className="bg-light">
         <div className={styles.container2}>
           <div className={styles.grid2}>
-            <div className={styles.center}>
+            <div className={styles.center2}>
               <p>
                 An opportunity to reconnect and to celebrate those moments with
                 your friends, family, special someone{" "}
@@ -77,7 +77,7 @@ const getAboutus = () => {
                 brighter!
               </p>
             </div>
-            <div className={styles.gridDiv}>
+            <div className={styles.gridDiv1}>
               <img src={aboutimg4} className={styles.pic} alt="Gofer About" />
             </div>
           </div>
@@ -101,7 +101,7 @@ const getAboutus = () => {
       <section className={styles.about1}>
         <img src={aboutimg3} className={styles.aboutbg} alt="Gofer About" />
         <div className={styles.container2}>
-          <div className={styles.center1}>
+          <div className="center1">
             <p>
               We strive to bring you closer{" "}
               <span className={styles.aboutHl}>

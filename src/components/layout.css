@@ -761,7 +761,8 @@ body.dark-mode .container-footer h3 {
   color: #000;
   width: 80vw;
   padding: 2em 1em 1em;
-}
+border-radius: 15px;
+} 
 body.dark-mode .contact-login h4 {
   color: #fff;
 }
@@ -770,6 +771,14 @@ body.dark-mode .contact-login p {
 }
 .contact-login .contact-space {
   font-weight: 700;
+}
+.session{
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+}
+body.dark-mode .session{
+  background: #333335;
 }
 /*help*/
 .help-card {
@@ -892,6 +901,28 @@ body.dark-mode .subs-card h2 {
 body.dark-mode .bg-light {
   background: var(--bgBlack);
   color:var(--mainWhite);
+}
+.center1 {
+  text-align: center;
+  margin: auto;
+  z-index: 2;
+  margin: 0;
+  border: 1px solid rgb(217, 186, 232);
+  border-radius: 5px;
+  padding: 35px 15px 0px 15px;
+  margin: 0 auto;
+  background-color: rgb(252, 250, 255);
+}
+body.dark-mode .center1 {
+  text-align: center;
+  margin: auto;
+  z-index: 2;
+  margin: 0;
+  border: 1px solid rgb(217, 186, 232);
+  border-radius: 5px;
+  padding: 35px 15px 0px 15px;
+  margin: 0 auto;
+  background-color: #333335;
 }
 /*Media*/
 @media screen and (min-width: 768px) {

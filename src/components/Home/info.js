@@ -154,7 +154,7 @@ export default class AsNavFor extends Component {
               <div className="info-step1">
                 <h5>Step 4</h5>
                 <h3>Enjoy your meal</h3>
-                <p>Dig-in and enjoy.</p>
+                <p>Dig-in and enjoy!</p>
               </div>
             </Slider>
           </div>
