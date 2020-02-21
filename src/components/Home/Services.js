@@ -23,7 +23,7 @@ const Services = () => {
         ...serviceImage
       }
 
-      image3: file(relativePath: { eq: "group.png" }) {
+      image3: file(relativePath: { eq: "group1.png" }) {
         ...serviceImage
       }
     }
@@ -83,10 +83,9 @@ const Services = () => {
                 alt="about image"
               />
             </div>
-            <h4>No minimum order</h4>
+            <h4>Deals</h4>
             <p>
-              Order any food you want. From small to large meals, no minimum
-              amount required.
+              Order any food you want and enjoy every meal with great deals!
             </p>
           </article>
         </div>
