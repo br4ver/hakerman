@@ -18,7 +18,7 @@
   outline: none;
 }
 .links a:hover {
-  color: var(--goferBlue);
+  color: var(--goferPink);
 }
 .icons a {
   display: inline-block;

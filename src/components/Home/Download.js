@@ -19,11 +19,18 @@ const getAbout = graphql`
         }
       }
     }
+    iosImage: file(relativePath: { eq: "appstore.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 
 const Download = () => {
-  const { aboutImage, gplayImage } = useStaticQuery(getAbout)
+  const { aboutImage, gplayImage, iosImage } = useStaticQuery(getAbout)
   return (
     <section id="home-download" className={styles.dlHolder}>
       <div
@@ -59,6 +66,7 @@ const Download = () => {
               alt="about image"
               className={styles.imgContainer}
             />
+
           </div>
         </div>
 
@@ -67,7 +75,7 @@ const Download = () => {
           <h2>A minute is all you need.</h2>
           <Link
             to="/"
-            id="download-btn"
+            id="download-gplay-btn"
             data-aos="fade-up"
             data-aos-duration="400"
             data-aos-delay="200"
@@ -75,8 +83,22 @@ const Download = () => {
           >
             <Img
               fluid={gplayImage.childImageSharp.fluid}
-              alt="about image"
-              className={styles.gPlay}
+              alt="gplayimage"
+              className={styles.imgContainer}
+            />
+          </Link>
+          <Link
+            to="/"
+            id="download-ios-btn"
+            data-aos="fade-up"
+            data-aos-duration="400"
+            data-aos-delay="200"
+            data-aos-once="true"
+          >
+            <Img
+              fluid={iosImage.childImageSharp.fluid}
+              alt="ios image"
+              className={styles.imgContainer}
             />
           </Link>
         </div>

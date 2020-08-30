@@ -60,6 +60,7 @@
       color-stop(90%, transparent),
       to(rgba(250, 250, 250, 0.15))
     );
+    margin: auto;
 }
 .g-play {
   margin: auto;
@@ -121,5 +122,6 @@
         color-stop(90%, transparent),
         to(rgba(250, 250, 250, 0.15))
       );
+    margin:0
   }
 }
