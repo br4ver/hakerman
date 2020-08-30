@@ -6,7 +6,7 @@ import { graphql } from "gatsby"
 import Title from "../components/Home/superBanner"
 import Subscribe from "../components/Subscribe"
 import Quicklink from "../components/Home/Quicklink"
-const help = ({ data }) => {
+const support = ({ data }) => {
   return (
     <Layout>
       <StyledHero img={data.helpBg.childImageSharp.fluid}>
@@ -30,4 +30,4 @@ export const query = graphql`
     }
   }
 `
-export default help
+export default support

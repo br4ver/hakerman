@@ -32,7 +32,7 @@ exports.createPages = async ({ graphql, actions }) => {
   })
   data.help.edges.forEach(({ node }) => {
     createPage({
-      path: `help/${node.slug}`,
+      path: `support/${node.slug}`,
       component: path.resolve("./src/templates/help-template.js"),
       context: {
         slug: node.slug,

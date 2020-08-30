@@ -83,11 +83,11 @@ const Navbar = () => {
             <AniLink
               aria-label="link-help"
               fade
-              to="/help"
+              to="/support"
               className={styles.btnHelp}
               id="navlink-help"
             >
-              Help
+              Support
             </AniLink>
           </div>
         </div>

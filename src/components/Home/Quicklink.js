@@ -36,7 +36,7 @@ const Quicklink = () => {
             </AniLink>
           </div>
           <div className={styles.links}>
-            <AniLink aria-label="footer-help" fade to="/help">
+            <AniLink aria-label="footer-help" fade to="/support">
               Help Center
             </AniLink>
           </div>
@@ -49,18 +49,13 @@ const Quicklink = () => {
         <div className={styles.footLinks}>
           <h6 className={styles.title}>Legal</h6>
           <div className={styles.links}>
-            <AniLink aria-label="footer-terms" fade to="/terms">
-              Terms And Conditions
+            <AniLink aria-label="footer-terms" fade to="/terms-of-use">
+              Terms of Use
             </AniLink>
           </div>
           <div className={styles.links}>
             <AniLink aria-label="footer-privacy" fade to="/privacy">
               Privacy Policy
-            </AniLink>
-          </div>
-          <div className={styles.links}>
-            <AniLink aria-label="footer-Cookie" fade to="/cookie">
-              Cookie Policy
             </AniLink>
           </div>
         </div>
