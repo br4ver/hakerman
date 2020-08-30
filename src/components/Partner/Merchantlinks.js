@@ -39,12 +39,12 @@ const Merchantlinks = () => {
             </AniLink>
           </div>
           <div className={styles.links}>
-            <AniLink aria-label="footer-contact" fade to="/contact">
+            <AniLink aria-label="footer-contact" fade to="/support">
               Contact Us
             </AniLink>
           </div>
           <div className={styles.links}>
-            <AniLink aria-label="footer-help" fade to="/support">
+            <AniLink aria-label="footer-help" fade to="/help">
               Help Center
             </AniLink>
           </div>

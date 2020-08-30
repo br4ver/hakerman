@@ -18,7 +18,7 @@ const Term = () => {
       const { termImage } = useStaticQuery(getLegal)
 
     return (
-      <div className={styles.cardlegal}>
+      <div className="cardlegal">
         <Img
           fluid={termImage.childImageSharp.fluid}
           className={styles.cardMedia}

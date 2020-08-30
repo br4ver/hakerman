@@ -16,7 +16,7 @@ const getLegal = graphql`
 const PrivacyPolicy = () => {
     const { privacyImage } = useStaticQuery(getLegal)
     return (
-      <div className={styles.cardlegal}>
+      <div className="cardlegal">
         <Img
           fluid={privacyImage.childImageSharp.fluid}
           className={styles.cardMedia}

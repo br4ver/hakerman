@@ -1,33 +1,29 @@
 import React from "react"
 import Layout from "../components/Layout"
-import StyledHero from "../components/StyledHero"
-import Helps from "../components/Help/Helps"
 import { graphql } from "gatsby"
-import Title from "../components/Home/superBanner"
-import Subscribe from "../components/Subscribe"
+import Contact from "../components/Contact/Contact"
+import SEO from "../components/SEO/SEO"
 import Quicklink from "../components/Home/Quicklink"
-const support = ({ data }) => {
+
+
+const contact = ({data}) => {
   return (
     <Layout>
-      <StyledHero img={data.helpBg.childImageSharp.fluid}>
-        <Title text="Frequently Asked Questions" />
-      </StyledHero>
-      <Helps />
-      <Subscribe />
+      <SEO title="Blog" />
+      <Contact />
       <Quicklink />
     </Layout>
   )
 }
-
 export const query = graphql`
   query {
-    helpBg: file(relativePath: { eq: "FAQ.jpg" }) {
+    contactBcg: file(relativePath: { eq: "defaultBcg.webp" }) {
       childImageSharp {
-        fluid(quality: 100, maxWidth: 4160) {
+        fluid(quality: 90, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
   }
 `
-export default support
+export default contact
